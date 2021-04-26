@@ -29,6 +29,8 @@ GEM
       concurrent-ruby (~> 1.0)
     http_parser.rb (0.6.0)
     json_schema (0.21.0)
+    kramdown (2.3.1)
+      rexml
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -80,6 +82,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ref (2.0.0)
+    rexml (3.2.5)
     slow_enumerator_tools (1.1.0)
     tty-color (0.6.0)
     tty-command (0.10.1)
@@ -94,6 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
+  kramdown
   nanoc (~> 4.12.1)
   nanoc-live
   webrick
