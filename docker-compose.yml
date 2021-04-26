@@ -1,6 +1,14 @@
 version: '3'
 services:
-  web:
+  compile: &default
     build: .
+    command: bundle exec nanoc compile -W
     volumes:
       - .:/usr/src/ros
+
+  web:
+    <<: *default
+    command: bundle exec nanoc view -o 0.0.0.0 -L
+    ports:
+      - '3000:3000'
+      - '35729:35729'

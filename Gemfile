@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'adsf'
 gem 'nanoc', '~> 4.12.1'
+gem 'nanoc-live'
+gem 'webrick'
