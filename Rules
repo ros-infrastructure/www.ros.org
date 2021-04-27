@@ -21,6 +21,12 @@ compile '/**/*.md' do
   end
 end
 
+compile '/**/*.{sass,scss}' do
+  syntax = @item.identifier.ext.to_sym
+  filter :sass, syntax: syntax, style: :compact
+  write @item.identifier.without_ext + '.css'
+end
+
 compile '/**/*' do
   write item.identifier.to_s
 end

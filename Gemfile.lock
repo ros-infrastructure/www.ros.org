@@ -83,6 +83,11 @@ GEM
       ffi (~> 1.0)
     ref (2.0.0)
     rexml (3.2.5)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     slow_enumerator_tools (1.1.0)
     tty-color (0.6.0)
     tty-command (0.10.1)
@@ -100,6 +105,7 @@ DEPENDENCIES
   kramdown
   nanoc (~> 4.12.1)
   nanoc-live
+  sass
   webrick
 
 BUNDLED WITH
