@@ -1,8 +1,15 @@
+$background-color: rgba(21, 37, 62, 1);
+$white: rgba(255, 255, 255, 1);
+
 * {
+  font-family: Interstate, Arial;
   margin: 0;
   padding: 0;
-
-  font-family: Georgia, Palatino, serif;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
 
 body {
@@ -22,10 +29,95 @@ a:hover {
   color: #f90;
 }
 
+header {
+  background-color: $background-color;
+  color: $white;
+  height: 90px;
+  width: 100%;
+  h1 {
+    color: $white;
+  }
+  #navbar {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    .logo {
+      width: 30%;
+      .logo-image-dots {
+        padding-top: 25px;
+        padding-left: 75px;
+        width: 50px;
+        height: 50px;
+      }
+      .logo-dot {
+        width: 13px;
+        height: 13px;
+      }
+      .logo-text {
+        text-transform: uppercase;
+        position: absolute;
+        top: 10px;
+        height: 80px;
+        width: 20%;
+        margin-left: 130px;
+        font-size: 70px;
+      }
+    }
+    ul.main-menu {
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 14px;
+      margin-left: 10%;
+      margin-right: 10%;
+      list-style: none;
+      display: flex;
+    }
+    li.nav-item {
+      height: 14px;
+      padding-top: 60px;
+      a {
+        color: $white;
+        justify-content: center;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    #dropdown-dots {
+      position: absolute;
+      top: 45px;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+      .dropdown-dot-top,
+      .dropdown-dot-bottom {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 5px;
+        height: 5px;
+      }
+      .dropdown-dot-middle {
+        padding-left: 4px;
+        width: 5px;
+        height: 5px;
+      }
+      &:hover {
+        .dropdown-dot-top,
+        .dropdown-dot-bottom {
+          display: none;
+        }
+        .dropdown-dot-middle {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+}
+
 #main {
   position: absolute;
-
-  top: 40px;
+  top: 100px;
   left: 280px;
   width: 500px;
 
@@ -54,35 +146,5 @@ a:hover {
 
   ul li {
     list-style-type: square;
-  }
-}
-
-#sidebar {
-  position: absolute;
-
-  top: 40px;
-  left: 20px;
-  width: 200px;
-
-  padding: 20px 20px 0 0;
-  border-right: 1px solid #ccc;
-  text-align: right;
-
-  h2 {
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #333;
-    letter-spacing: 1px;
-    line-height: 20px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 20px 0;
-  }
-
-  li {
-    font-size: 14px;
-    line-height: 20px;
   }
 }

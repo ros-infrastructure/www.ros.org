@@ -1,29 +1,51 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>A Brand New Nanoc Site - <%= @item[:title] %></title>
-    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
 
     <!-- you don't need to keep this, but it's cool for stats! -->
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
   </head>
   <body>
+    <header>
+      <div id="navbar">
+        <div class="logo">
+          <div class="logo-image-dots">
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+            <img src="images/dot.png" class="logo-dot" />
+          </div>
+          <span class="logo-text">ROS</span>
+        </div>
+        <ul class="main-menu">
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Why ROS</a></li>
+          <li class="nav-item"><a href="#">Getting Started</a></li>
+          <li class="nav-item"><a href="#">Community</a></li>
+          <li class="nav-item"><a href="#">Ecosystem</a></li>
+          <li class="nav-item dropdown">
+            <div id="dropdown-dots">
+              <img src="images/dot.png" class="dropdown-dot-top" />
+              <img src="images/dot.png" class="dropdown-dot-middle" />
+              <img src="images/dot.png" class="dropdown-dot-middle" />
+              <img src="images/dot.png" class="dropdown-dot-middle" />
+              <img src="images/dot.png" class="dropdown-dot-bottom" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <div id="main">
       <%= yield %>
-    </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="https://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="https://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="https://nanoc.ws/contributing/">Contributing</a></li>
-      </ul>
     </div>
   </body>
 </html>
