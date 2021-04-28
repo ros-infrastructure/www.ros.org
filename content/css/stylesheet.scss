@@ -90,10 +90,16 @@ header {
       width: 40px;
       height: 40px;
       font-size: 10px;
+      .dropwdown-show {
+        display: none;
+        &:hover {
+          display: block;
+        }
+      }
       .dropdown-dot-top,
       .dropdown-dot-bottom {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 16px;
+        padding-left: 16px;
         width: 5px;
         height: 5px;
       }
@@ -108,7 +114,10 @@ header {
           display: none;
         }
         .dropdown-dot-middle {
-          padding-top: 15px;
+          padding-top: 14px;
+        }
+        .dropwdown-show {
+          display: block;
         }
       }
     }
