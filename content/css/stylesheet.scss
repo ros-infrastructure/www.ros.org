@@ -1,8 +1,11 @@
+$header-height: 90px;
 $background-color: rgba(21, 37, 62, 1);
+$dropdown-background: #74c4b7;
+$submenu-underline: #fb9401;
 $white: rgba(255, 255, 255, 1);
 
 * {
-  font-family: Interstate, Arial;
+  font-family: "Overpass", sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -13,80 +16,83 @@ $white: rgba(255, 255, 255, 1);
 }
 
 body {
-  background: #fff;
+  background: $white;
+  background: $background-color;
 }
 
 a {
   text-decoration: none;
 }
 
-a:link,
-a:visited {
-  color: #f30;
+.invisible {
+  visibility: hidden;
 }
 
-a:hover {
-  color: #f90;
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 header {
   background-color: $background-color;
   color: $white;
-  height: 90px;
+  height: $header-height;
   width: 100%;
   h1 {
     color: $white;
   }
   #navbar {
-    height: 90px;
+    height: $header-height;
     width: 100%;
     display: flex;
     .logo {
-      width: 30%;
-      .logo-image-dots {
-        padding-top: 25px;
-        padding-left: 75px;
-        width: 50px;
-        height: 50px;
-      }
-      .logo-dot {
-        width: 13px;
-        height: 13px;
-      }
-      .logo-text {
-        text-transform: uppercase;
-        position: absolute;
-        top: 10px;
-        height: 80px;
-        width: 20%;
-        margin-left: 130px;
-        font-size: 70px;
+      padding-top: 25px;
+      padding-bottom: 5px;
+      margin-left: 10%;
+      width: 189px;
+      img {
+        width: 189px;
+        height: calc(#{$header-height} - 40px);
       }
     }
     ul.main-menu {
       text-transform: uppercase;
       width: 100%;
       font-size: 14px;
-      margin-left: 10%;
+      margin-left: 5%;
       margin-right: 10%;
       list-style: none;
-      display: flex;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    li.nav-item.wide-text {
+      padding-left: 18px;
+      padding-right: 18px;
     }
     li.nav-item {
       height: 14px;
+      text-align: center;
+      white-space: nowrap;
       padding-top: 60px;
       a {
+        font-weight: 700;
         color: $white;
         justify-content: center;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
 
     #dropdown-dots {
+      white-space: normal;
       position: absolute;
       top: 45px;
+      padding-left: 30px;
       width: 40px;
       height: 40px;
       font-size: 10px;
@@ -98,27 +104,127 @@ header {
       }
       .dropdown-dot-top,
       .dropdown-dot-bottom {
-        padding-right: 16px;
-        padding-left: 16px;
+        padding: 0px 20px 0px 20px;
         width: 5px;
         height: 5px;
       }
       .dropdown-dot-middle {
-        padding-left: 4px;
+        padding: 0 0 0 5px;
         width: 5px;
         height: 5px;
       }
+    }
+  }
+  #submenu-about::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid $white;
+    position: absolute;
+    top: calc(#{$header-height} - 5px);
+    left: calc(15% + 222px);
+  }
+
+  #submenu-about {
+    z-index: 0;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 90%;
+    height: 250px;
+    background-color: $white;
+    border-radius: 25px;
+  }
+
+  #submenu-about ul {
+    list-style: none;
+    height: 200px;
+    display: inline-flex;
+  }
+
+  #submenu-about ul li {
+    margin: 15px;
+    width: 150px;
+    justify-content: space-around;
+  }
+
+  a.submenu-title {
+    margin: 20px;
+    text-transform: uppercase;
+    color: $dropdown-background;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: $submenu-underline 0.25em solid;
+  }
+
+  #submenu-about ul li ul {
+    display: block;
+  }
+
+  #submenu-about ul li ul li {
+    height: 20px;
+    width: 100px;
+  }
+
+  #submenu-about ul li ul li a {
+    color: $background-color;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+
+  #submenu-about li.submenu-list.wide {
+    width: 250px;
+  }
+
+  #submenu-dots {
+    list-style: none;
+    height: 550px;
+    width: 250px;
+    background-color: $dropdown-background;
+    position: absolute;
+    top: 90px;
+    right: 12.5%;
+    padding: 20px;
+  }
+
+  #submenu-dots li {
+    height: 20%;
+    padding-bottom: 10px;
+  }
+
+  li.nav-item #submenu-dots li a {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+  }
+
+  #submenu-dots li a::after {
+    content: url("images/submenu-underline.png");
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    padding-top: 15px;
+    border-bottom: solid;
+    border-color: $submenu-underline;
+  }
+
+  #submenu-dots p {
+    white-space: normal;
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    text-transform: none;
+    line-height: 14px;
+  }
+
+  li.nav-item.dropdown:hover {
+    #submenu-dots li {
       &:hover {
-        .dropdown-dot-top,
-        .dropdown-dot-bottom {
-          display: none;
-        }
-        .dropdown-dot-middle {
-          padding-top: 14px;
-        }
-        .dropwdown-show {
-          display: block;
-        }
+        background-color: rgba(255, 255, 255, 0.5);
       }
     }
   }
@@ -129,6 +235,8 @@ header {
   top: 100px;
   left: 280px;
   width: 500px;
+  z-index: -1;
+  background-color: $background-color;
 
   h1 {
     font-size: 40px;

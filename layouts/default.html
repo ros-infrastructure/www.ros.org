@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>A Brand New Nanoc Site - <%= @item[:title] %></title>
+    <title>ROS: <%= @item[:title] %></title>
     <link rel="stylesheet" href="/css/stylesheet.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="javascript/default.js"></script>
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
   </head>
@@ -12,37 +17,110 @@
     <header>
       <div id="navbar">
         <div class="logo">
-          <div class="logo-image-dots">
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-            <img src="images/dot.png" class="logo-dot" />
-          </div>
-          <span class="logo-text">ROS</span>
+          <a href="#"><img src="images/ros_logo_white.png"/></a>
         </div>
         <ul class="main-menu">
-          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item">
+            <a href="#" id="about" onclick="openCloseAbout()">About</a>
+            <!-- The submenu for About is at the bottom of the header tag -->
+          </li>
           <li class="nav-item"><a href="#">Why ROS</a></li>
-          <li class="nav-item"><a href="#">Getting Started</a></li>
+          <li class="nav-item wide-text"><a href="#">Getting Started</a></li>
           <li class="nav-item"><a href="#">Community</a></li>
           <li class="nav-item"><a href="#">Ecosystem</a></li>
           <li class="nav-item dropdown">
-            <div id="dropdown-dots">
-              <img src="images/dot.png" class="dropdown-dot-top" />
+            <div id="dropdown-dots" onclick="openCloseDotsMenu()">
+              <img src="images/dot.png" id="dot-top" class="dropdown-dot-top" />
               <img src="images/dot.png" class="dropdown-dot-middle" />
               <img src="images/dot.png" class="dropdown-dot-middle" />
               <img src="images/dot.png" class="dropdown-dot-middle" />
-              <img src="images/dot.png" class="dropdown-dot-bottom" />
+              <img
+                src="images/dot.png"
+                id="dot-bottom"
+                class="dropdown-dot-bottom"
+              />
             </div>
+            <ul id="submenu-dots" class="hidden">
+              <li class="sub-item">
+                <a href="#">sub-item 1</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </li>
+              <li class="sub-item">
+                <a href="#">sub-item 2</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </li>
+              <li class="sub-item">
+                <a href="#">sub-item 3</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </li>
+              <li class="sub-item">
+                <a href="#">sub-item 4</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </li>
+              <li class="sub-item">
+                <a href="#">sub-item 5</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-      <div class="dropdown-show">Test Dropdown</div>
+      <div id="submenu-about" class="hidden">
+        <ul>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">History</a>
+          </li>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">What is ROS</a>
+            <ul>
+              <li><a href="#">Core ROS Capabilities</a></li>
+              <li><a href="#">ROS Packages</a></li>
+              <li><a href="#">Build Tools</a></li>
+              <li><a href="#">Sibling Libraries</a></li>
+              <li><a href="#">Community Resources</a></li>
+            </ul>
+          </li>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">TSC</a>
+            <ul>
+              <li><a href="#">Working Groups</a></li>
+              <li><a href="#">Road Map</a></li>
+              <li><a href="#">Contributors</a></li>
+            </ul>
+          </li>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">DISTROS</a>
+          </li>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">LEGAL</a>
+            <ul>
+              <li><a href="#">Brand Guidelines</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+          </li>
+          <li class="submenu-list wide">
+            <a href="#" class="submenu-title">How is ROS Developed</a>
+          </li>
+          <li class="submenu-list">
+            <a href="#" class="submenu-title">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <div id="main">
