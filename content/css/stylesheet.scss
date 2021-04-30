@@ -1,8 +1,8 @@
 $header-height: 90px;
-$background-color: rgba(21, 37, 62, 1);
+$background-color: #15253e;
 $dropdown-background: #74c4b7;
 $submenu-underline: #fb9401;
-$white: rgba(255, 255, 255, 1);
+$white: #fff;
 
 * {
   font-family: "Overpass", sans-serif;
@@ -22,6 +22,21 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 20px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.btn-install {
+  text-transform: uppercase;
+  color: $white;
+  background-color: $dropdown-background;
 }
 
 .invisible {
@@ -64,28 +79,28 @@ header {
     }
     ul.main-menu {
       text-transform: uppercase;
-      width: 100%;
+      width: 70%;
       font-size: 14px;
-      margin-left: 5%;
-      margin-right: 10%;
       list-style: none;
+      position: absolute;
+      right: 5%;
       display: inline-flex;
       justify-content: space-between;
-    }
-    li.nav-item.wide-text {
-      padding-left: 18px;
-      padding-right: 18px;
     }
     li.nav-item {
       height: 14px;
       text-align: center;
       white-space: nowrap;
       padding-top: 60px;
+      padding-left: 50px;
       a {
         font-weight: 700;
         color: $white;
         justify-content: center;
       }
+    }
+    li.nav-item.wide-text {
+      padding-left: 50px;
     }
 
     #dropdown-dots {
@@ -124,7 +139,7 @@ header {
     border-bottom: 25px solid $white;
     position: absolute;
     top: calc(#{$header-height} - 5px);
-    left: calc(15% + 222px);
+    left: calc(15% + 244px);
   }
 
   #submenu-about {
@@ -159,6 +174,9 @@ header {
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: $submenu-underline 0.25em solid;
+    &:hover {
+      border-bottom: none;
+    }
   }
 
   #submenu-about ul li ul {
@@ -166,6 +184,7 @@ header {
   }
 
   #submenu-about ul li ul li {
+    padding-left: 5px;
     height: 20px;
     width: 100px;
   }
@@ -187,8 +206,8 @@ header {
     background-color: $dropdown-background;
     position: absolute;
     top: 90px;
-    right: 12.5%;
-    padding: 20px;
+    right: 5%;
+    padding: 20px 20px 50px 20px;
   }
 
   #submenu-dots li {
@@ -232,36 +251,151 @@ header {
 
 #main {
   position: absolute;
-  top: 100px;
-  left: 280px;
-  width: 500px;
+  top: $header-height;
+  width: 100%;
   z-index: -1;
   background-color: $background-color;
-
+}
+.banner {
+  color: $white;
+  width: 1200px;
+  height: calc(80px * 8);
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 10% 27%;
+  grid-template-rows: repeat(7, 80px);
   h1 {
-    font-size: 40px;
-    font-weight: normal;
-    line-height: 40px;
+    font-weight: 700;
     letter-spacing: -1px;
+    font-size: 66px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
   }
-
+  h1::after {
+    content: url("images/submenu-underline.png");
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    padding-top: 80px;
+    left: 10%;
+    border-bottom: solid;
+    border-color: $submenu-underline;
+  }
   p {
-    margin: 20px 0;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
   }
-
-  ul,
-  ol {
-    margin: 20px;
+  img {
+    transform: scale(0.9);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
   }
+}
 
-  li {
-    font-size: 15px;
-    line-height: 20px;
+h3 {
+  width: 175px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 30px;
+  color: $background-color;
+}
+h3::after {
+  content: url("images/submenu-underline.png");
+  width: 100px;
+  position: absolute;
+  padding-top: 10px;
+  border-bottom: solid;
+  border-color: $submenu-underline;
+  margin-left: -125px;
+}
+
+.videos {
+  position: absolute;
+  top: calc(#{$header-height} + 750px);
+  background-color: $white;
+  width: 100%;
+  height: 500px;
+}
+
+.install {
+  position: absolute;
+  top: calc(#{$header-height} + 750px + 500px);
+  color: $white;
+  width: 100%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 200px 20px 250px 40px 280px 20px 250px;
+  grid-template-rows: 90px 75px 75px 100px 150px;
+  h3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    color: $white;
   }
-
-  ul li {
-    list-style-type: square;
+  h3::after {
+    content: url("images/submenu-underline.png");
+    width: 75px;
+    position: absolute;
+    left: 10%;
+  }
+  h6 {
+    font-size: 18px;
+    font-weight: 700;
+    height: 18px;
+    padding-bottom: 50px;
+  }
+  .release-img-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .install-text-1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .btn-install-left {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    width: 250px;
+    margin-top: 50px;
+  }
+  .divider-horizontal {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-right: 5px solid $submenu-underline;
+  }
+  .release-img-2 {
+    transform: scale(0.8);
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  .install-text-2 {
+    grid-column-start: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .btn-install-right {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    width: 250px;
+    margin-top: 50px;
   }
 }

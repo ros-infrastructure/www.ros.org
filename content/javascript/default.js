@@ -59,3 +59,28 @@ function openCloseAbout() {
     classes.add("hidden");
   }
 }
+
+function closeMenus() {
+  let aboutList = document.getElementById("submenu-about");
+  let classes = aboutList.classList;
+  let dots = document.getElementById("submenu-dots");
+  let topDot = document.getElementById("dot-top");
+  let bottomDot = document.getElementById("dot-bottom");
+  let dotsMenuClasses = dots.classList;
+  let dotTopClasses = topDot.classList;
+  let dotBottomClasses = bottomDot.classList;
+
+  if (classes.contains("show") || dotMenuClasses.contains("show")) {
+    classes.remove("show");
+    classes.add("hidden");
+
+    dotsMenuClasses.remove("show");
+    dotsMenuClasses.add("hidden");
+
+    dotTopClasses.remove("invisible");
+    dotTopClasses.add("visible");
+
+    dotBottomClasses.remove("invisible");
+    dotBottomClasses.add("visible");
+  }
+}
