@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>ROS: <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/css/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owlcarousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="/css/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,7 +19,7 @@
     <header>
       <div id="navbar">
         <div class="logo">
-          <a href="#"><img src="images/ros_logo_white.png"/></a>
+          <a href="#"><img src="images/logo-white.png"/></a>
         </div>
         <ul class="main-menu">
           <li class="nav-item">
@@ -127,8 +129,62 @@
       <%= yield %>
     </div>
     <footer>
-      <div class="footer-main"></div>
-      <div class="footer-sub"></div>
+      <div class="footer-main">
+        <img src="images/logo-white.png" class="logo" />
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Wiki</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-sub">
+        <div class="footer-sub-menu">
+          <ul>
+            <li><a href="#">answers.ros.org/questions</a></li>
+            <li><a href="#">discourse.ros.org</a></li>
+            <li><a href="#">index.res.org</a></li>
+            <li><a href="#">roscon.ros.org/2020</a></li>
+            <li><a href="#">wiki.ros.org</a></li>
+          </ul>
+        </div>
+        <div class="legal">
+          <p>
+            ©2021 Open Ropbodics | Brought to you by Open Robotics. Donate
+            today! Except where otherwise noted, the ros.org web pages are
+            licensed under Creative Commons Attributions 3.0
+          </p>
+        </div>
+      </div>
+      <script src="/javascript/owlcarousel/jquery.min.js"></script>
+      <script src="/javascript/owlcarousel/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $("#video-carousel").owlCarousel({
+            items: 5,
+            nav: true,
+            stagePadding: 20,
+            videoWidth: 10,
+            merge: true,
+            loop: true,
+            margin: 10,
+            video: true,
+            lazyLoad: false,
+            center: true,
+            responsive: {
+              480: {
+                items: 2
+              },
+              600: {
+                items: 4
+              }
+            }
+          });
+        });
+      </script>
     </footer>
   </body>
 </html>
