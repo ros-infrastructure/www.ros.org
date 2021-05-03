@@ -15,7 +15,7 @@
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
   </head>
-  <body>
+  <body id="body" onclick="closeMenus(this)">
     <header>
       <div id="navbar">
         <div class="logo">
@@ -23,64 +23,65 @@
         </div>
         <ul class="main-menu">
           <li class="nav-item">
-            <a href="#" id="about" onclick="openCloseAbout()">About</a>
+            <a href="#" id="about" onclick="openCloseAbout(), closeMenus(this)"
+              >About</a
+            >
             <!-- The submenu for About is at the bottom of the header tag -->
           </li>
           <li class="nav-item"><a href="#">Why ROS</a></li>
           <li class="nav-item wide-text"><a href="#">Getting Started</a></li>
           <li class="nav-item"><a href="#">Community</a></li>
           <li class="nav-item"><a href="#">Ecosystem</a></li>
-          <li class="nav-item dropdown">
-            <div id="dropdown-dots" onclick="openCloseDotsMenu()">
-              <img src="images/dot.png" id="dot-top" class="dropdown-dot-top" />
-              <img src="images/dot.png" class="dropdown-dot-middle" />
-              <img src="images/dot.png" class="dropdown-dot-middle" />
-              <img src="images/dot.png" class="dropdown-dot-middle" />
-              <img
-                src="images/dot.png"
-                id="dot-bottom"
-                class="dropdown-dot-bottom"
-              />
-            </div>
-            <ul id="submenu-dots" class="hidden">
-              <li class="sub-item">
-                <a href="#">sub-item 1</a>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </li>
-              <li class="sub-item">
-                <a href="#">sub-item 2</a>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </li>
-              <li class="sub-item">
-                <a href="#">sub-item 3</a>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </li>
-              <li class="sub-item">
-                <a href="#">sub-item 4</a>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </li>
-              <li class="sub-item">
-                <a href="#">sub-item 5</a>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </li>
-            </ul>
+        </ul>
+        <div id="dropdown-dots" onclick="openCloseDotsMenu(), closeMenus(this)">
+          <img src="images/dot.png" id="dot-top" class="dropdown-dot-top" />
+          <img src="images/dot.png" class="dropdown-dot-middle" />
+          <img src="images/dot.png" class="dropdown-dot-middle" />
+          <img src="images/dot.png" class="dropdown-dot-middle" />
+          <img
+            src="images/dot.png"
+            id="dot-bottom"
+            class="dropdown-dot-bottom"
+          />
+        </div>
+        <ul id="submenu-dots" class="hidden">
+          <li class="sub-item">
+            <a href="#">sub-item 1</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
+          <li class="sub-item">
+            <a href="#">sub-item 2</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
+          <li class="sub-item">
+            <a href="#">sub-item 3</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
+          <li class="sub-item">
+            <a href="#">sub-item 4</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
+          <li class="sub-item">
+            <a href="#">sub-item 5</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
           </li>
         </ul>
+        <div class="menu-blog-link"><a href="#">Read the ROS blog</a></div>
       </div>
       <div id="submenu-about" class="hidden">
         <ul>
@@ -166,11 +167,13 @@
           $("#video-carousel").owlCarousel({
             items: 5,
             nav: true,
-            stagePadding: 20,
-            videoWidth: 10,
-            merge: true,
+            center: true,
+            stagePadding: 0,
+            videoWidth: false,
+            videoHeight: false,
+            merge: false,
             loop: true,
-            margin: 10,
+            margin: 0,
             video: true,
             lazyLoad: false,
             center: true,
