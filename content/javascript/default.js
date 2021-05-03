@@ -11,8 +11,8 @@ function closeMenus(menuId, event) {
 
   // stop checking in parent elements further up the DOM
   window.event.stopPropagation();
-
-  if (menuId.id == "about") {
+  const menuIds = ["about", "submenu-about", "dropdown-dots", "submenu-dots"];
+  if (menuIds.includes(menuId.id)) {
     return;
   } else if (menuId.id == "dropdown-dots") {
     return;
