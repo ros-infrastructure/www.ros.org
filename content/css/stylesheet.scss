@@ -52,9 +52,18 @@ p {
   text-transform: uppercase;
   color: $white;
   background-color: $aqua;
-  width: 250px;
-  padding-top: 12px;
+  font-weight: 400;
+  width: 210px;
+  padding-top: 15px;
   padding-bottom: 12px;
+  padding-left: 30px;
+  img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    margin-left: -40px;
+    margin-top: -5px;
+  }
 }
 
 .btn-subscribe {
@@ -485,11 +494,10 @@ button.owl-next {
   color: $white;
   width: 100%;
   display: grid;
-  grid-template-columns: 200px 250px 40px 280px 250px;
-  grid-template-columns: 5% 0.8fr 1fr 0.05fr 1.1fr 1fr 5%;
-  grid-template-rows: 90px 75px 75px 100px 150px;
-  grid-template-rows: 90px 0.4fr 0.4fr 0.6fr 0.8fr;
-  grid-gap: 20px;
+  grid-template-columns: 5% 0.9fr 1fr 0.05fr 1.1fr 1fr 5%;
+  grid-template-rows: 90px repeat(5, 0.4fr);
+  grid-row-gap: 5px;
+  grid-column-gap: 15px;
   justify-content: center;
   h3 {
     grid-column: 2 / 3;
@@ -497,6 +505,7 @@ button.owl-next {
     margin: 0;
     color: $white;
     width: 80px;
+    margin-left: 80px;
     padding-bottom: 50px;
     border-bottom: solid 4px $orange;
     &::after {
@@ -513,6 +522,7 @@ button.owl-next {
     color: $white;
   }
   .release-img-1 {
+    padding-top: 20px;
     grid-column: 2 / 3;
     grid-row: 2 / 6;
   }
@@ -522,7 +532,7 @@ button.owl-next {
   }
   .btn-install-left {
     grid-column: 3 / 4;
-    grid-row: 4 / 4;
+    grid-row: 5 / 6;
   }
   .divider-horizontal {
     grid-column: 4 / 4;
@@ -539,8 +549,9 @@ button.owl-next {
     grid-row: 3 / 4;
   }
   .btn-install-right {
+    align-items: end;
     grid-column: 6 / 6;
-    grid-row: 4 / 4;
+    grid-row: 5 / 6;
   }
 }
 
