@@ -14,6 +14,7 @@
     <script src="javascript/default.js"></script>
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body id="body" onclick="closeMenus(this)">
     <header>
@@ -35,9 +36,9 @@
         </ul>
         <div id="dropdown-dots" onclick="openCloseDotsMenu(), closeMenus(this)">
           <img src="images/dot.png" id="dot-top" class="dropdown-dot-top" />
-          <img src="images/dot.png" class="dropdown-dot-middle" />
-          <img src="images/dot.png" class="dropdown-dot-middle" />
-          <img src="images/dot.png" class="dropdown-dot-middle" />
+          <img src="images/dot.png" class="dropdown-dot-middle dot-1" />
+          <img src="images/dot.png" class="dropdown-dot-middle dot-2" />
+          <img src="images/dot.png" class="dropdown-dot-middle dot-3" />
           <img
             src="images/dot.png"
             id="dot-bottom"
@@ -45,6 +46,21 @@
           />
         </div>
         <ul id="submenu-dots" class="hidden" onclick="closeMenus(this)">
+          <div class="grid-mob-menu">
+            <a class="twitter-icon" href="#"
+              ><img src="images/twitter-icon.png"
+            /></a>
+            <a class="discourse-icon" href="#"
+              ><img src="images/discourse-icon.png"
+            /></a>
+            <a class="github-icon" href="#"
+              ><img src="images/github-icon.png"
+            /></a>
+            <a class="mob-nav-item-1" href="#">Blog</a>
+            <a class="mob-nav-item-2" href="#">Wiki</a>
+            <a class="mob-nav-item-3" href="#">About</a>
+            <a class="mob-nav-item-4" href="#">contact</a>
+          </div>
           <li class="sub-item">
             <a href="#">sub-item 1</a>
             <p>
@@ -165,16 +181,15 @@
       <script>
         $(document).ready(function() {
           $("#video-carousel").owlCarousel({
-            items: 5,
+            items: 1,
             nav: true,
             center: true,
-            stagePadding: 0,
-            videoWidth: false,
-            videoHeight: false,
+            stagePadding: 10,
+            videoWidth: 500,
+            videoHeight: 280,
             merge: false,
             loop: true,
-            margin: 0,
-            video: true,
+            margin: 10,
             lazyLoad: false,
             center: true,
             responsive: {
