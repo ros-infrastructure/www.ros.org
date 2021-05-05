@@ -1041,6 +1041,7 @@ button.owl-next {
 
   .videos {
     top: $banner-height-mob;
+    padding-right: 1px;
   }
   .install {
     top: calc(
@@ -1111,8 +1112,10 @@ button.owl-next {
   }
   .support {
     height: $support-height-mob;
+    padding-right: 1px;
     top: calc(
-      #{$header-height-mob} + #{$banner-height-mob} + #{$video-height-mob} + #{$install-height-mob}
+      #{$header-height-mob} + #{$banner-height-mob} + #{$video-height-mob} + #{$install-height-mob} +
+        1px
     );
     h3 {
       width: 110px;
@@ -1291,7 +1294,7 @@ button.owl-next {
     );
     padding-right: 1px;
     padding-bottom: 5px;
-    top: calc(876px + 300px);
+    top: calc(880px + 300px);
     .legal p {
       width: 100%;
     }
