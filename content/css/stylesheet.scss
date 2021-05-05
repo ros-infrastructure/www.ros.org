@@ -7,12 +7,12 @@ $blog-newsletter-height: 585px;
 $footer-main-height: 150px;
 $subfooter-height: 100px;
 $header-height-mob: 45px;
-$banner-height-mob: 800px;
+$banner-height-mob: 820px;
 $video-height-mob: 500px;
 $install-height-mob: 850px;
 $support-height-mob: 850px;
 $blog-newsletter-height-mob: 900px;
-$footer-main-height-mob: 320px;
+$footer-main-height-mob: 300px;
 $subfooter-height-mob: 75px;
 $aqua: #74c4b7;
 $black: #000;
@@ -1014,6 +1014,11 @@ button.owl-next {
 
   .banner {
     margin-left: 10px;
+    background-image: url("/images/noetic-background.png");
+    background-attachment: fixed;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 130% 30%;
     height: $banner-height-mob;
     grid-template-columns: 2fr 0.75fr;
     grid-template-rows: repeat(7, 1fr);
@@ -1031,15 +1036,11 @@ button.owl-next {
   }
 
   .banner-image {
-    transform: scale(0.7);
-    position: fixed;
-    top: -50px;
-    right: -100px;
-    z-index: -2;
+    display: none;
   }
 
   .videos {
-    top: calc(#{$header-height-mob} + #{$banner-height-mob});
+    top: $banner-height-mob;
   }
   .install {
     top: calc(
@@ -1244,8 +1245,7 @@ button.owl-next {
       #{$header-height-mob} + #{$banner-height-mob} + #{$video-height-mob} + #{$install-height-mob} +
         #{$support-height-mob} + #{$blog-newsletter-height-mob}
     );
-    .footer-menu {
-    }
+    top: 875px;
 
     .footer-menu ul {
       display: block;
@@ -1289,6 +1289,9 @@ button.owl-next {
       #{$header-height-mob} + #{$banner-height-mob} + #{$video-height-mob} + #{$install-height-mob} +
         #{$support-height-mob} + #{$blog-newsletter-height-mob} + #{$footer-main-height-mob}
     );
+    padding-right: 1px;
+    padding-bottom: 5px;
+    top: calc(876px + 300px);
     .legal p {
       width: 100%;
     }
