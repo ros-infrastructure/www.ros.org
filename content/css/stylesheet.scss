@@ -1222,7 +1222,7 @@ button.owl-next {
     }
 
     .newsletter-signup {
-      margin-left: 15px;
+      margin-left: 2.5vw;
       white-space: pre-line;
       grid-column-start: 2;
       grid-row-start: 3;
@@ -1231,13 +1231,17 @@ button.owl-next {
         font-weight: 700;
       }
       input {
+        margin-left: 0;
         margin-bottom: 10px;
-        width: 300px;
-        padding: 8px;
+        width: clamp(250px, 85vw, 400px);
+        padding: 8px 0 8px 0;
+        margin-left: 0;
       }
       .btn-subscribe {
-        width: 320px;
-        border: none;
+        margin-left: 0;
+        width: clamp(250px, 86vw, 400px);
+        padding: 10px;
+        margin: solid 1px $aqua;
       }
     }
   }
