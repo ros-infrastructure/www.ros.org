@@ -211,6 +211,25 @@
             }
           });
         });
+
+        $(document).ready(function() {
+          $("#support-carousel").owlCarousel({
+            items: 3,
+            nav: false,
+            center: true,
+            merge: false,
+            stagePadding: 0,
+            padding: 0,
+            loop: true,
+            rewind: true,
+            lazyLoad: false,
+            responsive: {
+              480: {
+                items: 3
+              }
+            }
+          });
+        });
       </script>
     </footer>
   </body>

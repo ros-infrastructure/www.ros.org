@@ -2567,7 +2567,7 @@
    * @public
    */
   Video.Defaults = {
-    video: true,
+    video: false,
     videoHeight: false,
     videoWidth: false
   };
