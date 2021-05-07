@@ -214,8 +214,11 @@ $white: #fff;
     h1 {
       overflow-x: auto;
       overflow-y: hidden;
-      font-size: clamp(25px, 60px, 75px);
+      font-size: clamp(25px, 70px, 75px);
       grid-row: 2 / 5;
+      &::after {
+        left: 5%;
+      }
     }
     p {
       font-weight: 400;
@@ -306,14 +309,15 @@ $white: #fff;
       z-index: 0;
       position: absolute;
       top: -40px;
-      left: -15px;
-      transform: scale(0.9);
+      left: -40px;
+      transform: scale(0.75);
       grid-column: 3 / 5;
       grid-row: 2 / 3;
     }
     .btn-install-left {
       align-self: center;
       margin: 0 5vw;
+      margin-top: 50px;
       width: 80vw;
       grid-column: 1 / 4;
       grid-row: 3 / 3;
@@ -331,9 +335,9 @@ $white: #fff;
     }
     .release-img-2 {
       position: absolute;
-      top: -20px;
-      left: -55px;
-      transform: scale(0.7);
+      top: -80px;
+      left: -105px;
+      transform: scale(0.5);
       grid-column: 3 / 5;
       grid-row: 4 / 5;
     }
@@ -343,6 +347,18 @@ $white: #fff;
       width: 80vw;
       grid-column: 1 / 5;
       grid-row: 5 / 6;
+    }
+
+    .install-text-1,
+    .install-text-2 {
+      h6 {
+        margin-left: 10px;
+      }
+      p {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
   .support {

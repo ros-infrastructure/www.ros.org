@@ -123,11 +123,13 @@ header {
         padding-right: 50px;
       }
 
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 993px) {
         #submenu-dots .grid-mob-menu {
           display: none;
         }
-        height: calc(#{$header-height} - 40px);
+        .main-menu-mobile {
+          display: none;
+        }
       }
     }
     ul.main-menu {
@@ -155,7 +157,7 @@ header {
       overflow-x: hidden;
     }
 
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 993px) {
       #submenu-dots .grid-mob-menu {
         display: none;
       }
