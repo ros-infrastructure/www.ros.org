@@ -23,6 +23,9 @@ $white: #fff;
   -webkit-font-smoothing: antialiased;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
 }
 
 body {
@@ -31,6 +34,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 a {
@@ -115,199 +119,209 @@ header {
       width: 189px;
       img {
         width: 189px;
-        height: calc(#{$header-height} - 40px);
+        padding-right: 50px;
       }
-    }
-    ul.main-menu {
-      text-transform: uppercase;
-      width: 50%;
-      font-size: 14px;
-      list-style: none;
-      position: absolute;
-      right: 15%;
-      display: inline-flex;
-      justify-content: space-between;
-    }
-    li.nav-item {
-      height: 14px;
-      white-space: nowrap;
-      padding-top: 60px;
-      a {
-        font-weight: 700;
-        color: $white;
-      }
-    }
-    li.nav-item.wide-text {
-      padding-right: 50px;
-    }
 
-    @media screen and (min-width: 500px) {
-      #submenu-dots .grid-mob-menu {
-        display: none;
-      }
-      .main-menu-mobile {
-        display: none;
-      }
-    }
-
-    #dropdown-dots {
-      position: absolute;
-      top: 45px;
-      right: 100px;
-      width: 40px;
-      height: 40px;
-      font-size: 10px;
-      .dropwdown-show {
-        display: none;
-        &:hover {
-          display: block;
+      @media screen and (min-width: 768px) {
+        @media screen and (min-width: 500px) {
+          #submenu-dots .grid-mob-menu {
+            display: none;
+          }
+          height: calc(#{$header-height} - 40px);
         }
       }
-      .dropdown-dot-top,
-      .dropdown-dot-bottom {
-        padding: 0px 20px 0px 20px;
-        width: 5px;
-        height: 5px;
+      ul.main-menu {
+        text-transform: uppercase;
+        width: 50%;
+        font-size: 14px;
+        list-style: none;
+        position: absolute;
+        right: 15%;
+        display: inline-flex;
+        justify-content: space-between;
       }
-      .dropdown-dot-middle {
-        padding: 0 0 0 6px;
-        width: 5px;
-        height: 5px;
+      li.nav-item {
+        height: 14px;
+        white-space: nowrap;
+        padding-top: 60px;
+        a {
+          font-weight: 700;
+          color: $white;
+        }
+      }
+      li.nav-item.wide-text {
+        padding-right: 50px;
+      }
+
+      @media screen and (min-width: 500px) {
+        #submenu-dots .grid-mob-menu {
+          display: none;
+        }
+        .main-menu-mobile {
+          display: none;
+        }
+      }
+
+      #dropdown-dots {
+        overflow-y: hidden;
+        position: absolute;
+        top: 45px;
+        right: 100px;
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+        .dropwdown-show {
+          display: none;
+          &:hover {
+            display: block;
+          }
+        }
+        .dropdown-dot-top,
+        .dropdown-dot-bottom {
+          padding: 0px 20px 0px 20px;
+          width: 5px;
+          height: 5px;
+        }
+        .dropdown-dot-middle {
+          padding: 0 0 0 6px;
+          width: 5px;
+          height: 5px;
+        }
       }
     }
-  }
 
-  .menu-blog-link a {
-    position: absolute;
-    top: 15px;
-    right: 85px;
-    width: 150px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $gray-light;
-  }
-
-  #submenu-about::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 25px solid $white;
-    position: absolute;
-    top: calc(#{$header-height} - 5px);
-    left: calc(15% + 250px);
-  }
-
-  #submenu-about {
-    z-index: 0;
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 15%;
-    width: 90%;
-    height: 250px;
-    background-color: $white;
-    border-radius: 25px;
-  }
-
-  #submenu-about ul {
-    list-style: none;
-    height: 200px;
-    display: inline-flex;
-  }
-
-  #submenu-about ul li {
-    margin: 15px;
-    width: 150px;
-    justify-content: space-around;
-  }
-
-  a.submenu-title {
-    margin: 20px;
-    text-transform: uppercase;
-    color: $aqua;
-    font-weight: 700;
-    font-size: 12px;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: $orange 0.25em solid;
-    &:hover {
-      border-bottom: none;
+    .menu-blog-link a {
+      position: absolute;
+      top: 15px;
+      right: 85px;
+      width: 150px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $gray-light;
     }
-  }
 
-  #submenu-about ul li ul {
-    display: block;
-  }
+    #submenu-about::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid $white;
+      position: absolute;
+      top: calc(#{$header-height} - 5px);
+      left: calc(15% + 250px);
+    }
 
-  #submenu-about ul li ul li {
-    padding-left: 5px;
-    height: 20px;
-    width: 100px;
-  }
+    #submenu-about {
+      z-index: 0;
+      margin-top: 10px;
+      margin-left: 5%;
+      margin-right: 15%;
+      width: 90%;
+      height: 250px;
+      background-color: $white;
+      border-radius: 25px;
+    }
 
-  #submenu-about ul li ul li a {
-    color: $navy-darker;
-    text-decoration: underline;
-    font-size: 12px;
-  }
+    #submenu-about ul {
+      list-style: none;
+      height: 200px;
+      display: inline-flex;
+    }
 
-  #submenu-about li.submenu-list.wide {
-    width: 250px;
-  }
+    #submenu-about ul li {
+      margin: 15px;
+      width: 150px;
+      justify-content: space-around;
+    }
 
-  #submenu-dots {
-    list-style: none;
-    height: 550px;
-    width: 210px;
-    background-color: $aqua;
-    position: absolute;
-    top: 90px;
-    right: 100px;
-    padding: 20px 25px 50px 10px;
-  }
-
-  #submenu-dots li {
-    height: 15%;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: right;
-  }
-
-  li.nav-item #submenu-dots li a {
-    height: 30px;
-  }
-
-  #submenu-dots li a::after {
-    content: url("images/submenu-underline.png");
-    width: 50px;
-    height: 5px;
-    position: absolute;
-    right: 15px;
-    padding-top: 20px;
-    border-bottom: solid;
-    border-color: $orange;
-  }
-
-  #submenu-dots a {
-    color: $white;
-  }
-
-  #submenu-dots p {
-    white-space: normal;
-    font-style: italic;
-    font-size: 12px;
-    text-align: right;
-    text-transform: none;
-    line-height: 14px;
-    padding-top: 15px;
-  }
-
-  li.nav-item.dropdown:hover {
-    #submenu-dots li {
+    a.submenu-title {
+      margin: 20px;
+      text-transform: uppercase;
+      color: $aqua;
+      font-weight: 700;
+      font-size: 12px;
+      text-decoration: none;
+      padding-bottom: 5px;
+      border-bottom: $orange 0.25em solid;
       &:hover {
-        background-color: rgba(255, 255, 255, 0.5);
+        border-bottom: none;
+      }
+    }
+
+    #submenu-about ul li ul {
+      display: block;
+    }
+
+    #submenu-about ul li ul li {
+      padding-left: 5px;
+      height: 20px;
+      width: 100px;
+    }
+
+    #submenu-about ul li ul li a {
+      color: $navy-darker;
+      text-decoration: underline;
+      font-size: 12px;
+    }
+
+    #submenu-about li.submenu-list.wide {
+      width: 250px;
+    }
+
+    #submenu-dots {
+      list-style: none;
+      height: 550px;
+      width: 210px;
+      background-color: $aqua;
+      position: absolute;
+      top: 90px;
+      right: 100px;
+      padding: 20px 25px 50px 10px;
+    }
+
+    #submenu-dots li {
+      height: 15%;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right;
+    }
+
+    li.nav-item #submenu-dots li a {
+      height: 30px;
+    }
+
+    #submenu-dots li a::after {
+      content: url("images/submenu-underline.png");
+      width: 50px;
+      height: 5px;
+      position: absolute;
+      right: 15px;
+      padding-top: 20px;
+      border-bottom: solid;
+      border-color: $orange;
+    }
+
+    #submenu-dots a {
+      color: $white;
+    }
+
+    #submenu-dots p {
+      white-space: normal;
+      font-style: italic;
+      font-size: 12px;
+      text-align: right;
+      text-transform: none;
+      line-height: 14px;
+      padding-top: 15px;
+    }
+
+    li.nav-item.dropdown:hover {
+      #submenu-dots li {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
       }
     }
   }
@@ -841,4 +855,5 @@ button.owl-next {
   color: $gray-light;
 }
 
+@import "tablet-styles";
 @import "mobile-styles";
