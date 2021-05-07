@@ -276,7 +276,6 @@ $white: #fff;
     top: calc(#{$header-height} + #{$banner-height} + #{$video-height});
     height: $install-height;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 90px 1.75fr 0.25fr 2fr 0.25fr;
     grid-template-rows: 90px 2fr 1fr 2fr 1fr;
     grid-column-gap: 5px;
     h3 {
