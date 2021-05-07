@@ -141,7 +141,7 @@ header {
       padding-right: 50px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
       #submenu-dots .grid-mob-menu {
         display: none;
       }
@@ -389,20 +389,6 @@ h3::after {
 
 .container-video {
   margin-top: 50px;
-  .fade-out-left {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    height: 300px;
-    z-index: 2;
-  }
-  .fade-out-right {
-    position: absolute;
-    right: 0;
-    width: 135px;
-    height: 300px;
-    z-index: 2;
-  }
 }
 
 .owl-prev span,
@@ -443,11 +429,9 @@ button.owl-next {
   transform: scale(0.6);
 }
 .owl-item.active.center iframe {
-  z-index: 3;
 }
 
 .owl-item.active {
-  z-index: 2;
   position: absolute;
   margin-left: -250px;
   border: solid 1px red;
