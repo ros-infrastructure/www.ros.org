@@ -31,27 +31,32 @@
     margin-left: 10px;
     background-image: url("/images/noetic-background.png");
     background-attachment: fixed;
-    background-size: 250px;
+    background-size: 210px;
     background-repeat: no-repeat;
-    background-position: 115% 20%;
+    background-position: 115% 10%;
     height: $banner-height;
-    grid-template-columns: 2fr 0.75fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 45px 60px 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
+    grid-column-gap: 10px;
     h1 {
-      overflow-x: auto;
+      overflow-x: visible;
       overflow-y: hidden;
-      font-size: clamp(25px, 70px, 75px);
-      grid-row: 2 / 5;
+      margin-left: 5%;
+      font-size: 60px;
+      line-height: 60px;
+      grid-column: 1 / 2;
+      grid-row: 3 / 6;
       &::after {
         left: 5%;
+        padding-top: 100px;
       }
     }
     p {
-      font-weight: 400;
+      font-size: 21px;
       padding-top: 10px;
       padding-left: 10px;
       width: 335px;
-      grid-row: 5 / 8;
+      grid-row: 5 / 7;
     }
   }
 
