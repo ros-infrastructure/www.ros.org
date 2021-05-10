@@ -384,7 +384,7 @@ header {
   height: calc(80px * 8);
   width: 100%;
   display: grid;
-  grid-template-columns: 0.4fr 0.2fr;
+  grid-template-columns: 50% 30%;
   grid-template-rows: repeat(5, 0.15fr) 0.175fr;
   grid-column-gap: 25px;
   justify-content: center;
@@ -405,7 +405,7 @@ header {
     border-bottom: solid;
     border-color: $orange;
     position: absolute;
-    left: 20%;
+    left: 10%;
   }
   p {
     color: $white;
