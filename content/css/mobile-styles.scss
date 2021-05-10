@@ -38,6 +38,7 @@
     grid-template-rows: 45px 60px 20% auto;
     grid-column-gap: 10px;
     h1 {
+      padding-top: 10px;
       overflow-x: visible;
       overflow-y: hidden;
       margin-left: 5%;
@@ -84,6 +85,7 @@
       width: 335px;
     }
     .btn-event {
+      margin: 0 auto;
       width: clamp(230px, 275px, 375px);
     }
   }
@@ -460,7 +462,6 @@
   .banner {
     grid-template-rows: 45px 60px 25% auto;
     h1 {
-      padding-top: 5px;
       font-size: 70px;
     }
   }

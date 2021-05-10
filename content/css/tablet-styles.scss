@@ -61,7 +61,7 @@
 
   .news {
     position: absolute;
-    top: calc(#{$header-height + $banner-height - 75px});
+    top: calc(#{$header-height + $banner-height - 90px});
     background-color: $white;
     margin-left: 10%;
     height: $news-height;
@@ -473,6 +473,48 @@
     }
     .legal {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 993px) {
+  $banner-height: 950px;
+  $video-height: 450px;
+  .banner {
+    height: $banner-height;
+    grid-template-rows: repeat(6, 15%);
+    h1 {
+      grid-row: 2 / 5;
+      font-size: 60px;
+    }
+    p {
+      padding-top: 75px;
+      grid-row: 3 / 6;
+    }
+    .banner-image {
+      grid-row: 1 / 6;
+    }
+  }
+  .news {
+    top: calc(#{$header-height + $banner-height / 1.85});
+    padding-bottom: 25px;
+    .btn-event {
+      margin: 0;
+    }
+  }
+
+  .videos {
+    padding-top: 80px;
+  }
+
+  .install {
+    grid-template-columns: 10px 220px 1fr 5px 220px 0.75fr 0.25fr;
+    .release-img-1 {
+      transform: scale(0.9);
+    }
+    .release-img-2 {
+      transform: scale(0.6);
+      margin-left: -60px;
     }
   }
 }

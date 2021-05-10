@@ -1,6 +1,6 @@
 $header-height: 90px;
-$banner-height: 500px;
-$news-height: 125px;
+$banner-height: 550px;
+$news-height: 140px;
 $video-height: 400px;
 $install-height: 570px;
 $support-height: 575px;
@@ -458,7 +458,7 @@ h3::after {
 
 .news {
   position: absolute;
-  top: calc(#{$header-height / 2 + $banner-height});
+  top: calc(#{$header-height / 1.5 + $banner-height});
   background-color: $white;
   padding-top: 10px;
   margin-left: 15%;
@@ -475,11 +475,14 @@ h3::after {
   p {
     padding-bottom: 15px;
   }
+  .btn-event {
+    margin: 0;
+  }
 }
 
 .videos {
   position: absolute;
-  top: calc(#{$header-height + $banner-height + $news-height / 4});
+  top: calc(#{$header-height + $banner-height + $news-height / 3});
   background-color: $white;
   height: $video-height;
   padding-top: 50px;
