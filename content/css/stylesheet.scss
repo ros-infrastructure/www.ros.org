@@ -1,5 +1,6 @@
 $header-height: 90px;
-$banner-height: 550px;
+$banner-height: 500px;
+$news-height: 125px;
 $video-height: 400px;
 $install-height: 570px;
 $support-height: 575px;
@@ -35,24 +36,24 @@ body {
   height: auto;
   overflow-x: hidden;
   overflow-y: visible;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
 }
 
-header {
-  display: grid;
-  grid-row: 1 / 2;
-}
-
-#main {
-  display: grid;
-  grid-row: 2 / 3;
-}
-
-footer {
-  display: grid;
-  grid-row: 3 / 4;
-}
+// header {
+//   display: grid;
+//   grid-row: 1 / 2;
+// }
+//
+// #main {
+//   display: grid;
+//   grid-row: 2 / 3;
+// }
+//
+// footer {
+//   display: grid;
+//   grid-row: 3 / 4;
+// }
 
 a {
   text-decoration: none;
@@ -94,10 +95,20 @@ p {
   color: $white;
   background-color: $aqua;
   padding: 10px 0 8px 0;
-  border-color: $aqua;
   font-weight: 700;
   width: clamp(264px, 280px, 300px);
   border: 2px solid $aqua;
+}
+.btn-event {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $aqua;
+  padding: 10px 25px 8px 25px;
+  font-weight: 700;
+  width: clamp(264px, 280px, 300px);
 }
 
 .invisible {
@@ -392,7 +403,7 @@ header {
     overflow-y: hidden;
     font-weight: 900;
     letter-spacing: -1px;
-    font-size: clamp(50px, 60px, 70px);
+    font-size: clamp(50px, 70px, 80px);
     grid-column: 1 / 2;
     grid-row: 3 / 5;
   }
@@ -445,11 +456,33 @@ h3::after {
   margin-left: -125px;
 }
 
+.news {
+  position: absolute;
+  top: calc(#{$header-height / 2 + $banner-height});
+  background-color: $white;
+  padding-top: 10px;
+  margin-left: 15%;
+  height: $news-height;
+  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px $gray-light;
+  z-index: 1;
+  h2 {
+    color: $navy-darker;
+  }
+  p {
+    padding-bottom: 15px;
+  }
+}
+
 .videos {
   position: absolute;
-  top: calc(#{$header-height} + #{$banner-height});
+  top: calc(#{$header-height + $banner-height + $news-height / 4});
   background-color: $white;
   height: $video-height;
+  padding-top: 50px;
 }
 
 .container-video {
@@ -457,7 +490,6 @@ h3::after {
 }
 
 .owl-carousel .owl-stage-outer {
-  // padding: 0 7.5% 0 7.5%;
   overflow-x: hidden;
 }
 
@@ -533,7 +565,7 @@ button.owl-next {
 
 .install {
   position: absolute;
-  top: calc(#{$header-height} + #{$banner-height} + #{$video-height});
+  top: calc(#{$header-height + $banner-height + $news-height + $video-height});
   color: $white;
   width: 100%;
   height: $install-height;
@@ -587,7 +619,7 @@ button.owl-next {
   .divider-horizontal {
     grid-column: 4 / 5;
     grid-row: 2 / 4;
-    border-right: 5px solid $orange;
+    border-right: 3px solid $orange;
   }
   .release-img-2 {
     transform: scale(0.8);
@@ -612,7 +644,8 @@ button.owl-next {
 .support {
   position: absolute;
   top: calc(
-    #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height}
+    #{$header-height + $banner-height + $news-height + $video-height +
+      $install-height}
   );
   background-color: $white;
   width: 100%;
@@ -708,8 +741,8 @@ button.owl-next {
 .blog-newsletter {
   position: absolute;
   top: calc(
-    #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height} +
-      #{$support-height}
+    #{$header-height + $banner-height + $news-height + $video-height +
+      $install-height + $support-height}
   );
   background-color: $gray-lighter;
 }
@@ -835,8 +868,9 @@ button.owl-next {
   padding-top: 25px;
   position: absolute;
   top: calc(
-    #{$header-height} + #{$header-height} + #{$banner-height} + #{$video-height} +
-      #{$install-height} + #{$support-height} + #{$blog-newsletter-height}
+    #{$header-height + $header-height + $banner-height + $news-height +
+      $video-height + $install-height + $support-height +
+      $blog-newsletter-height}
   );
   background-color: $navy-darker;
   .logo {
@@ -875,8 +909,9 @@ button.owl-next {
 .footer-sub {
   position: absolute;
   top: calc(
-    #{$header-height} + #{$header-height} + #{$banner-height} + #{$video-height} +
-      #{$install-height} + #{$support-height} + #{$blog-newsletter-height} + #{$footer-main-height}
+    #{$header-height + $header-height + $banner-height + $news-height +
+      $video-height + $install-height + $support-height +
+      $blog-newsletter-height + $footer-main-height}
   );
   background-color: $gray-lighter;
   height: $subfooter-height;

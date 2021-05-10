@@ -59,11 +59,31 @@
     display: none;
   }
 
+  .news {
+    position: absolute;
+    top: calc(#{$header-height + $banner-height - 75px});
+    background-color: $white;
+    margin-left: 10%;
+    height: $news-height;
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $gray-light;
+    z-index: 1;
+    h2 {
+      color: $navy-darker;
+    }
+    p {
+      padding-bottom: 15px;
+    }
+  }
+
   .videos {
     height: $video-height;
-    top: $banner-height;
+    top: calc(#{$header-height + $banner-height});
     overflow-y: hidden;
     padding-right: 1px;
+    padding-top: 80px;
     h3 {
       width: 50vw;
       text-align: center;
@@ -102,20 +122,23 @@
     display: none;
   }
   .install {
-    top: calc(#{$header-height} + #{$banner-height} + #{$video-height});
+    top: calc(
+      #{$header-height + $banner-height + $news-height + $video-height}
+    );
     height: $install-height;
     max-width: 768px;
+    padding-top: 50px;
     grid-template-columns: 22.5% 22.5% 1% 22.5% 22.5%;
-    grid-template-rows: 90px 0.9fr 10%;
+    grid-template-rows: 90px 0.8fr 10%;
     grid-column-gap: 5px;
     h3 {
-      justify-self: center;
       margin-left: 0;
       overflow-y: hidden;
       padding: 25px 0 20px 0;
+      margin-left: 25px;
       height: 30px;
       width: 85px;
-      grid-column: 3 / 4;
+      grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
     h6 {
@@ -196,8 +219,8 @@
     padding-right: 1px;
     overflow-y: hidden;
     top: calc(
-      #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height} +
-        1px
+      #{$header-height + $banner-height + $news-height + $video-height +
+        $install-height} + 1px
     );
     h3 {
       width: 110px;
@@ -218,13 +241,14 @@
     .support-grid {
       display: grid;
       grid-template-columns: repeat(3, 175px);
-      grid-template-rows: 150px 50px 50px;
+      grid-template-rows: 150px 50px 100px;
       background-color: $white;
       grid-column-gap: 75px;
       justify-content: center;
       p {
-        text-align: left;
+        text-align: center;
         font-size: 18px;
+        width: unset;
       }
       strong {
         text-align: center;
@@ -243,6 +267,7 @@
       font-size: 22px;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
+      width: unset;
     }
     .blurb-1 {
       grid-column: 1 / 2;
@@ -276,6 +301,7 @@
     .blurb-3 {
       grid-column: 3 / 4;
       grid-row: 3 / 4;
+      padding-right: 10px;
     }
   }
 
@@ -286,8 +312,8 @@
     width: 100%;
     padding-left: 30px;
     top: calc(
-      #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height} +
-        #{$support-height}
+      #{$header-height + $banner-height + $news-height + $video-height +
+        $install-height + $support-height}
     );
 
     .blog-grid {
@@ -418,8 +444,8 @@
   .footer-main {
     height: $footer-main-height;
     top: calc(
-      #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height} +
-        #{$support-height} + #{$blog-newsletter-height}
+      #{$header-height + $banner-height + $news-height + $video-height +
+        $install-height + $support-height + $blog-newsletter-height}
     );
     .logo {
       height: auto;
@@ -433,8 +459,9 @@
   .footer-sub {
     height: $subfooter-height;
     top: calc(
-      #{$header-height} + #{$banner-height} + #{$video-height} + #{$install-height} +
-        #{$support-height} + #{$blog-newsletter-height} + #{$footer-main-height}
+      #{$header-height + $banner-height + $news-height + $video-height +
+        $install-height + $support-height + $blog-newsletter-height +
+        $footer-main-height}
     );
 
     .footer-sub-menu ul {
