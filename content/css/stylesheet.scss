@@ -35,6 +35,23 @@ body {
   height: auto;
   overflow-x: hidden;
   overflow-y: visible;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: grid;
+  grid-row: 1 / 2;
+}
+
+#main {
+  display: grid;
+  grid-row: 2 / 3;
+}
+
+footer {
+  display: grid;
+  grid-row: 3 / 4;
 }
 
 a {
