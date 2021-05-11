@@ -1,5 +1,7 @@
 .git
 Dockerfile
 docker-compose.yml
+
+crash.log
 output
 tmp
