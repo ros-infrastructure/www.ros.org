@@ -16,6 +16,10 @@
 
   @import "header-mobile-tablet";
 
+  #submenu-about {
+    display: none;
+  }
+
   #main {
     position: static;
   }
@@ -480,6 +484,7 @@
 @media screen and (max-width: 1250px) and (min-width: 993px) {
   $banner-height: 950px;
   $video-height: 450px;
+
   .banner {
     height: $banner-height;
     grid-template-rows: repeat(6, 15%);
@@ -516,5 +521,15 @@
       transform: scale(0.6);
       margin-left: -60px;
     }
+  }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 993px) {
+  header #submenu-about ul li {
+    margin: 15px 0 0 0;
+  }
+
+  header #submenu-about ul li ul li {
+    padding-left: 20px;
   }
 }

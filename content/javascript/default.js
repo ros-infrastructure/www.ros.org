@@ -6,6 +6,8 @@ function closeMenus(menuId, event) {
   let dotTopClasses = topDot.classList;
   let dotBottomClasses = bottomDot.classList;
 
+  let aboutLink = document.getElementById("about");
+  let aboutLinkClasses = aboutLink.classList;
   let aboutList = document.getElementById("submenu-about");
   let aboutClasses = aboutList.classList;
 
@@ -28,6 +30,9 @@ function closeMenus(menuId, event) {
 
     aboutClasses.add("hidden");
     aboutClasses.remove("show");
+
+    aboutLinkClasses.remove("show-after");
+    aboutLinkClasses.add("hide-after");
   }
 }
 
@@ -38,6 +43,8 @@ function openCloseDotsMenu() {
   let classes = dots.classList;
   let dotTopClasses = topDot.classList;
   let dotBottomClasses = bottomDot.classList;
+  let aboutLink = document.getElementById("about");
+  let aboutLinkClasses = aboutLink.classList;
   let aboutList = document.getElementById("submenu-about");
   let aboutClasses = aboutList.classList;
 
@@ -50,6 +57,9 @@ function openCloseDotsMenu() {
 
     dotBottomClasses.add("invisible");
     dotBottomClasses.remove("visible");
+
+    aboutLinkClasses.remove("show-after");
+    aboutLinkClasses.add("hide-after");
 
     aboutClasses.add("hidden");
     aboutClasses.remove("show");
@@ -74,10 +84,15 @@ function openCloseAbout() {
   let dotsMenuClasses = dots.classList;
   let dotTopClasses = topDot.classList;
   let dotBottomClasses = bottomDot.classList;
+  let aboutLink = document.getElementById("about");
+  let aboutLinkClasses = aboutLink.classList;
 
   if (classes.contains("hidden")) {
     classes.remove("hidden");
     classes.add("show");
+
+    aboutLinkClasses.remove("hide-after");
+    aboutLinkClasses.add("show-after");
 
     dotsMenuClasses.remove("show");
     dotsMenuClasses.add("hidden");
@@ -90,5 +105,7 @@ function openCloseAbout() {
   } else {
     classes.remove("show");
     classes.add("hidden");
+    aboutLinkClasses.remove("show-after");
+    aboutLinkClasses.add("hide-after");
   }
 }

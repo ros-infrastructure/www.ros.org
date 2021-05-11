@@ -36,24 +36,7 @@ body {
   height: auto;
   overflow-x: hidden;
   overflow-y: visible;
-  // display: grid;
-  // grid-template-rows: auto 1fr auto;
 }
-
-// header {
-//   display: grid;
-//   grid-row: 1 / 2;
-// }
-//
-// #main {
-//   display: grid;
-//   grid-row: 2 / 3;
-// }
-//
-// footer {
-//   display: grid;
-//   grid-row: 3 / 4;
-// }
 
 a {
   text-decoration: none;
@@ -135,6 +118,24 @@ header {
   h1 {
     color: $white;
   }
+
+  .show-after::after {
+    content: "";
+    white-space: pre-line;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid $white;
+    position: absolute;
+    top: calc(#{$header-height} - 5px);
+    left: -5px;
+  }
+
+  .hide-after::after {
+    display: none;
+  }
+
   #navbar {
     height: $header-height;
     width: 100%;
@@ -250,18 +251,6 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     color: $gray-light;
-  }
-
-  #submenu-about::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 25px solid $white;
-    position: absolute;
-    top: calc(#{$header-height} - 5px);
-    left: calc(15% + 250px);
   }
 
   #submenu-about {
