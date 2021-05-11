@@ -532,4 +532,30 @@
   header #submenu-about ul li ul li {
     padding-left: 20px;
   }
+
+  .news {
+    top: 600px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .banner {
+    background-position: 110% 100%;
+  }
+  .install {
+    grid-template-columns: 175px 175px 1% 175px 175px;
+  }
+  .install .btn-install-left,
+  .btn-install-right {
+    width: clamp(10vw, 275px, 30vw);
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 501px) {
+  .banner h1 {
+    font-size: 60px;
+    &::after {
+      margin-left: 10px;
+    }
+  }
 }

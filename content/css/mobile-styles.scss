@@ -15,6 +15,10 @@
     overflow-y: auto;
   }
 
+  #submenu-about {
+    display: none;
+  }
+
   #main {
     position: static;
   }
@@ -41,7 +45,7 @@
       padding-top: 10px;
       overflow-x: visible;
       overflow-y: hidden;
-      margin-left: 5%;
+      margin-left: 10px;
       font-size: 60px;
       line-height: 60px;
       grid-column: 1 / 2;
