@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="javascript/default.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/javascript/default.js"></script>
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +24,7 @@
     <header>
       <div id="navbar">
         <div class="logo">
-          <a href="#"><img src="images/logo-white.png"/></a>
+          <a href="/"><img src="/images/logo-white.png"/></a>
         </div>
         <ul class="main-menu">
           <li class="nav-item">
@@ -39,12 +43,12 @@
           <li class="nav-item"><a href="#">Ecosystem</a></li>
         </ul>
         <div id="dropdown-dots" onclick="openCloseDotsMenu(), closeMenus(this)">
-          <img src="images/dot.png" id="dot-top" class="dropdown-dot-top" />
-          <img src="images/dot.png" class="dropdown-dot-middle dot-1" />
-          <img src="images/dot.png" class="dropdown-dot-middle dot-2" />
-          <img src="images/dot.png" class="dropdown-dot-middle dot-3" />
+          <img src="/images/dot.png" id="dot-top" class="dropdown-dot-top" />
+          <img src="/images/dot.png" class="dropdown-dot-middle dot-1" />
+          <img src="/images/dot.png" class="dropdown-dot-middle dot-2" />
+          <img src="/images/dot.png" class="dropdown-dot-middle dot-3" />
           <img
-            src="images/dot.png"
+            src="/images/dot.png"
             id="dot-bottom"
             class="dropdown-dot-bottom"
           />
@@ -52,13 +56,13 @@
         <ul id="submenu-dots" class="hidden" onclick="closeMenus(this)">
           <div class="grid-mob-menu">
             <a class="twitter-icon" href="#"
-              ><img src="images/twitter-icon.svg"
+              ><img src="/images/twitter-icon.svg"
             /></a>
             <a class="discourse-icon" href="#"
-              ><img src="images/discourse-icon.svg"
+              ><img src="/images/discourse-icon.svg"
             /></a>
             <a class="github-icon" href="#"
-              ><img src="images/github-icon.svg"
+              ><img src="/images/github-icon.svg"
             /></a>
             <a class="mob-nav-item-1" href="#">Blog</a>
             <a class="mob-nav-item-2" href="#">Wiki</a>
@@ -101,7 +105,7 @@
             </p>
           </li>
         </ul>
-        <div class="menu-blog-link"><a href="#">Read the ROS blog</a></div>
+        <div class="menu-blog-link"><a href="/blog/">Read the ROS blog</a></div>
       </div>
       <div id="submenu-about" class="hidden" onclick="closeMenus(this)">
         <ul>
@@ -151,11 +155,11 @@
     </div>
     <footer>
       <div class="footer-main">
-        <img src="images/logo-white.png" class="logo" />
+        <img src="/images/logo-white.png" class="logo" />
         <div class="footer-menu">
           <ul>
             <li class="link-home"><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
             <li><a href="#">Wiki</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>

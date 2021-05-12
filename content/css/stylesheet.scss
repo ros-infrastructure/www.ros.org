@@ -27,6 +27,9 @@ $white: #fff;
   -ms-overflow-style: none;
   // overflow-x: hidden;
   overflow-y: visible;
+
+  //for debugging
+  // outline: 1px solid red;
 }
 
 body {
@@ -966,6 +969,6 @@ button.owl-next {
     width: 400px;
   }
 }
-
+@import "blog";
 @import "tablet-styles";
 @import "mobile-styles";
