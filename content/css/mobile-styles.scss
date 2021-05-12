@@ -21,6 +21,7 @@
 
   #main {
     position: static;
+    margin-top: $header-height;
   }
 
   .content-wrapper {
@@ -526,5 +527,41 @@
         $install-height + $support-height + $blog-newsletter-height +
         $footer-main-height + 100px}
     );
+  }
+}
+
+@media screen and (max-width: 992px) and (max-height: 450px) {
+  .banner {
+    background-size: 200px;
+    background-position: 100% 200%;
+    h1 {
+      font-size: 60px;
+      grid-row: 2 / 6;
+    }
+    p {
+      width: 425px;
+      grid-row: 4 / 6;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) and (max-height: 450px) and (min-height: 200px) {
+  .banner {
+    background-size: 300px;
+    background-position: 110% -50%;
+  }
+
+  .blog-newsletter {
+    padding-left: 0;
+    .blog-grid {
+      grid-column-gap: 0;
+      grid-template-columns: 300px 200px;
+      .newsletter-signup .btn-subscribe {
+        width: 184px;
+      }
+      .newsletter-signup input {
+        width: 180px;
+      }
+    }
   }
 }

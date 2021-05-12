@@ -327,6 +327,8 @@
       grid-template-rows: 50px 225px 250px;
       grid-gap: 30px;
       justify-content: center;
+      padding-left: 10px;
+      padding-top: 10px;
       h4 {
         height: 50px;
         width: 500px;
@@ -543,7 +545,8 @@
     background-position: 110% 100%;
   }
   .install {
-    grid-template-columns: 175px 175px 1% 175px 175px;
+    grid-template-columns: 200px 200px 1% 200px 200px;
+    max-width: 992px;
   }
   .install .btn-install-left,
   .btn-install-right {
