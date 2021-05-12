@@ -1,3 +1,15 @@
+// width debugger
+
+// function whatIsTooBig() {
+//   var docWidth = document.documentElement.offsetWidth;
+//
+//   [].forEach.call(document.querySelectorAll("*"), function(el) {
+//     if (el.offsetWidth > docWidth) {
+//       console.log(el);
+//     }
+//   });
+// }
+
 function closeMenus(menuId, event) {
   let dots = document.getElementById("submenu-dots");
   let topDot = document.getElementById("dot-top");

@@ -341,7 +341,7 @@ header {
     width: 50px;
     height: 5px;
     position: absolute;
-    right: 15px;
+    right: 33px;
     padding-top: 20px;
     border-bottom: solid;
     border-color: $orange;
@@ -380,7 +380,7 @@ header {
 
   color: $white;
   height: auto;
-  width: 100%;
+  width: unset;
   display: grid;
   grid-template-columns: 50% 30%;
   grid-template-rows: repeat(6, 0.15fr);
@@ -442,9 +442,14 @@ h3::after {
   margin-left: -125px;
 }
 
+.news-wrapper {
+  height: 300px;
+  background: linear-gradient(180deg, $navy-darker 50%, $white 50%);
+  display: flex;
+  align-items: center;
+}
+
 .news {
-  position: absolute;
-  top: calc(#{$header-height + $banner-height + 25px});
   background-color: $white;
   margin-left: 15%;
   padding: 20px;
@@ -563,7 +568,7 @@ button.owl-next {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 25px 1fr 1fr;
+  grid-template-columns: 20% 20% 25px 20% 20%;
   grid-template-rows: 90px 1fr 1fr 0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 10px;

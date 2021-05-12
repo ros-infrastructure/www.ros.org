@@ -2,7 +2,7 @@
 @import "mobile-heights";
 @import "colors";
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   body {
     height: auto;
   }
@@ -60,11 +60,13 @@
     display: none;
   }
 
+  .news-wrapper {
+    height: 200px;
+  }
+
   .news {
-    top: 800px;
-    height: $news-height;
     margin-left: 0;
-    padding: 0;
+    padding: 0 0 15px 0;
     width: 100vw;
     border-radius: 10px;
     box-shadow: 1px 1px 1px $gray-light;
@@ -85,15 +87,13 @@
   }
 
   .videos {
-    margin-top: 100px;
-
+    padding-top: 0;
     h3 {
       width: 110px;
       text-align: center;
       overflow-y: hidden;
       font-weight: bolder;
       letter-spacing: -2px;
-
       &::after {
         display: none;
       }
@@ -442,15 +442,15 @@
   }
 }
 
-@media screen and (max-width: 500px) and (min-width: 375px) {
-  .banner {
-    background-position: 125% 20%;
-    grid-template-rows: 45px 60px 25% auto;
-    h1 {
-      font-size: 70px;
-    }
-  }
-}
+// @media screen and (max-width: 500px) and (min-width: 375px) {
+//   .banner {
+//     background-position: 125% 20%;
+//     grid-template-rows: 45px 60px 25% auto;
+//     h1 {
+//       font-size: 70px;
+//     }
+//   }
+// }
 
 @media screen and (max-width: 330px) {
   .banner {
@@ -461,21 +461,6 @@
     }
     p {
       width: 300px;
-    }
-  }
-
-  .news {
-    top: 800px;
-    height: calc(#{$news-height + 20px});
-    h2 {
-      margin-left: 20px;
-    }
-    p {
-      margin-left: 20px;
-      width: 260px;
-    }
-    .btn-event {
-      width: 230px;
     }
   }
 

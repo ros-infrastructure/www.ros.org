@@ -2,6 +2,9 @@
 @import "colors";
 
 @media screen and (max-width: 992px) {
+  header {
+    width: unset;
+  }
   header,
   header #navbar {
     position: fixed;
@@ -147,14 +150,15 @@
     grid-row: 4 / 4;
   }
 
+  header #submenu-dots li a::after {
+    right: 15px;
+  }
+
   header #submenu-dots {
     overflow-y: scroll;
     a {
       text-transform: uppercase;
       font-weight: 900;
-      &::after {
-        margin-right: 15px;
-      }
     }
     p {
       color: $white;

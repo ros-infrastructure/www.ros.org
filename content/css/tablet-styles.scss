@@ -1,7 +1,7 @@
 @import "tablet-heights";
 @import "colors";
 
-@media screen and (max-width: 992px) and (min-width: 500px) {
+@media screen and (max-width: 1100px) and (min-width: 601px) {
   @import "header-mobile-tablet";
 
   #submenu-about {
@@ -13,6 +13,7 @@
   }
 
   .banner {
+    padding-bottom: 175px;
     background-image: url("/images/noetic-background.png");
     background-attachment: fixed;
     background-size: 400px;
@@ -43,8 +44,6 @@
   }
 
   .news {
-    position: absolute;
-    top: calc(#{$header-height + $banner-height - 90px});
     background-color: $white;
     margin-left: 10%;
     height: $news-height;
@@ -102,7 +101,7 @@
   .install {
     margin: 0 auto;
     grid-template-columns: 175px 175px 25px 175px 175px;
-    grid-template-rows: 90px 1fr 0.5fr;
+    grid-template-rows: 90px 1fr 0.25fr;
     grid-column-gap: 0;
     h3 {
       margin-left: 0;
@@ -189,8 +188,11 @@
       }
     }
   }
+
+  .btn-install img {
+    margin-top: -5px;
+  }
   .support {
-    padding-right: 1px;
     overflow-y: hidden;
     h3 {
       width: 110px;
@@ -374,7 +376,6 @@
       }
 
       .newsletter-signup {
-        // margin-left: 15px;
         white-space: pre-line;
         grid-column-start: 2;
         grid-row-start: 3;
@@ -418,86 +419,40 @@
     }
     .legal {
       display: block;
+      p {
+        width: unset;
+      }
     }
   }
 }
 
-// @media screen and (max-width: 1250px) and (min-width: 993px) {
-//   $banner-height: 950px;
-//   $video-height: 450px;
-//
-//   .banner {
-//     height: $banner-height;
-//     grid-template-rows: repeat(6, 15%);
-//     h1 {
-//       grid-row: 2 / 5;
-//       font-size: 60px;
-//     }
-//     p {
-//       padding-top: 75px;
-//       grid-row: 3 / 6;
-//     }
-//     .banner-image {
-//       grid-row: 1 / 6;
-//     }
-//   }
-//   .news {
-//     top: calc(#{$header-height + $banner-height / 1.85});
-//     padding-bottom: 25px;
-//     .btn-event {
-//       margin: 0;
-//     }
-//   }
-//
-//   .videos {
-//     padding-top: 80px;
-//   }
-//
-//   .install {
-//     grid-template-columns: 10px 220px 1fr 5px 220px 0.75fr 0.25fr;
-//     .release-img-1 {
-//       transform: scale(0.9);
-//     }
-//     .release-img-2 {
-//       transform: scale(0.6);
-//       margin-left: -60px;
-//     }
-//   }
-// }
-
-@media screen and (max-width: 1250px) and (min-width: 993px) {
-  header #submenu-about ul li {
-    margin: 15px 0 0 0;
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .banner h1::after {
+    left: 7%;
+  }
+  .banner p {
+    width: unset;
+    grid-row: 7 / 9;
   }
 
-  header #submenu-about ul li ul li {
-    padding-left: 20px;
-  }
-
-  .news {
-    top: 600px;
+  .install {
+    grid-gap: 50px;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  // .banner {
-  //   background-position: 50% 30%;
-  // }
-  // .install {
-  //   grid-template-columns: 200px 200px 1% 200px 200px;
-  //   max-width: 992px;
-  // }
-  .install .btn-install-left,
-  .btn-install-right {
-    width: clamp(10vw, 275px, 30vw);
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  .blog-newsletter .blog-grid {
+    grid-column-gap: 5px;
+    grid-template-columns: 375px 200px;
   }
 }
-
-@media screen and (max-width: 650px) and (min-width: 501px) {
-  .banner h1 {
-    font-size: 60px;
-    &::after {
-      margin-left: 10px;
+@media screen and (max-width: 700px) and (min-width: 601px) {
+  .blog-newsletter .blog-grid .newsletter-signup {
+    input {
+      max-width: 200px;
+    }
+    .btn-subscribe {
+      max-width: 206px;
     }
   }
 }
