@@ -20,13 +20,9 @@ $white: #fff;
   font-family: "Overpass", sans-serif;
   margin: 0;
   padding: 0;
-  height: auto;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
-  // overflow-x: hidden;
-  overflow-y: visible;
 
   //for debugging
   // outline: 1px solid red;
@@ -36,8 +32,8 @@ body {
   background: $white;
   background: $navy-darker;
   width: 100%;
-  height: auto;
-  overflow-x: hidden;
+  height: 100%;
+  // overflow-x: hidden;
   overflow-y: visible;
 }
 
@@ -72,7 +68,7 @@ p {
     height: 25px;
     width: 25px;
     margin-left: -40px;
-    margin-top: -5px;
+    margin-top: -15px;
   }
 }
 
@@ -141,7 +137,7 @@ header {
 
   #navbar {
     height: $header-height;
-    width: 100%;
+    width: 100vw;
     display: flex;
     overflow-y: hidden;
     .logo {
@@ -152,7 +148,7 @@ header {
       overflow-x: visible;
       img {
         width: 189px;
-        padding-right: 50px;
+        height: unset;
       }
 
       @media screen and (min-width: 993px) {
@@ -217,12 +213,14 @@ header {
         }
       }
       .dropdown-dot-top {
+        width: 5px;
         padding: 0;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
       }
       .dropdown-dot-middle {
         padding: 0;
+        width: 5px;
       }
       .dot-1 {
         grid-column: 1 / 1;
@@ -238,6 +236,7 @@ header {
         grid-row: 2 / 3;
       }
       .dropdown-dot-bottom {
+        width: 5px;
         padding: 1px 0 0 0;
         grid-column: 2 / 3;
         grid-row: 3 / 4;
@@ -370,29 +369,21 @@ header {
 }
 
 #main {
-  position: absolute;
-  top: $header-height;
   z-index: -1;
   background-color: $navy-darker;
 }
 
-.content-wrapper {
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-}
-
 .banner {
   color: $white;
-  height: calc(80px * 8);
+  height: auto;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 30%;
-  grid-template-rows: repeat(5, 0.15fr) 0.175fr;
+  grid-template-rows: repeat(6, 0.15fr);
   grid-column-gap: 25px;
   justify-content: center;
+  padding-bottom: 25px;
   h1 {
-    overflow-y: hidden;
     font-weight: 900;
     letter-spacing: -1px;
     font-size: clamp(50px, 70px, 80px);
@@ -411,13 +402,12 @@ header {
     left: 10%;
   }
   p {
+    padding-top: 125px;
     color: $white;
-    padding-top: 30px;
     font-size: 22px;
     font-weight: 500;
     grid-column: 1 / 2;
-    grid-row: 5 / 7;
-    overflow-y: hidden;
+    grid-row: 5 / 6;
   }
   .banner-image {
     grid-column: 2 / 2;
@@ -450,17 +440,15 @@ h3::after {
 
 .news {
   position: absolute;
-  top: calc(#{$header-height / 1.5 + $banner-height});
+  top: calc(#{$header-height + $banner-height + 25px});
   background-color: $white;
-  padding-top: 10px;
   margin-left: 15%;
-  height: $news-height;
+  padding: 20px;
   width: 70%;
-  padding-left: 20px;
-  padding-right: 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 1px $gray-light;
   z-index: 1;
+  height: auto;
   h2 {
     color: $navy-darker;
   }
@@ -473,11 +461,19 @@ h3::after {
 }
 
 .videos {
-  position: absolute;
-  top: calc(#{$header-height + $banner-height + $news-height / 3});
   background-color: $white;
   height: $video-height;
-  padding-top: 50px;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  h3 {
+    padding-bottom: 10px;
+    border-bottom: 4px solid $orange;
+    width: 120px;
+  }
+  h3::after {
+    display: none;
+  }
 }
 
 .container-video {
@@ -559,26 +555,24 @@ button.owl-next {
 }
 
 .install {
-  position: absolute;
-  top: calc(#{$header-height + $banner-height + $news-height + $video-height});
   color: $white;
   width: 100%;
-  height: $install-height;
+  height: auto;
   display: grid;
-  grid-template-columns: 0.25fr 1fr 1fr 25px 1fr 1fr 0.25fr;
-  grid-template-rows: 90px repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 25px 1fr 1fr;
+  grid-template-rows: 90px 1fr 1fr 0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 10px;
   justify-content: center;
   object-fit: contain;
   h3 {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 0;
     color: $white;
-    width: 80px;
+    width: 65px;
     margin-left: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: solid 4px $orange;
     &::after {
       display: none;
@@ -598,21 +592,21 @@ button.owl-next {
     min-width: 225px;
     max-width: 250px;
     padding-top: 20px;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 6;
   }
   .install-text-1 {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
   .btn-install-left {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 4 / 5;
-    place-self: end;
+    place-self: center;
     justify-self: start;
   }
   .divider-horizontal {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     grid-row: 2 / 4;
     border-right: 3px solid $orange;
   }
@@ -620,36 +614,31 @@ button.owl-next {
     transform: scale(0.8);
     min-width: 350px;
     max-width: 400px;
-    grid-column: 5 / 6;
+    grid-column: 4 / 5;
     grid-row: 2 / 6;
   }
   .install-text-2 {
-    grid-column: 6 / 7;
+    grid-column: 5 / 6;
     grid-row: 3 / 4;
   }
   .btn-install-right {
     align-items: end;
-    grid-column: 6 / 7;
+    grid-column: 5 / 6;
     grid-row: 4 / 5;
-    place-self: end;
+    place-self: center;
     justify-self: start;
   }
 }
 
 .support {
-  position: absolute;
-  top: calc(
-    #{$header-height + $banner-height + $news-height + $video-height +
-      $install-height}
-  );
   background-color: $white;
   width: 100%;
-  height: $support-height;
+  height: auto;
   overflow: hidden;
   h3 {
-    width: 110px;
+    width: 90px;
     padding-bottom: 10px;
-    border-bottom: 5px solid $orange;
+    border-bottom: 4px solid $orange;
   }
   h3::after {
     display: none;
@@ -686,7 +675,8 @@ button.owl-next {
   }
 
   .img-1 {
-    transform: scale(0.5);
+    justify-self: center;
+    height: 75px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -702,7 +692,8 @@ button.owl-next {
     grid-row-start: 3;
   }
   .img-2 {
-    transform: scale(0.5);
+    justify-self: center;
+    height: 75px;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -718,7 +709,8 @@ button.owl-next {
     grid-row-start: 3;
   }
   .img-3 {
-    transform: scale(0.5);
+    justify-self: center;
+    height: 75px;
     grid-column-start: 5;
     grid-row-start: 1;
   }
@@ -734,11 +726,7 @@ button.owl-next {
 }
 
 .blog-newsletter {
-  position: absolute;
-  top: calc(
-    #{$header-height + $banner-height + $news-height + $video-height +
-      $install-height + $support-height}
-  );
+  height: auto;
   background-color: $gray-lighter;
 }
 
@@ -776,16 +764,19 @@ button.owl-next {
   .recent-posts h1 {
     font-size: 18px;
     font-weight: 700;
+    height: 20px;
   }
 
   .highlighted-post-subtitle h2 {
     font-size: 16px;
     font-weight: 400;
+    height: 20px;
   }
 
   .recent-post-title h2 {
     font-size: 12px;
     font-weight: 700;
+    height: 20px;
   }
 
   .highlighted-post-author-date h3,
@@ -808,6 +799,7 @@ button.owl-next {
     }
   }
   .recent-posts {
+    height: unset;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     a {
@@ -821,7 +813,9 @@ button.owl-next {
   }
 
   .recent-post {
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    height: auto;
   }
 
   a.read-more {
@@ -848,6 +842,7 @@ button.owl-next {
     input {
       margin-bottom: 10px;
       width: clamp(260px, 275px, 300px);
+      height: unset;
       padding: 8px 0 8px 0;
     }
     input::placeholder {
@@ -856,17 +851,15 @@ button.owl-next {
       font-size: 12px;
       text-align: center;
     }
+    .btn-subscribe {
+      height: unset;
+    }
   }
 }
 
 .footer-main {
   padding-top: 25px;
-  position: absolute;
-  top: calc(
-    #{$header-height + $header-height + $banner-height + $news-height +
-      $video-height + $install-height + $support-height +
-      $blog-newsletter-height}
-  );
+  height: auto;
   background-color: $navy-darker;
   .logo {
     display: block;
@@ -876,15 +869,16 @@ button.owl-next {
     border-bottom: $orange 4px solid;
   }
   .footer-menu {
+    width: 50%;
+    margin-left: 25%;
     padding-top: 25px;
-    width: 100%;
+    padding-bottom: 25px;
   }
   .footer-menu ul {
-    display: inline-flex;
+    display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
   }
-
   .footer-menu li {
     max-width: 100px;
     text-align: center;
@@ -902,23 +896,17 @@ button.owl-next {
 }
 
 .footer-sub {
-  position: absolute;
-  top: calc(
-    #{$header-height + $header-height + $banner-height + $news-height +
-      $video-height + $install-height + $support-height +
-      $blog-newsletter-height + $footer-main-height}
-  );
   background-color: $gray-lighter;
-  height: $subfooter-height;
-
+  height: auto;
   .footer-sub-menu {
+    width: 80%;
+    margin-left: 10%;
     padding-top: 10px;
-    width: 100%;
   }
   .footer-sub-menu ul {
-    display: inline-flex;
+    display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .footer-sub-menu li {
@@ -937,12 +925,17 @@ button.owl-next {
   }
 }
 
+.footer-submenu-mob {
+  display: none;
+}
+
 .legal p {
   display: block;
   margin: 0 auto;
   text-align: center;
   width: 700px;
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 12px;
   font-style: italic;
   color: $gray-light;
