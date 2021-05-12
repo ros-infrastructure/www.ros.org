@@ -25,7 +25,7 @@ $white: #fff;
   -ms-overflow-style: none;
 
   //for debugging
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 body {
@@ -143,7 +143,7 @@ header {
     .logo {
       padding-top: 25px;
       padding-bottom: 5px;
-      margin-left: 10%;
+      // margin-left: 10%;
       width: 189px;
       overflow-x: visible;
       img {
@@ -195,11 +195,10 @@ header {
     }
 
     #dropdown-dots {
-      overflow-y: hidden;
+      overflow: hidden;
       position: absolute;
       top: 45px;
       right: 100px;
-      width: 40px;
       padding-bottom: 1px;
       font-size: 10px;
       display: grid;
@@ -256,20 +255,22 @@ header {
   }
 
   #submenu-about {
-    z-index: 0;
+    z-index: 1;
+    position: relative;
     margin-top: 10px;
     margin-left: 5%;
-    margin-right: 15%;
     width: 90%;
-    height: 250px;
     background-color: $white;
     border-radius: 25px;
   }
 
   #submenu-about ul {
+    width: 100%;
     list-style: none;
-    height: 200px;
     display: inline-flex;
+    background-color: $white;
+    border-radius: 25px;
+    padding-bottom: 10px;
   }
 
   #submenu-about ul li {
@@ -321,6 +322,7 @@ header {
     top: 90px;
     right: 100px;
     padding: 20px 25px 50px 10px;
+    z-index: 5;
   }
 
   #submenu-dots li {
@@ -374,6 +376,8 @@ header {
 }
 
 .banner {
+  overflow: hidden;
+
   color: $white;
   height: auto;
   width: 100%;
@@ -509,7 +513,7 @@ button.owl-next {
 .owl-carousel .item-video {
   height: 280px;
   width: 500px;
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .owl-item iframe {
@@ -831,7 +835,7 @@ button.owl-next {
   }
 
   .newsletter-signup {
-    margin-left: 15px;
+    // margin-left: 15px;
     white-space: pre-line;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -870,7 +874,8 @@ button.owl-next {
   }
   .footer-menu {
     width: 50%;
-    margin-left: 25%;
+    margin: 0 auto;
+    // margin-left: 25%;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -941,27 +946,27 @@ button.owl-next {
   color: $gray-light;
 }
 
-@media screen and (min-width: 2000px) {
-  .install {
-    display: grid;
-    grid-template-columns: 0.25fr 0.75fr 0.75fr 25px 0.75fr 0.75fr 0.25fr;
-  }
-  .install .release-img-1 {
-    max-width: 280px;
-  }
-  .install-text-1,
-  .install-text-2 {
-    h6 {
-      font-size: 26px;
-    }
-    font-size: 22px;
-  }
-
-  .btn-install-left,
-  .btn-install-right {
-    width: 400px;
-  }
-}
+// @media screen and (min-width: 2000px) {
+//   .install {
+//     display: grid;
+//     grid-template-columns: 0.25fr 0.75fr 0.75fr 25px 0.75fr 0.75fr 0.25fr;
+//   }
+//   .install .release-img-1 {
+//     max-width: 280px;
+//   }
+//   .install-text-1,
+//   .install-text-2 {
+//     h6 {
+//       font-size: 26px;
+//     }
+//     font-size: 22px;
+//   }
+//
+//   .btn-install-left,
+//   .btn-install-right {
+//     width: 400px;
+//   }
+// }
 @import "blog";
 @import "tablet-styles";
 @import "mobile-styles";

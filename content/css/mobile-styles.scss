@@ -7,14 +7,12 @@
     height: auto;
   }
 
-  header,
-  header #navbar {
-    top: 0;
-    width: 100vw;
-  }
-
   #submenu-about {
     display: none;
+  }
+
+  header #submenu-dots li a {
+    text-align: right;
   }
 
   #main {
@@ -28,13 +26,11 @@
   }
 
   .banner {
-    padding-left: 10px;
     background-image: url("/images/noetic-background.png");
     background-attachment: fixed;
-    background-size: 210px;
+    background-size: 250px;
     background-repeat: no-repeat;
-    background-position: 115% 15%;
-    height: $banner-height;
+    background-position: 135% 20%;
     grid-template-columns: 80% 20%;
     grid-template-rows: 45px 60px 20% auto;
     grid-column-gap: 10px;
@@ -54,7 +50,6 @@
     }
     p {
       font-size: 21px;
-      padding-top: 10px;
       padding-left: 20px;
       width: 335px;
       grid-row: 5 / 6;
@@ -66,7 +61,7 @@
   }
 
   .news {
-    top: calc(#{$header-height + $banner-height - 50px});
+    top: 800px;
     height: $news-height;
     margin-left: 0;
     padding: 0;
@@ -90,7 +85,7 @@
   }
 
   .videos {
-    margin-top: 50px;
+    margin-top: 100px;
 
     h3 {
       width: 110px;
@@ -130,15 +125,15 @@
     display: none;
   }
   .install {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 90px 1fr 0.5fr;
+    grid-template-columns: repeat(4, 22.5%);
+    grid-template-rows: 90px 48% 41%;
     grid-column-gap: 0;
     padding-bottom: 50px;
     h3 {
       overflow-y: hidden;
       padding: 25px 0 20px 0;
       height: 30px;
-      width: 85px;
+      width: 60px;
       margin-left: 50px;
       grid-column: 2 / 4;
       grid-row: 1 / 2;
@@ -166,9 +161,6 @@
       grid-row: 2 / 3;
     }
     .btn-install-left {
-      align-self: center;
-      margin: 0 5vw;
-      margin-top: 50px;
       width: 80vw;
       grid-column: 2 / 4;
       grid-row: 2 / 3;
@@ -215,6 +207,10 @@
         font-weight: 400;
       }
     }
+
+    .btn-install img {
+      margin-top: -2.5px;
+    }
   }
   .support {
     padding-bottom: 50px;
@@ -226,6 +222,7 @@
       }
     }
     p {
+      margin: 0;
       font-size: 16px;
       width: 300px;
       text-align: center;
@@ -312,16 +309,18 @@
   }
   .blog-newsletter {
     display: block;
-    overflow-y: hidden;
-    height: $blog-newsletter-height;
     width: 100%;
-    padding: 10px 0 25px 25px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    // padding: 10px 0 25px 0;
 
     .blog-grid {
       display: block;
       width: 90%;
+      margin: 0 auto;
       h4 {
         color: $navy-darker;
+        width: auto;
       }
       .recent-post {
         padding-top: 0;
@@ -359,7 +358,6 @@
     }
 
     .newsletter-signup {
-      margin-left: 2.5vw;
       margin: 0 auto;
       grid-column-start: 2;
       grid-row-start: 3;
@@ -386,6 +384,7 @@
   }
 
   .footer-main {
+    margin-top: 50px;
     padding-bottom: 15px;
 
     .logo {
@@ -397,7 +396,6 @@
     .footer-menu ul {
       display: block;
       list-style: none;
-      margin-left: 20px;
       .link-home {
         display: none;
       }
@@ -432,7 +430,7 @@
   }
 
   .footer-sub {
-    padding-right: 1px;
+    // padding-right: 1px;
     padding-bottom: 5px;
     overflow-y: visible;
     .legal {
@@ -446,6 +444,7 @@
 
 @media screen and (max-width: 500px) and (min-width: 375px) {
   .banner {
+    background-position: 125% 20%;
     grid-template-rows: 45px 60px 25% auto;
     h1 {
       font-size: 70px;
@@ -455,19 +454,19 @@
 
 @media screen and (max-width: 330px) {
   .banner {
-    background-position: 115% 25%;
+    background-position: 150% 30%;
     grid-template-columns: 90% 10%;
     h1 {
       padding-top: 5px;
     }
     p {
-      width: 275px;
+      width: 300px;
     }
   }
 
   .news {
-    top: calc(#{$header-height + $banner-height - 50px});
-    height: $news-height;
+    top: 800px;
+    height: calc(#{$news-height + 20px});
     h2 {
       margin-left: 20px;
     }
@@ -478,6 +477,10 @@
     .btn-event {
       width: 230px;
     }
+  }
+
+  .videos {
+    margin-top: 125px;
   }
 
   .install .release-img-2 {
