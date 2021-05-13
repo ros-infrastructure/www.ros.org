@@ -64,11 +64,25 @@
             <a class="github-icon" href="#"
               ><img src="/images/github-icon.svg"
             /></a>
-            <a class="mob-nav-item-1" href="#">Blog</a>
+            <a class="mob-nav-item-1" href="/blog/">Blog</a>
             <a class="mob-nav-item-2" href="#">Wiki</a>
             <a class="mob-nav-item-3" href="#">About</a>
             <a class="mob-nav-item-4" href="#">contact</a>
           </div>
+          <li class="sub-item">
+            <a href="#">sub-item 1</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
+          <li class="sub-item">
+            <a href="#">sub-item 1</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </li>
           <li class="sub-item">
             <a href="#">sub-item 1</a>
             <p>
@@ -249,10 +263,14 @@
             nav: false,
             dots: false,
             center: true,
-            padding: 10,
+            padding: 20,
+            responsiveClass: true,
             responsive: {
               0: {
                 items: 1
+              },
+              480: {
+                items: 3
               }
             }
           });

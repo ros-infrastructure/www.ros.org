@@ -24,7 +24,7 @@ $white: #fff;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 
-  //for debugging widths and such
+  // for debugging widths and such
   // outline: 1px solid red;
 }
 
@@ -76,7 +76,7 @@ p {
   background-color: $aqua;
   padding: 10px 0 8px 0;
   font-weight: 700;
-  width: clamp(264px, 280px, 300px);
+  width: clamp(250px, 380px, 85vw);
   border: 2px solid $aqua;
 }
 .btn-event {
@@ -108,6 +108,7 @@ p {
 }
 
 header {
+  position: fixed;
   background-color: $navy-darker;
   color: $white;
   height: $header-height;
@@ -134,6 +135,7 @@ header {
   }
 
   #navbar {
+    position: fixed;
     height: $header-height;
     width: 100vw;
     display: flex;
@@ -312,15 +314,16 @@ header {
   }
 
   #submenu-dots {
+    position: fixed;
+    top: $header-height;
+    right: 100px;
     list-style: none;
     height: 550px;
     width: 210px;
     background-color: $aqua;
-    position: absolute;
-    top: 90px;
-    right: 100px;
     padding: 20px 25px 50px 10px;
     z-index: 5;
+    overflow-y: scroll;
   }
 
   #submenu-dots li {
@@ -441,8 +444,8 @@ h3::after {
 }
 
 .news-wrapper {
-  height: 300px;
-  background: linear-gradient(180deg, $navy-darker 50%, $white 50%);
+  height: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, $white 50%);
   display: flex;
   align-items: center;
 }
@@ -454,7 +457,6 @@ h3::after {
   width: 70%;
   border-radius: 5px;
   box-shadow: 1px 1px 1px $gray-light;
-  z-index: 1;
   height: auto;
   h2 {
     color: $navy-darker;
@@ -486,6 +488,9 @@ h3::after {
 .container-video {
   margin-top: 50px;
 }
+.owl-stage {
+  padding: 0 !important;
+}
 
 .owl-carousel .owl-stage-outer {
   overflow-x: hidden;
@@ -516,7 +521,6 @@ button.owl-next {
 .owl-carousel .item-video {
   height: 280px;
   width: 500px;
-  // margin-left: 50px;
 }
 
 .owl-item iframe {
@@ -524,9 +528,6 @@ button.owl-next {
   width: 500px;
 }
 
-.owl-item .active iframe {
-  // transform: scale(0.6);
-}
 .owl-item.active.center iframe {
 }
 
@@ -566,7 +567,7 @@ button.owl-next {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 20% 20% 25px 20% 20%;
+  grid-template-columns: 22.5% 22.5% 25px 22.5% 22.5%;
   grid-template-rows: 90px 1fr 1fr 0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 10px;
@@ -735,6 +736,7 @@ button.owl-next {
 .blog-newsletter {
   height: auto;
   background-color: $gray-lighter;
+  padding-bottom: 25px;
 }
 
 .blog-grid {
@@ -838,7 +840,6 @@ button.owl-next {
   }
 
   .newsletter-signup {
-    // margin-left: 15px;
     white-space: pre-line;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -878,7 +879,6 @@ button.owl-next {
   .footer-menu {
     width: 50%;
     margin: 0 auto;
-    // margin-left: 25%;
     padding-top: 25px;
     padding-bottom: 25px;
   }

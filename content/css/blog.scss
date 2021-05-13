@@ -1,5 +1,5 @@
 @import "colors";
-
+$header-height: 90px;
 $blog-header-height: 300px;
 
 h1 {
@@ -24,6 +24,7 @@ p {
 }
 
 .blog-wrapper {
+  padding-top: $header-height;
   background-color: $white;
   h1,
   h2 {
@@ -32,6 +33,7 @@ p {
   h3 {
     width: unset;
     color: $black;
+    padding-bottom: 5px;
     &::after {
       display: none;
     }
@@ -52,6 +54,24 @@ p {
   h3,
   p {
     color: $white;
+  }
+  height: $blog-header-height;
+  padding-top: 5%;
+  background-color: $navy-darker;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  h1 {
+    z-index: 2;
+    padding-left: 10%;
+    width: 700px;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    padding-top: 75px;
+    padding-left: 10%;
   }
 }
 
@@ -92,13 +112,29 @@ p {
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.65);
   }
 }
-
-.bg-light {
-  background-color: $gray-light;
+.bg-light,
+.bg-lighter {
+  height: $blog-header-height;
+  padding-top: 5%;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  h1 {
+    padding-left: 10%;
+    width: 50vw;
+  }
+  h2 {
+    padding-left: 10%;
+    width: 67vw;
+  }
 }
-
+.bg-light {
+  background-color: $gray-lighter;
+}
 .bg-lighter {
   background-color: $white;
+}
+.bg-light,
+.bg-lighter {
   h1,
   h2 {
     color: $navy-darker;
@@ -156,7 +192,7 @@ p {
   }
 }
 
-.recent-post {
+.blog-sidebar .recent-post {
   max-width: 300px;
   margin-left: 15px;
   margin-top: 25px;
@@ -179,16 +215,22 @@ p {
       text-align: center;
     }
   }
-  .btn-subscribe {
-    margin-top: 10px;
-    width: 96%;
-  }
 }
 
+.blog-sidebar .btn-subscribe {
+  margin-top: 10px;
+  width: 96%;
+}
 @media screen and (max-width: 767px) {
+  .blog-wrapper {
+    padding-top: 0;
+  }
+  .bg-lighter,
+  .bg-light,
+  .bg-dark,
   .bg-photo {
-    height: 50vh;
-    background-position: 15% 50%;
+    height: 30vh;
+    background-position: 20% 50%;
     h1 {
       font-size: 60px;
       line-height: 60px;
@@ -199,13 +241,14 @@ p {
     h2 {
       width: 90vw;
       font-size: 22px;
+      line-height: 24px;
       padding-top: 15px;
       padding-left: 15px;
     }
   }
 
   .blog-grid-main {
-    padding-botom: 0;
+    padding-bottom: 0;
   }
 
   .blog-post-main {
@@ -228,16 +271,77 @@ p {
   .recent-post {
     padding-left: 10px;
   }
-
-  .newsletter-signup {
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    input {
+  .blog-sidebar {
+    .newsletter-signup {
       width: 90%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      input {
+        width: 90%;
+      }
+      .btn-subscribe {
+        width: 91%;
+      }
     }
-    .btn-subscribe {
-      width: 91%;
+  }
+}
+
+@media screen and (max-width: 993px) and (min-width: 450px) {
+  .blog-wrapper {
+    padding-top: 0;
+  }
+  .bg-lighter,
+  .bg-light,
+  .bg-dark,
+  .bg-photo {
+    height: 30vh;
+    padding-left: 7%;
+    h1 {
+      width: 67vw;
+      padding-top: 55px;
+      padding-left: 15px;
     }
+    h2 {
+      width: 67vw;
+      font-size: 22px;
+      line-height: 24px;
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .bg-light,
+  .bg-lighter {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+  }
+  .blog-grid-main {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 449px) {
+  .blog-grid-main {
+    padding: 0;
+  }
+  .bg-photo {
+  }
+}
+@media screen and (max-width: 320px) {
+  .bg-photo,
+  .bg-dark,
+  .bg-light,
+  .bg-lighter {
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+      width: 75vw;
+    }
+  }
+
+  .blog-post-main {
+    grid-column: 1 / 4;
+    width: 90vw;
+    padding-left: 15px;
   }
 }

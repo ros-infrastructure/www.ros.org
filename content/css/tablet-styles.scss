@@ -32,9 +32,9 @@
     }
     p {
       font-weight: 400;
-      padding-top: 10px;
+      padding-top: 75px;
       padding-left: 10px;
-      width: 335px;
+      width: 400px;
       grid-row: 6 / 9;
     }
   }
@@ -51,7 +51,6 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px $gray-light;
-    z-index: 1;
     h2 {
       color: $navy-darker;
     }
@@ -61,9 +60,9 @@
   }
 
   .videos {
-    padding-top: 80px;
+    padding-top: 0;
     h3 {
-      width: 50vw;
+      width: 15vw;
       text-align: center;
       overflow-y: hidden;
       font-weight: bolder;
@@ -78,6 +77,9 @@
     }
   }
 
+  .owl-stage {
+    padding: 0;
+  }
   .owl-carousel.owl-drag .owl-item {
     overflow-y: visible;
   }
@@ -168,7 +170,7 @@
     }
     .btn-install-right {
       align-self: start;
-      margin-left: 30px;
+      margin-left: 60px;
       width: 33vw;
       grid-column: 4 / 6;
       grid-row: 2 / 3;
@@ -231,7 +233,7 @@
     }
 
     .img-1 {
-      transform: scale(0.4);
+      transform: scale(0.8);
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
@@ -246,7 +248,7 @@
       grid-row: 3 / 4;
     }
     .img-2 {
-      transform: scale(0.4);
+      transform: scale(0.8);
       grid-column: 2 / 3;
       grid-row: 1 / 2;
     }
@@ -261,7 +263,7 @@
     }
     .img-3 {
       align-self: start;
-      transform: scale(0.4);
+      transform: scale(0.8);
       grid-column: 3 / 4;
       grid-row: 1 / 2;
     }
@@ -316,16 +318,20 @@
       .recent-posts h1 {
         font-size: 18px;
         font-weight: 700;
+        padding-bottom: 25px;
       }
 
       .highlighted-post-subtitle h2 {
         font-size: 16px;
         font-weight: 400;
+        padding-top: 5px;
       }
 
       .recent-post-title h2 {
         font-size: 12px;
         font-weight: 700;
+        padding-left: 15px;
+        padding-bottom: 5px;
       }
 
       .highlighted-post-author-date h3,
@@ -338,6 +344,9 @@
           display: none;
         }
         margin-left: 0 auto;
+      }
+      .recent-post-author-date {
+        padding-left: 15px;
       }
       .highlighted-post-content {
         height: auto;
@@ -360,7 +369,10 @@
       }
 
       .recent-post {
-        padding: 15px;
+        padding: 0;
+      }
+
+      .recent-post-title h2 {
       }
 
       a.read-more {
@@ -376,12 +388,15 @@
       }
 
       .newsletter-signup {
+        margin: 0;
         white-space: pre-line;
         grid-column-start: 2;
         grid-row-start: 3;
         h2 {
-          font-size: 12px;
+          width: auto;
           font-weight: 700;
+          font-size: 12px;
+          line-height: 12px;
         }
         input {
           margin-bottom: 10px;
@@ -426,7 +441,36 @@
   }
 }
 
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  .banner {
+    background-position: 110% 10%;
+    h1 {
+      width: 700px;
+    }
+    p {
+      padding-top: 0;
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .btn-subscribe {
+    width: clamp(264px, 280px, 300px);
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1101px) {
+  .install .release-img-2 {
+    margin-left: -50px;
+    transform: scale(0.7);
+  }
+}
+
 @media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .banner {
+    background-attachment: scroll;
+  }
   .banner h1::after {
     left: 7%;
   }
@@ -436,23 +480,70 @@
   }
 
   .install {
-    grid-gap: 50px;
+    grid-gap: 0px;
+  }
+
+  .install .release-img-2 {
+    margin-left: -50px;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 993px) and (min-width: 600px) {
+  .install .release-img-2 {
+    margin-left: -80px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 601px) {
+  .install {
+    grid-template-columns: 150px 150px 1px 150px 150px;
+    .install-text-1 p {
+      margin: 0;
+    }
+  }
   .blog-newsletter .blog-grid {
     grid-column-gap: 5px;
     grid-template-columns: 375px 200px;
   }
 }
 @media screen and (max-width: 700px) and (min-width: 601px) {
+  .install {
+    .release-img-2 {
+      transform: scale(0.4);
+      margin-left: -100px;
+    }
+  }
   .blog-newsletter .blog-grid .newsletter-signup {
     input {
       max-width: 200px;
     }
     .btn-subscribe {
       max-width: 206px;
+    }
+  }
+}
+@media screen and (max-width: 601px) and (min-width: 500px) {
+  #main .banner {
+    background-size: 300px;
+    background-position: 110% 10%;
+    grid-template-columns: 65% 35%;
+    h1 {
+      padding-left: 15px;
+      font-size: 72px;
+    }
+    p {
+      padding-top: 175px;
+      width: 500px;
+    }
+  }
+}
+@media screen and (max-width: 499px) and (min-width: 400px) {
+  #main .banner {
+    background-position: 110% 10%;
+    p {
+      padding-top: 125px;
+      width: 375px;
     }
   }
 }

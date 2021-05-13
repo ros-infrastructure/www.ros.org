@@ -68,6 +68,7 @@
 
   header #submenu-dots {
     position: fixed;
+    margin: 0;
     top: calc(#{$header-height} - 1px);
     right: 0;
     width: 225px;
