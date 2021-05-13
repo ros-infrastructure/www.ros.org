@@ -241,6 +241,22 @@
             }
           });
         });
+
+        $(document).ready(function() {
+          $("#blog-image-slider").owlCarousel({
+            items: 3,
+            loop: true,
+            nav: false,
+            dots: false,
+            center: true,
+            padding: 10,
+            responsive: {
+              0: {
+                items: 1
+              }
+            }
+          });
+        });
       </script>
     </footer>
   </body>

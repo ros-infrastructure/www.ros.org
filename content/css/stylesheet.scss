@@ -24,16 +24,14 @@ $white: #fff;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 
-  //for debugging
-  outline: 1px solid red;
+  //for debugging widths and such
+  // outline: 1px solid red;
 }
 
 body {
-  background: $white;
   background: $navy-darker;
   width: 100%;
   height: 100%;
-  // overflow-x: hidden;
   overflow-y: visible;
 }
 
@@ -143,7 +141,7 @@ header {
     .logo {
       padding-top: 25px;
       padding-bottom: 5px;
-      // margin-left: 10%;
+      margin-left: 10%;
       width: 189px;
       overflow-x: visible;
       img {
@@ -951,27 +949,6 @@ button.owl-next {
   color: $gray-light;
 }
 
-// @media screen and (min-width: 2000px) {
-//   .install {
-//     display: grid;
-//     grid-template-columns: 0.25fr 0.75fr 0.75fr 25px 0.75fr 0.75fr 0.25fr;
-//   }
-//   .install .release-img-1 {
-//     max-width: 280px;
-//   }
-//   .install-text-1,
-//   .install-text-2 {
-//     h6 {
-//       font-size: 26px;
-//     }
-//     font-size: 22px;
-//   }
-//
-//   .btn-install-left,
-//   .btn-install-right {
-//     width: 400px;
-//   }
-// }
 @import "blog";
 @import "tablet-styles";
 @import "mobile-styles";
