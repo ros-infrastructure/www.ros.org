@@ -70,7 +70,6 @@
     width: 100vw;
     border-radius: 10px;
     box-shadow: 1px 1px 1px $gray-light;
-    z-index: 1;
     h2 {
       color: $navy-darker;
       margin-top: 15px;
@@ -134,9 +133,10 @@
       padding: 25px 0 20px 0;
       height: 30px;
       width: 60px;
-      margin-left: 50px;
-      grid-column: 2 / 4;
+      margin-left: 0;
+      grid-column: 1 / 5;
       grid-row: 1 / 2;
+      justify-self: center;
     }
     h6 {
       padding: 0;
@@ -181,10 +181,9 @@
     .release-img-2 {
       transform: scale(0.5);
       margin-top: -80px;
-      margin-left: -10px;
-      grid-column: 2 / 5;
+      grid-column: 3 / 5;
       grid-row: 3 / 4;
-      place-self: start;
+      justify-self: center;
     }
     .btn-install-right {
       align-self: start;
@@ -312,7 +311,6 @@
     width: 100%;
     padding-top: 35px;
     padding-bottom: 25px;
-    // padding: 10px 0 25px 0;
 
     .blog-grid {
       display: block;
@@ -376,7 +374,6 @@
       }
       .btn-subscribe {
         margin-left: 0;
-        width: clamp(250px, 400px, 86vw);
         padding: 10px 0;
         border: 4px solid $aqua;
       }
@@ -430,7 +427,6 @@
   }
 
   .footer-sub {
-    // padding-right: 1px;
     padding-bottom: 5px;
     overflow-y: visible;
     .legal {
@@ -441,16 +437,6 @@
     }
   }
 }
-
-// @media screen and (max-width: 500px) and (min-width: 375px) {
-//   .banner {
-//     background-position: 125% 20%;
-//     grid-template-rows: 45px 60px 25% auto;
-//     h1 {
-//       font-size: 70px;
-//     }
-//   }
-// }
 
 @media screen and (max-width: 330px) {
   .banner {
@@ -464,8 +450,15 @@
     }
   }
 
-  .videos {
-    margin-top: 125px;
+  .news {
+    h2,
+    p {
+      width: 90vw;
+    }
+
+    .btn-event {
+      width: 70vw;
+    }
   }
 
   .install .release-img-2 {
@@ -478,7 +471,7 @@
   }
 
   .blog-newsletter .newsletter-signup .btn-subscribe {
-    width: 268px;
+    width: 254px;
   }
 }
 
@@ -515,5 +508,18 @@
         width: 180px;
       }
     }
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    background-size: 250px;
+    background-position: 110% 20%;
+    h1 {
+      font-size: 68px;
+    }
+  }
+
+  .blog-newsletter .btn-subsribe {
+    width: clamp(250px, 380px, 85vw);
   }
 }

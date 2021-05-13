@@ -1,5 +1,5 @@
 @import "colors";
-
+$header-height: 90px;
 $blog-header-height: 300px;
 
 h1 {
@@ -24,6 +24,7 @@ p {
 }
 
 .blog-wrapper {
+  padding-top: $header-height;
   background-color: $white;
   h1,
   h2 {
@@ -117,6 +118,14 @@ p {
   padding-top: 5%;
   grid-column: 1 / 5;
   grid-row: 1 / 2;
+  h1 {
+    padding-left: 10%;
+    width: 50vw;
+  }
+  h2 {
+    padding-left: 10%;
+    width: 67vw;
+  }
 }
 .bg-light {
   background-color: $gray-lighter;
@@ -183,7 +192,7 @@ p {
   }
 }
 
-.recent-post {
+.blog-sidebar .recent-post {
   max-width: 300px;
   margin-left: 15px;
   margin-top: 25px;
@@ -206,18 +215,21 @@ p {
       text-align: center;
     }
   }
-  .btn-subscribe {
-    margin-top: 10px;
-    width: 96%;
-  }
 }
 
+.blog-sidebar .btn-subscribe {
+  margin-top: 10px;
+  width: 96%;
+}
 @media screen and (max-width: 767px) {
+  .blog-wrapper {
+    padding-top: 0;
+  }
   .bg-lighter,
   .bg-light,
   .bg-dark,
   .bg-photo {
-    height: 40vh;
+    height: 30vh;
     background-position: 20% 50%;
     h1 {
       font-size: 60px;
@@ -259,49 +271,62 @@ p {
   .recent-post {
     padding-left: 10px;
   }
-
-  .newsletter-signup {
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    input {
+  .blog-sidebar {
+    .newsletter-signup {
       width: 90%;
-    }
-    .btn-subscribe {
-      width: 91%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      input {
+        width: 90%;
+      }
+      .btn-subscribe {
+        width: 91%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 993px) and (min-width: 400px) {
+@media screen and (max-width: 993px) and (min-width: 450px) {
+  .blog-wrapper {
+    padding-top: 0;
+  }
   .bg-lighter,
   .bg-light,
   .bg-dark,
   .bg-photo {
-    height: 40vh;
-    background-position: 20% 50%;
-    padding: 0;
+    height: 30vh;
+    padding-left: 7%;
     h1 {
-      margin-top: 50px;
-      font-size: 72px;
-      line-height: 72px;
-      width: 80vw;
-      padding-top: 15px;
+      width: 67vw;
+      padding-top: 55px;
       padding-left: 15px;
     }
     h2 {
-      width: 90vw;
+      width: 67vw;
       font-size: 22px;
       line-height: 24px;
       padding-top: 15px;
       padding-left: 15px;
     }
   }
+
+  .bg-light,
+  .bg-lighter {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+  }
   .blog-grid-main {
     padding: 0;
   }
 }
-
+@media screen and (max-width: 449px) {
+  .blog-grid-main {
+    padding: 0;
+  }
+  .bg-photo {
+  }
+}
 @media screen and (max-width: 320px) {
   .bg-photo,
   .bg-dark,
