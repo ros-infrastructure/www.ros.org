@@ -32,6 +32,7 @@ p {
   h3 {
     width: unset;
     color: $black;
+    padding-bottom: 5px;
     &::after {
       display: none;
     }
@@ -216,8 +217,8 @@ p {
   .bg-light,
   .bg-dark,
   .bg-photo {
-    height: 50vh;
-    background-position: 15% 50%;
+    height: 40vh;
+    background-position: 20% 50%;
     h1 {
       font-size: 60px;
       line-height: 60px;
@@ -272,6 +273,35 @@ p {
   }
 }
 
+@media screen and (max-width: 993px) and (min-width: 400px) {
+  .bg-lighter,
+  .bg-light,
+  .bg-dark,
+  .bg-photo {
+    height: 40vh;
+    background-position: 20% 50%;
+    padding: 0;
+    h1 {
+      margin-top: 50px;
+      font-size: 72px;
+      line-height: 72px;
+      width: 80vw;
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+    h2 {
+      width: 90vw;
+      font-size: 22px;
+      line-height: 24px;
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+  }
+  .blog-grid-main {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .bg-photo,
   .bg-dark,
@@ -282,5 +312,11 @@ p {
       line-height: 50px;
       width: 75vw;
     }
+  }
+
+  .blog-post-main {
+    grid-column: 1 / 4;
+    width: 90vw;
+    padding-left: 15px;
   }
 }
