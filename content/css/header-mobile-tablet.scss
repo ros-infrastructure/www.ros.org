@@ -2,20 +2,25 @@
 @import "colors";
 
 @media screen and (max-width: 992px) {
+  header {
+    width: unset;
+  }
   header,
   header #navbar {
-    overflow-y: hidden;
-    height: $header-height;
     position: fixed;
     z-index: 5;
+    top: 0;
+    height: $header-height;
+    background-color: $navy-darker;
   }
   header #navbar .logo {
     padding-top: 10px;
-    margin-left: 25px;
+    padding-left: 25px;
+    margin: 0;
   }
   header #navbar .logo img {
     height: 20px;
-    width: 80px;
+    width: auto;
   }
 
   header #navbar #dropdown-dots {
@@ -66,6 +71,7 @@
     top: calc(#{$header-height} - 1px);
     right: 0;
     width: 225px;
+    padding: 20px 10px 50px 10px;
     background-color: $navy-darker;
   }
 
@@ -80,7 +86,6 @@
   header #submenu-dots {
     .grid-mob-menu {
       height: 175px;
-      padding-right: 10px;
       display: grid;
       grid-template-columns: 0.3fr 0.7fr;
       grid-template-rows: repeat(4, 1fr);
@@ -88,7 +93,6 @@
     a.twitter-icon,
     a.discourse-icon,
     a.github-icon {
-      overflow-y: hidden;
       height: 25px;
       width: 25px;
     }
@@ -126,6 +130,7 @@
       font-size: 18px;
       font-weight: 900;
       color: $aqua;
+      padding-right: 0;
     }
   }
 
@@ -145,22 +150,23 @@
     grid-column: 2 / 3;
     grid-row: 4 / 4;
   }
-  header #submenu-dots li {
-    margin-right: 30px;
+
+  header #submenu-dots li a::after {
+    right: 15px;
   }
 
   header #submenu-dots {
+    overflow-y: scroll;
     a {
       text-transform: uppercase;
       font-weight: 900;
-      padding-right: 15px;
-      &::after {
-        margin-right: 15px;
-      }
     }
     p {
       color: $white;
       width: 210px;
+    }
+    li.sub-item a {
+      margin-right: -5px;
     }
   }
 }

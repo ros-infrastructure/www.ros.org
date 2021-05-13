@@ -20,7 +20,7 @@
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body id="body" onclick="closeMenus(this)">
+  <body id="body" onclick="closeMenus(this)" onload="whatIsTooBig()">
     <header>
       <div id="navbar">
         <div class="logo">
@@ -38,7 +38,7 @@
             <!-- The submenu for About is at the bottom of the header tag -->
           </li>
           <li class="nav-item"><a href="#">Why ROS</a></li>
-          <li class="nav-item wide-text"><a href="#">Getting Started</a></li>
+          <li class="nav-item"><a href="#">Getting Started</a></li>
           <li class="nav-item"><a href="#">Community</a></li>
           <li class="nav-item"><a href="#">Ecosystem</a></li>
         </ul>
@@ -237,6 +237,22 @@
             responsive: {
               480: {
                 items: 3
+              }
+            }
+          });
+        });
+
+        $(document).ready(function() {
+          $("#blog-image-slider").owlCarousel({
+            items: 3,
+            loop: true,
+            nav: false,
+            dots: false,
+            center: true,
+            padding: 10,
+            responsive: {
+              0: {
+                items: 1
               }
             }
           });
