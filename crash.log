@@ -1,16 +1,16 @@
-Crashlog created at 2021-05-01 00:08:48 +0000
+Crashlog created at 2021-05-14 05:55:21 +0000
 
 ===== MESSAGE:
 
-Sass::SyntaxError: Invalid CSS after "  box-shadow: ": expected expression (e.g. 1px, bold), was ";"
+Sass::SyntaxError: Invalid CSS after "...template-rows: ": expected expression (e.g. 1px, bold), was ";"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /css/stylesheet.scss (:default representation)
+Current item: /css/categories.scss (:default representation)
 
 ===== STACK TRACE:
 
-  0. /css/stylesheet.scss:348
+  0. /css/categories.scss:72
   1. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
   2. /usr/local/bundle/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
   3. /usr/local/bundle/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
