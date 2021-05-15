@@ -113,6 +113,7 @@ header {
   color: $white;
   height: $header-height;
   width: 100%;
+  z-index: 1;
   h1 {
     color: $white;
   }
@@ -124,10 +125,10 @@ header {
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 25px solid $white;
+    border-bottom: 25px solid #fff;
     position: absolute;
-    top: calc(#{$header-height} - 5px);
     left: -5px;
+    top: 14px;
   }
 
   .hide-after::after {
@@ -174,8 +175,8 @@ header {
       height: 14px;
       white-space: nowrap;
       padding-top: 60px;
-      overflow-y: hidden;
       a {
+        position: relative;
         font-weight: 700;
         color: $white;
       }
@@ -230,7 +231,6 @@ header {
         grid-row: 2 / 3;
       }
       .dot-3 {
-        padding-left: 1px;
         grid-column: 3 / 4;
         grid-row: 2 / 3;
       }
@@ -257,7 +257,7 @@ header {
   #submenu-about {
     z-index: 1;
     position: relative;
-    margin-top: 10px;
+    margin-top: $header-height;
     margin-left: 5%;
     width: 90%;
     background-color: $white;
@@ -950,5 +950,6 @@ button.owl-next {
 }
 
 @import "blog";
+@import "categories";
 @import "tablet-styles";
 @import "mobile-styles";
