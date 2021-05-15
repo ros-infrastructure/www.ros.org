@@ -5,6 +5,7 @@ $header-height: 90px;
 .categories-wrapper {
   padding-top: $header-height;
   background-color: $white;
+  height: auto;
 }
 
 .categories {
@@ -27,6 +28,7 @@ $header-height: 90px;
       margin-top: 10px;
       left: 10%;
       width: 210px;
+      z-index: 0;
     }
   }
 }
@@ -43,16 +45,74 @@ $header-height: 90px;
 .btn-ground,
 .btn-manipulator,
 .btn-marine {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
   color: $navy-darker;
   font-weight: 800;
   border: 3px solid $navy-darker;
-  padding: 15px 30px;
-  min-width: 120px;
+  padding: 5px 50px 5px 15px;
+  width: clamp(90px, 100px, 130px);
+  font-size: 14px;
+  line-height: 14px;
+  &:hover {
+    background-color: $navy-darker;
+    color: $white;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+  }
+  span {
+    padding-left: 12.5px;
+    padding-top: 5px;
+  }
 }
 
+.btn-aerial span,
+.btn-ground span,
+.btn-marine span {
+  padding-left: 20px;
+}
+
+.btn-manipulator {
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.btn-manipulator span {
+  padding-left: 9px;
+}
+
+.row-buttons {
+  .aerial {
+    width: 15px;
+    height: 15px;
+    padding-top: 2.5px;
+    transform: rotate(-45deg);
+  }
+  .component {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+  }
+  .ground {
+    width: 20px;
+    height: 20px;
+  }
+  .manipulator {
+    width: 20px;
+    height: 20px;
+  }
+  .marine {
+    width: 20px;
+    height: 20px;
+  }
+}
+.col-tags {
+  padding-bottom: 25px;
+}
 .tag {
   text-transform: uppercase;
   text-align: center;
@@ -65,14 +125,31 @@ $header-height: 90px;
   font-size: 12px;
   line-height: 36px;
   white-space: pre;
+  &:hover {
+    background-color: $navy-darker;
+    color: $white;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+  }
 }
 
+$columns: 4;
+
 .categories-grid {
-  display: grid;
-  grid-template-columns: 22.5% 23.5% 23.5% 23.5%;
-  grid-template-rows: masonry;
-  grid-gap: 2.5%;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  columns: $columns;
+  gap: 1.5em;
+}
+
+.categories-grid > * {
+  -webkit-column-break-inside: avoid;
+
+  break-inside: avoid;
+  margin-bottom: 2em;
 }
 
 .col-tags {
@@ -80,11 +157,18 @@ $header-height: 90px;
 }
 
 .card {
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
   border-radius: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
   height: fit-content;
+  padding-bottom: 10px;
+  margin-bottom: 1.5em;
   h1 {
     padding-top: 10px;
     padding-left: 15px;
@@ -141,6 +225,8 @@ $header-height: 90px;
   grid-template-rows: 24px;
   grid-auto-rows: 24px;
   justify-content: center;
+  margin-bottom: 25px;
+  margin-left: 2.5%;
   h3 {
     color: $aqua;
     font-size: 12px;
@@ -152,33 +238,189 @@ $header-height: 90px;
   }
 }
 
-.ribbon {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-  background-color: $orange;
-  z-index: 0;
-  margin-top: -15px;
-  margin-left: 70%;
-  margin-bottom: 15px;
-
-  // border-bottom: 15px solid $orange;
-  // border-left: 20px solid transparent;
-  // border-right: 20px solid transparent;
-  span {
-    z-index: 1;
-    transform: rotate(45deg);
-    color: $white;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: center;
-    margin-top: 35px;
+@supports (grid-template-rows: masonry) {
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat($columns, 23.5%);
+    grid-template-rows: masonry;
+    grid-column-gap: 3%;
+    padding-bottom: 25px;
+  }
+  .categories-grid > * {
+    margin-bottom: 0;
   }
 
-  .ribbon::after {
-    height: 10px;
-    width: 20px;
-    background-color: $orange;
+  .card {
+    margin-bottom: 1.55em;
+  }
+}
+
+.wrapper-ribbon::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  right: 42px;
+  width: 30px;
+  height: 15px;
+  background: $white;
+}
+.wrapper-ribbon::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right: -25px;
+  width: 15px;
+  height: 30px;
+  background: $white;
+}
+
+.ribbon {
+  width: 15px;
+  height: 110px;
+  position: absolute;
+  top: -33px;
+  right: 15px;
+  background-color: $orange;
+  transform: rotate(-45deg);
+}
+.ribbon::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid $orange;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid $orange;
+  transform: rotate(-90deg);
+}
+.ribbon::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid $orange;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid $orange;
+}
+
+.ribbon-text {
+  z-index: 1;
+  color: $white;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 35px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+
+.row-buttons-mob {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .btn-aerial,
+  .btn-component,
+  .btn-ground,
+  .btn-manipulator,
+  .btn-marine {
+    width: auto;
+    font-size: 10px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .row-buttons {
+    display: none;
+  }
+  .row-buttons-mob {
+    display: block;
+    .aerial {
+      width: 15px;
+      height: 15px;
+      padding-top: 2.5px;
+      transform: rotate(-45deg);
+    }
+    .component {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+    }
+    .ground {
+      width: 20px;
+      height: 20px;
+    }
+    .manipulator {
+      width: 20px;
+      height: 20px;
+    }
+    .marine {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .row-buttons-mob #submenu-categories ul {
+    list-style: none;
+  }
+
+  #submenu-categories ul {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 50px;
+    grid-auto-rows: 50px;
+    justify-content: center;
+  }
+
+  #submenu-categories {
+    .cat-1 {
+      grid-row: 1 / 2;
+    }
+    .cat-2 {
+      grid-row: 2 / 3;
+    }
+    .cat-3 {
+      grid-row: 3 / 4;
+    }
+    .cat-4 {
+      grid-row: 4 / 5;
+    }
+    .cat-5 {
+      grid-row: 5 / 6;
+    }
+
+    .cat-1,
+    .cat-2,
+    .cat-3,
+    .cat-4,
+    .cat-5 {
+      .text {
+        grid-column: 2 / 3;
+      }
+      input {
+        grid-column: 3 / 4;
+      }
+    }
+  }
+
+  #submenu-categories span {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  #submenu-categories input {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .categories-grid {
+    display: grid;
+    grid-template-columns: auto;
   }
 }

@@ -7,11 +7,57 @@ title: Categories
     <h1>ROS Robots</h1>
     <a href="#"><h3>Find Robots by Category</h3></a>
     <div class="row-buttons">
-      <a href="#" class="btn-aerial">aerial</a>
-      <a href="#" class="btn-component">component</a>
-      <a href="#" class="btn-ground">ground</a>
-      <a href="#" class="btn-manipulator">manipulator</a>
-      <a href="#" class="btn-marine">marine</a>
+      <a href="#" class="btn-aerial"
+        ><img src="/images/plane.svg" class="aerial" /><span>aerial</span></a
+      >
+      <a href="#" class="btn-component"
+        ><img src="/images/wrench.svg" class="component" /><span
+          >component</span
+        ></a
+      >
+      <a href="#" class="btn-ground"
+        ><img src="/images/truck.svg" class="ground " /><span>ground</span></a
+      >
+      <a href="#" class="btn-manipulator">
+        <img src="/images/robotic-arm.svg" class="manipulator" /><span
+          >manipulator</span
+        ></a
+      >
+      <a href="#" class="btn-marine"
+        ><img src="/images/sub.svg" class="marine" /><span>marine</span></a
+      >
+    </div>
+    <div class="row-buttons-mob">
+      <div id="submenu-categories">
+        <ul>
+          <li class="cat-1">
+            <img src="/images/plane.svg" class="aerial" /><span class="text"
+              >aerial</span
+            ><input type="checkbox" />
+          </li>
+          <li class="cat-2">
+            <img src="/images/wrench.svg" class="component" /><span class="text"
+              >component</span
+            ><input type="checkbox" />
+          </li>
+          <li class="cat-3">
+            <img src="/images/truck.svg" class="ground" /><span class="text"
+              >ground</span
+            ><input type="checkbox" />
+          </li>
+          <li class="cat-4">
+            <img src="/images/robotic-arm.svg" class="manipulator" /><span
+              class="text"
+              >manipulator</span
+            ><input type="checkbox" />
+          </li>
+          <li class="cat-5">
+            <img src="/images/sub.svg" class="marine" /><span class="text"
+              >marine</span
+            ><input type="checkbox" />
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="categories-grid">
       <div class="col-tags">
@@ -111,26 +157,30 @@ title: Categories
         <h1>Robot Name</h1>
         <h2>Robot Subtitle</h2>
       </div>
-      <div class="card col-3">
-        <div class="ribbon">
-          <span>Best in Show</span>
-        </div>
-        <img src="/images/toy-robots.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-        <div class="card-facts">
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
+      <div class="wrapper-card col-3">
+        <div class="card">
+          <div class="wrapper-ribbon">
+            <div class="ribbon">
+              <div class="ribbon-text">Best in Show</div>
+            </div>
+          </div>
+          <img src="/images/toy-robots.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+          <div class="card-facts">
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+          </div>
         </div>
       </div>
     </div>
