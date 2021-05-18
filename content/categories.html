@@ -29,34 +29,65 @@ title: Categories
     </div>
     <div class="row-buttons-mob">
       <div id="submenu-categories">
-        <ul>
-          <li class="cat-1">
-            <img src="/images/plane.svg" class="aerial" /><span class="text"
-              >aerial</span
-            ><input type="checkbox" />
-          </li>
-          <li class="cat-2">
-            <img src="/images/wrench.svg" class="component" /><span class="text"
-              >component</span
-            ><input type="checkbox" />
-          </li>
-          <li class="cat-3">
-            <img src="/images/truck.svg" class="ground" /><span class="text"
-              >ground</span
-            ><input type="checkbox" />
-          </li>
-          <li class="cat-4">
-            <img src="/images/robotic-arm.svg" class="manipulator" /><span
-              class="text"
-              >manipulator</span
-            ><input type="checkbox" />
-          </li>
-          <li class="cat-5">
-            <img src="/images/sub.svg" class="marine" /><span class="text"
-              >marine</span
-            ><input type="checkbox" />
-          </li>
-        </ul>
+        <div class="menu-collapsed" id="top-item">
+          <div class="text">
+            Find Robots by Category
+            <img
+              src="/images/plus.svg"
+              id="plus"
+              class="plus show-grid"
+              onclick="openCloseCategories()"
+            />
+            <img
+              src="/images/minus.png"
+              id="minus"
+              class="minus hidden"
+              onclick="openCloseCategories()"
+            />
+          </div>
+        </div>
+        <div id="menu-expanded" class="menu-expanded hidden">
+          <div class="submenu-category">
+            <img src="/images/plane.svg" class="aerial" />
+            <p class="text">aerial</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <img src="/images/wrench.svg" class="component" />
+            <p class="text">component</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <img src="/images/truck.svg" class="ground" />
+            <p class="text">ground</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <img src="/images/robotic-arm.svg" class="manipulator" />
+            <p class="text">manipulator</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <img src="/images/sub.svg" class="marine" />
+            <p class="text">marine</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
     <div class="categories-grid">

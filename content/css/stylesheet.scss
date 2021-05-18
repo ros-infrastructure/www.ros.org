@@ -107,13 +107,17 @@ p {
   display: block;
 }
 
+.show-grid {
+  display: grid;
+}
+
 header {
   position: fixed;
   background-color: $navy-darker;
   color: $white;
   height: $header-height;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   h1 {
     color: $white;
   }

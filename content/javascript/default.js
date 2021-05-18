@@ -121,3 +121,38 @@ function openCloseAbout() {
     aboutLinkClasses.add("hide-after");
   }
 }
+
+function openCloseCategories() {
+  let plusList = document.getElementById("plus");
+  let plusClasses = plusList.classList;
+  let minusList = document.getElementById("minus");
+  let minusClasses = minusList.classList;
+  let topItem = document.getElementById("top-item");
+  let topItemClasses = topItem.classList;
+  let expandList = document.getElementById("menu-expanded");
+  let expandClasses = expandList.classList;
+
+  if (minusClasses.contains("hidden")) {
+    plusClasses.remove("show-grid");
+    plusClasses.add("hidden");
+
+    minusClasses.remove("hidden");
+    minusClasses.add("show-grid");
+
+    topItemClasses.add("top-item-text-color");
+
+    expandClasses.remove("hidden");
+    expandClasses.add("show-grid");
+  } else {
+    plusClasses.remove("hidden");
+    plusClasses.add("show-grid");
+
+    minusClasses.remove("show-grid");
+    minusClasses.add("hidden");
+
+    topItemClasses.remove("top-item-text-color");
+
+    expandClasses.remove("show-grid");
+    expandClasses.add("hidden");
+  }
+}
