@@ -138,7 +138,7 @@ $columns: 3;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat($columns, 23.5%);
-  grid-gap: 3%;
+  grid-gap: 2%;
   grid-auto-rows: auto;
   padding-bottom: 25px;
   justify-content: end;
@@ -201,11 +201,16 @@ $columns: 3;
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
-    color: $gray-light;
   }
   a {
     text-decoration: underline;
     color: $aqua;
+  }
+
+  p {
+    color: $gray-light;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -215,14 +220,16 @@ $columns: 3;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 24px;
   grid-auto-rows: 24px;
+  grid-row-gap: 10px;
   justify-content: center;
   margin-bottom: 25px;
   margin-left: 1%;
   h3 {
     color: $aqua;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 12px;
     padding-top: 0;
+    white-space: pre-line;
     &::after {
       display: none;
     }
@@ -234,8 +241,7 @@ $columns: 3;
     display: grid;
     grid-template-columns: repeat($columns, 23.5%);
     grid-template-rows: masonry;
-    grid-column-gap: 3%;
-    // align-tracks: stretch;
+    grid-column-gap: 2%;
     padding-bottom: 25px;
   }
   .categories-grid > * {
@@ -244,10 +250,12 @@ $columns: 3;
 
   .card {
     margin-bottom: 1.55em;
+    order: 2;
   }
   .featured {
     grid-column: auto;
-    grid-row: 1 / 2;
+    grid-row-start: 1;
+    order: 1;
   }
   .col-tags {
     grid-column: 1 / 2;
@@ -255,40 +263,22 @@ $columns: 3;
   }
 }
 
-.wrapper-ribbon::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -25px;
-  right: 42px;
-  width: 30px;
-  height: 15px;
-  background: $white;
-}
-.wrapper-ribbon::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 40px;
-  right: -25px;
-  width: 15px;
-  height: 30px;
-  background: $white;
-}
-
 .ribbon {
-  width: 15px;
-  height: 110px;
+  width: 95px;
+  height: 0;
   position: absolute;
-  top: -33px;
-  right: 15px;
-  background-color: $orange;
-  transform: rotate(-45deg);
+  top: 20px;
+  right: -35px;
+  border-bottom: 17px solid #fb9401;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  transform: rotate(45deg);
 }
 .ribbon::before {
   content: "";
   position: absolute;
-  left: -11px;
+  top: 20px;
+  left: 105px;
   border-left: 5px solid transparent;
   border-right: 5px solid $orange;
   border-top: 5px solid transparent;
@@ -298,23 +288,24 @@ $columns: 3;
 .ribbon::after {
   content: "";
   position: absolute;
-  right: 17px;
-  bottom: 0;
+  right: 103px;
+  bottom: -30px;
   border-left: 5px solid transparent;
   border-right: 5px solid $orange;
   border-top: 5px solid transparent;
   border-bottom: 5px solid $orange;
+  transform: rotate(180deg);
 }
 
 .ribbon-text {
   z-index: 1;
   color: $white;
-  font-size: 8px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 35px;
-  transform: rotate(90deg);
+  margin-top: 3px;
   white-space: nowrap;
 }
 
@@ -322,12 +313,8 @@ $columns: 3;
   display: none;
 }
 
-@media screen and (max-width: 1100px) {
-  .btn-aerial,
-  .btn-component,
-  .btn-ground,
-  .btn-manipulator,
-  .btn-marine {
+@media screen and (max-width: 1200px) {
+  .btn-category {
     width: auto;
     font-size: 10px;
     padding-right: 25px;
@@ -350,28 +337,12 @@ $columns: 3;
     display: block;
     margin-top: 25px;
     .fa-plane {
-      // width: 15px;
-      // height: 15px;
-      // padding-top: 2.5px;
       transform: rotate(-45deg);
-    }
-    .component {
-      width: 20px;
-      height: 20px;
-      transform: rotate(45deg);
-    }
-    .ground {
-      width: 20px;
-      height: 20px;
     }
     .manipulator {
       width: 30px;
       height: 30px;
       padding-left: 10px;
-    }
-    .marine {
-      width: 20px;
-      height: 20px;
     }
   }
 
@@ -418,7 +389,7 @@ $columns: 3;
   #submenu-categories .menu-expanded {
     transition: 1s ease-out;
     grid-column: 1 / 4;
-    z-index: 1;
+    z-index: 2;
     grid-row-gap: 0px;
     background-color: $gray-lighter;
 
@@ -432,7 +403,7 @@ $columns: 3;
           25px,
           50px
         );
-      img {
+      i {
         padding-left: 15px;
         grid-column: 1 / 2;
         width: 50px;
@@ -451,33 +422,19 @@ $columns: 3;
       }
 
       .fa-plane {
-        transform: rotate(-45deg);
+        transform: rotate(220deg);
+        margin-top: -15px;
+        margin-left: -15px;
+        padding-top: 10px;
       }
-      .component {
-        margin-top: -5px;
-        width: 20px;
-        height: 20px;
-        transform: rotate(45deg);
-      }
-      .ground {
-        width: 20px;
-        height: 20px;
-      }
+
       .manipulator {
         width: 30px;
         height: 30px;
         margin-top: -5px;
-        padding-left: 10px;
-      }
-      .marine {
-        width: 20px;
-        height: 20px;
+        padding-left: 15px;
       }
     }
-  }
-
-  .shrink {
-    margin-top: -50px;
   }
   .col-tags {
     display: none;
@@ -509,9 +466,31 @@ $columns: 3;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 993px) {
   .categories-grid {
-    display: grid;
+    justify-content: center;
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .categories {
+    padding-bottom: 15%;
+  }
+  .grid-wrapper {
+    height: 100%;
+    margin-bottom: 10%;
+  }
+  .categories-grid {
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-gap: 0.5%;
+  }
+  .card {
+    order: 2;
+  }
+  .featured {
+    grid-row: auto;
+    order: 1;
   }
 }
