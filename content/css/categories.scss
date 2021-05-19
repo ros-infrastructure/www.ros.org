@@ -105,8 +105,6 @@ $header-height: 90px;
   }
 }
 
-$columns: 3;
-
 // .categories-grid {
 //   padding-left: 23.5%;
 //   padding-top: 0px;
@@ -114,7 +112,7 @@ $columns: 3;
 //   max-width: 100%;
 //   margin: 0 auto;
 //   display: column;
-//   columns: $columns;
+// columns: 3;
 //   gap: 2em;
 // }
 //
@@ -137,22 +135,14 @@ $columns: 3;
 .categories-grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat($columns, 23.5%);
-  grid-gap: 2%;
+  grid-template-columns: repeat(3, 23.5%);
+  grid-column-gap: 2%;
   grid-auto-rows: auto;
   padding-bottom: 25px;
   justify-content: end;
 }
 .categories-grid > * {
   margin-bottom: 0;
-}
-
-.card {
-  margin-bottom: 2em;
-}
-.featured {
-  grid-column: auto;
-  grid-row: 1 / 2;
 }
 
 .card {
@@ -169,16 +159,17 @@ $columns: 3;
   height: fit-content;
   padding-bottom: 10px;
   margin-bottom: 1.5em;
+  order: 2;
   h1 {
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 10%;
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
     letter-spacing: 0.5px;
   }
   h2 {
-    padding-left: 15px;
+    padding-left: 10%;
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
@@ -221,6 +212,7 @@ $columns: 3;
   grid-template-rows: 24px;
   grid-auto-rows: 24px;
   grid-row-gap: 10px;
+  grid-column-gap: 3px;
   justify-content: center;
   margin-bottom: 25px;
   margin-left: 1%;
@@ -236,10 +228,14 @@ $columns: 3;
   }
 }
 
+.featured {
+  order: 1;
+}
+
 @supports (grid-template-rows: masonry) {
   .categories-grid {
     display: grid;
-    grid-template-columns: repeat($columns, 23.5%);
+    grid-template-columns: repeat(3, 23.5%);
     grid-template-rows: masonry;
     grid-column-gap: 2%;
     padding-bottom: 25px;
@@ -253,14 +249,12 @@ $columns: 3;
     order: 2;
   }
   .featured {
-    grid-column: auto;
-    grid-row-start: 1;
     order: 1;
   }
-  .col-tags {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+  //   .col-tags {
+  //     grid-column: 1 / 2;
+  //     grid-row: 1 / 2;
+  //   }
 }
 
 .ribbon {
