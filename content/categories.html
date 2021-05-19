@@ -7,24 +7,22 @@ title: Categories
     <h1>ROS Robots</h1>
     <a href="#"><h3>Find Robots by Category</h3></a>
     <div class="row-buttons">
-      <a href="#" class="btn-aerial"
-        ><img src="/images/plane.svg" class="aerial" /><span>aerial</span></a
+      <a href="#" class="btn-category btn-aerial"
+        ><i class="fas fa-plane"></i><span>aerial</span></a
       >
-      <a href="#" class="btn-component"
-        ><img src="/images/wrench.svg" class="component" /><span
-          >component</span
-        ></a
+      <a href="#" class="btn-category"
+        ><i class="fas fa-wrench"></i><span>component</span></a
       >
-      <a href="#" class="btn-ground"
-        ><img src="/images/truck.svg" class="ground " /><span>ground</span></a
+      <a href="#" class="btn-category"
+        ><i class="fas fa-truck-monster"></i><span>ground</span></a
       >
-      <a href="#" class="btn-manipulator">
+      <a href="#" class="btn-category btn-manipulator">
         <img src="/images/robotic-arm.svg" class="manipulator" /><span
           >manipulator</span
         ></a
       >
-      <a href="#" class="btn-marine"
-        ><img src="/images/sub.svg" class="marine" /><span>marine</span></a
+      <a href="#" class="btn-category"
+        ><i class="fas fa-ship"></i><span>marine</span></a
       >
     </div>
     <div class="row-buttons-mob">
@@ -48,7 +46,7 @@ title: Categories
         </div>
         <div id="menu-expanded" class="menu-expanded hidden">
           <div class="submenu-category">
-            <img src="/images/plane.svg" class="aerial" />
+            <i class="fas fa-plane fa-rotate-90"></i>
             <p class="text">aerial</p>
             <label class="checkbox-container">
               <input type="checkbox" value="0" class="checkbox" />
@@ -56,7 +54,7 @@ title: Categories
             </label>
           </div>
           <div class="submenu-category">
-            <img src="/images/wrench.svg" class="component" />
+            <i class="fas fa-wrench"></i>
             <p class="text">component</p>
             <label class="checkbox-container">
               <input type="checkbox" value="0" class="checkbox" />
@@ -64,7 +62,7 @@ title: Categories
             </label>
           </div>
           <div class="submenu-category">
-            <img src="/images/truck.svg" class="ground" />
+            <i class="fas fa-truck-monster"></i>
             <p class="text">ground</p>
             <label class="checkbox-container">
               <input type="checkbox" value="0" class="checkbox" />
@@ -80,7 +78,7 @@ title: Categories
             </label>
           </div>
           <div class="submenu-category">
-            <img src="/images/sub.svg" class="marine" />
+            <i class="fas fa-ship"></i>
             <p class="text">marine</p>
             <label class="checkbox-container">
               <input type="checkbox" value="0" class="checkbox" />
@@ -90,7 +88,7 @@ title: Categories
         </div>
       </div>
     </div>
-    <div class="categories-grid">
+    <div class="grid-wrapper">
       <div class="col-tags">
         <a class="tag">Tag Long</a>
         <a class="tag">Tag 2</a>
@@ -125,71 +123,81 @@ title: Categories
         <a class="tag">Tag 14</a>
         <a class="tag">Tag 15</a>
       </div>
-      <div class="card col-1">
-        <img src="/images/not-the-droid-im-looking-for.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-        <div class="card-facts">
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-          <h3>100kg payload</h3>
-        </div>
-      </div>
-      <div class="card col-2">
-        <img src="/images/rover.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-      </div>
-      <div class="card col-3">
-        <img src="/images/bot.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-        <div class="card-description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <a href="#">Read More...</a>
-        </div>
-      </div>
-      <div class="card col-1">
-        <img src="/images/realistic.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-        <div class="card-description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <a href="#">Read More...</a>
-        </div>
-      </div>
-      <div class="card col-2">
-        <img src="/images/arm.png" />
-        <h1>Robot Name</h1>
-        <h2>Robot Subtitle</h2>
-      </div>
-      <div class="wrapper-card col-3">
+      <div class="categories-grid" id="categories-grid">
         <div class="card">
+          <img src="/images/not-the-droid-im-looking-for.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+          <div class="card-facts">
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+            <h3>100kg payload</h3>
+          </div>
+        </div>
+        <div class="card featured">
+          <div class="wrapper-ribbon">
+            <div class="ribbon">
+              <div class="ribbon-text">Best in Show</div>
+            </div>
+          </div>
+          <img src="/images/rover.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+        </div>
+        <div class="card">
+          <img src="/images/bot.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+          <div class="card-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#">Read More...</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/realistic.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+          <div class="card-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#">Read More...</a>
+          </div>
+        </div>
+        <div class="card featured">
+          <div class="wrapper-ribbon">
+            <div class="ribbon">
+              <div class="ribbon-text">Best in Show</div>
+            </div>
+          </div>
+          <img src="/images/arm.png" />
+          <h1>Robot Name</h1>
+          <h2>Robot Subtitle</h2>
+        </div>
+        <div class="card featured">
           <div class="wrapper-ribbon">
             <div class="ribbon">
               <div class="ribbon-text">Best in Show</div>

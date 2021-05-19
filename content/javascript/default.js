@@ -129,6 +129,8 @@ function openCloseCategories() {
   let minusClasses = minusList.classList;
   let topItem = document.getElementById("top-item");
   let topItemClasses = topItem.classList;
+  let submenuList = document.getElementById("submenu-categories");
+  let submenuClasses = submenuList.classList;
   let expandList = document.getElementById("menu-expanded");
   let expandClasses = expandList.classList;
 
@@ -141,6 +143,8 @@ function openCloseCategories() {
 
     topItemClasses.add("top-item-text-color");
 
+    // submenuClasses.add("shrink");
+
     expandClasses.remove("hidden");
     expandClasses.add("show-grid");
   } else {
@@ -152,7 +156,23 @@ function openCloseCategories() {
 
     topItemClasses.remove("top-item-text-color");
 
+    // submenuClasses.remove("shrink");
+
     expandClasses.remove("show-grid");
     expandClasses.add("hidden");
+  }
+}
+
+// based on the masonry design from https://css-tricks.com/a-lightweight-masonry-solution/
+function gridMasonry() {
+  let grid = document.getElementById("categories-grid");
+  console.log(grid);
+  if (grid.length && getComputedStyle(grid[0]).gridTemplateRows !== "masonry") {
+    grid => ({
+      _el: grid,
+      gap: parseFloat(getComputedStyle(grid).gridRowGap),
+      items: [...grid.childNodes].filter(c => c.nodeType === 1),
+      ncol: 0
+    });
   }
 }

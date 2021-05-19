@@ -1,52 +1,60 @@
-Crashlog created at 2021-05-14 05:55:21 +0000
+Crashlog created at 2021-05-19 00:12:21 +0000
 
 ===== MESSAGE:
 
-Sass::SyntaxError: Invalid CSS after "...template-rows: ": expected expression (e.g. 1px, bold), was ";"
+Nanoc::Core::Errors::InternalInconsistency: File raw_path did not appear in time (10.0s): /usr/src/ros/output/css/categories.css
 
 ===== ITEM BEING COMPILED:
 
-Current item: /css/categories.scss (:default representation)
+Current item: /css/stylesheet.scss (:default representation)
 
 ===== STACK TRACE:
 
-  0. /css/categories.scss:72
-  1. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-  2. /usr/local/bundle/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
-  3. /usr/local/bundle/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
-  4. /usr/local/bundle/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
-  5. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
-  6. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
-  7. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
-  8. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-  9. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-  10. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-  11. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-  12. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-  13. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-  14. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-  15. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-  16. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-  17. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-  18. /usr/local/bundle/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-  19. /usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-  20. /usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
-  21. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:36:in `render'
-  22. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:8:in `css'
-  23. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:57:in `run'
-  24. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  25. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/executor.rb:22:in `filter'
-  26. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  27. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  28. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `each'
-  29. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `each'
-  30. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  31. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  32. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  33. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
-  34. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  35. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  36. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  0. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_item_rep_view.rb:37:in `raw_path'
+  1. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/filter.rb:264:in `each'
+  2. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/filter.rb:264:in `flat_map'
+  3. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/filter.rb:264:in `depend_on'
+  4. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass/importer.rb:27:in `find_relative'
+  5. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/import_node.rb:48:in `import'
+  6. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+  7. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+  8. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+  9. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+  10. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+  11. /usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+  12. /usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+  13. /usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+  14. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+  15. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+  16. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+  17. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+  18. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+  19. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+  20. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+  21. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+  22. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+  23. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+  24. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+  25. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+  26. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+  27. /usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+  28. /usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+  29. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:36:in `render'
+  30. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:8:in `css'
+  31. /usr/local/bundle/gems/nanoc-4.12.1/lib/nanoc/filters/sass.rb:57:in `run'
+  32. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  33. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/executor.rb:22:in `filter'
+  34. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  35. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  36. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `each'
+  37. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/action_sequence.rb:49:in `each'
+  38. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  39. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  40. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  41. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
+  42. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  43. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  44. /usr/local/bundle/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 

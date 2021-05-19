@@ -40,11 +40,7 @@ $header-height: 90px;
   justify-content: space-between;
 }
 
-.btn-aerial,
-.btn-component,
-.btn-ground,
-.btn-manipulator,
-.btn-marine {
+.btn-category {
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -54,7 +50,7 @@ $header-height: 90px;
   color: $navy-darker;
   font-weight: 800;
   border: 3px solid $navy-darker;
-  padding: 5px 50px 5px 15px;
+  padding: 5px 75px 5px 10px;
   width: clamp(90px, 100px, 130px);
   font-size: 14px;
   line-height: 14px;
@@ -65,50 +61,26 @@ $header-height: 90px;
     transition-duration: 0.2s;
   }
   span {
-    padding-left: 12.5px;
+    padding-left: 30px;
     padding-top: 5px;
+  }
+  .fas {
+    padding-top: 3px;
   }
 }
 
-.btn-aerial span,
-.btn-ground span,
-.btn-marine span {
-  padding-left: 20px;
+.btn-aerial .fas {
+  transform: rotate(-135deg) !important;
+  margin-top: -5px;
 }
 
-.btn-manipulator {
-  padding-left: 10px;
-  padding-right: 60px;
+.manipulator {
+  height: 20px;
+  margin-left: -5px;
 }
 
 .btn-manipulator span {
-  padding-left: 9px;
-}
-
-.row-buttons {
-  .aerial {
-    width: 15px;
-    height: 15px;
-    padding-top: 2.5px;
-    transform: rotate(-45deg);
-  }
-  .component {
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-  }
-  .ground {
-    width: 20px;
-    height: 20px;
-  }
-  .manipulator {
-    width: 20px;
-    height: 20px;
-  }
-  .marine {
-    width: 20px;
-    height: 20px;
-  }
+  padding-left: 15px;
 }
 .col-tags {
   padding-bottom: 25px;
@@ -133,30 +105,58 @@ $header-height: 90px;
   }
 }
 
-$columns: 4;
+$columns: 3;
 
-.categories-grid {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-  columns: $columns;
-  gap: 1.5em;
-}
+// .categories-grid {
+//   padding-left: 23.5%;
+//   padding-top: 0px;
+//   padding-bottom: 50px;
+//   max-width: 100%;
+//   margin: 0 auto;
+//   display: column;
+//   columns: $columns;
+//   gap: 2em;
+// }
+//
+// .categories-grid > * {
+//   -webkit-column-break-inside: avoid;
+//   break-inside: avoid;
+//   margin-bottom: 2em;
+// }
 
-.categories-grid > * {
-  -webkit-column-break-inside: avoid;
-
-  break-inside: avoid;
-  margin-bottom: 2em;
+.grid-wrapper {
+  position: relative;
+  padding-top: 25px;
 }
 
 .col-tags {
-  grid-column: 1 / 2;
+  width: 20%;
+  position: absolute;
+}
+
+.categories-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat($columns, 23.5%);
+  grid-gap: 3%;
+  grid-auto-rows: auto;
+  padding-bottom: 25px;
+  justify-content: end;
+}
+.categories-grid > * {
+  margin-bottom: 0;
 }
 
 .card {
+  margin-bottom: 2em;
+}
+.featured {
+  grid-column: auto;
+  grid-row: 1 / 2;
+}
+
+.card {
+  grid-column: auto;
   position: relative;
   width: 100%;
   -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
@@ -193,15 +193,6 @@ $columns: 4;
   .card-description {
     padding-left: 15px;
   }
-  .col-1 {
-    grid-column: 2 / 3;
-  }
-  .col-2 {
-    grid-column: 3 / 4;
-  }
-  .col-3 {
-    grid-column: 4 / 5;
-  }
 }
 .card-description {
   padding-bottom: 10px;
@@ -226,7 +217,7 @@ $columns: 4;
   grid-auto-rows: 24px;
   justify-content: center;
   margin-bottom: 25px;
-  margin-left: 2.5%;
+  margin-left: 1%;
   h3 {
     color: $aqua;
     font-size: 12px;
@@ -244,6 +235,7 @@ $columns: 4;
     grid-template-columns: repeat($columns, 23.5%);
     grid-template-rows: masonry;
     grid-column-gap: 3%;
+    // align-tracks: stretch;
     padding-bottom: 25px;
   }
   .categories-grid > * {
@@ -252,6 +244,14 @@ $columns: 4;
 
   .card {
     margin-bottom: 1.55em;
+  }
+  .featured {
+    grid-column: auto;
+    grid-row: 1 / 2;
+  }
+  .col-tags {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 }
 
@@ -349,10 +349,10 @@ $columns: 4;
   .row-buttons-mob {
     display: block;
     margin-top: 25px;
-    .aerial {
-      width: 15px;
-      height: 15px;
-      padding-top: 2.5px;
+    .fa-plane {
+      // width: 15px;
+      // height: 15px;
+      // padding-top: 2.5px;
       transform: rotate(-45deg);
     }
     .component {
@@ -365,8 +365,9 @@ $columns: 4;
       height: 20px;
     }
     .manipulator {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
+      padding-left: 10px;
     }
     .marine {
       width: 20px;
@@ -449,9 +450,7 @@ $columns: 4;
         width: 50px;
       }
 
-      .aerial {
-        width: 15px;
-        width: 15px;
+      .fa-plane {
         transform: rotate(-45deg);
       }
       .component {
@@ -465,8 +464,10 @@ $columns: 4;
         height: 20px;
       }
       .manipulator {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+        padding-left: 10px;
       }
       .marine {
         width: 20px;
@@ -475,6 +476,9 @@ $columns: 4;
     }
   }
 
+  .shrink {
+    margin-top: -50px;
+  }
   .col-tags {
     display: none;
   }
@@ -495,7 +499,6 @@ $columns: 4;
     position: absolute;
     margin-top: 1px;
     margin-left: 1px;
-    // background-color: $black;
     background-color: $white;
     height: 8px;
     width: 8px;
