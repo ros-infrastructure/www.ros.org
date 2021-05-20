@@ -30,19 +30,17 @@ title: Categories
         <div class="menu-collapsed" id="top-item">
           <div class="text">
             Find Robots by Category
-            <img
-              src="/images/plus.svg"
-              id="plus"
-              class="plus show-grid"
-              onclick="openCloseCategories()"
-            />
-            <img
-              src="/images/minus.png"
-              id="minus"
-              class="minus hidden"
-              onclick="openCloseCategories()"
-            />
           </div>
+          <i
+            class="fas fa-plus show-grid"
+            id="plus"
+            onclick="openCloseCategories()"
+          ></i>
+          <i
+            class="fas fa-minus hidden"
+            id="minus"
+            onclick="openCloseCategories()"
+          ></i>
         </div>
         <div id="menu-expanded" class="menu-expanded hidden">
           <div class="submenu-category">
@@ -125,9 +123,11 @@ title: Categories
       </div>
       <div class="categories-grid" id="categories-grid">
         <div class="grid-item">
-          <div class="card">
-            <img src="/images/not-the-droid-im-looking-for.png" />
-            <h1>Robot Name</h1>
+          <div class="card featured">
+            <a href="/robot_description"
+              ><img src="/images/not-the-droid-im-looking-for.png"
+            /></a>
+            <a href="/robot_description"><h1>Robot Name</h1></a>
             <h2>Robot Subtitle</h2>
             <div class="card-facts">
               <h3>100kg payload</h3>
@@ -146,7 +146,7 @@ title: Categories
           </div>
         </div>
         <div class="grid-item">
-          <div class="card featured">
+          <div class="card">
             <img src="/images/rover.png" />
             <h1>Robot Name</h1>
             <h2>Robot Subtitle</h2>
