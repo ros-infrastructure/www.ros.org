@@ -107,13 +107,18 @@ p {
   display: block;
 }
 
+.show-grid {
+  display: grid;
+}
+
 header {
   position: fixed;
+  top: 0;
   background-color: $navy-darker;
   color: $white;
   height: $header-height;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   h1 {
     color: $white;
   }
@@ -140,6 +145,7 @@ header {
     height: $header-height;
     width: 100vw;
     display: flex;
+    top: 0;
     overflow-y: hidden;
     .logo {
       padding-top: 25px;
@@ -378,7 +384,7 @@ header {
 
 .banner {
   overflow: hidden;
-
+  margin-top: $header-height;
   color: $white;
   height: auto;
   width: unset;

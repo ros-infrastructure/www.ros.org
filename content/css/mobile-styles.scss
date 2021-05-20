@@ -16,11 +16,10 @@
   }
 
   #main {
-    margin-top: $header-height;
+    margin-top: calc(#{0 - $header-height});
   }
 
   .content-wrapper {
-    overflow-x: hidden;
     height: 100%;
     width: 100%;
   }
@@ -36,8 +35,6 @@
     grid-column-gap: 10px;
     h1 {
       padding-top: 10px;
-      overflow-x: visible;
-      overflow-y: hidden;
       margin-left: 10px;
       font-size: 60px;
       line-height: 60px;
@@ -512,10 +509,12 @@
 }
 @media screen and (max-width: 500px) {
   .banner {
-    background-size: 250px;
-    background-position: 110% 20%;
+    background-size: 300px;
+    background-position: 110% 30%;
+    grid-template-columns: auto;
     h1 {
-      font-size: 68px;
+      font-size: 20vw;
+      line-height: 20vw;
     }
   }
 

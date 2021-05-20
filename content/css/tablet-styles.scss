@@ -10,6 +10,7 @@
 
   #main {
     position: static;
+    margin-top: calc(#{0 - $header-height});
   }
 
   .banner {
@@ -441,9 +442,22 @@
   }
 }
 
-@media screen and (max-width: 1100px) and (min-width: 900px) {
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
   .banner {
-    background-position: 110% 10%;
+    background-position: 100% 60%;
+    h1 {
+      width: 700px;
+    }
+    p {
+      padding-top: 0;
+      width: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+  .banner {
+    background-position: 110% -25%;
     h1 {
       width: 700px;
     }
@@ -490,12 +504,25 @@
 }
 
 @media screen and (max-width: 993px) and (min-width: 600px) {
+  .banner {
+    background-position: 100% 20%;
+    p {
+      margin-top: 25px;
+    }
+  }
   .install .release-img-2 {
     margin-left: -80px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 601px) {
+  .banner p {
+    font-weight: 400;
+    padding-top: 100px;
+    /* padding-left: 10px; */
+    width: 340px;
+    grid-row: 5 / 9;
+  }
   .install {
     grid-template-columns: 150px 150px 1px 150px 150px;
     .install-text-1 p {
@@ -526,7 +553,7 @@
 @media screen and (max-width: 601px) and (min-width: 500px) {
   #main .banner {
     background-size: 300px;
-    background-position: 110% 10%;
+    background-position: 110% 9%;
     grid-template-columns: 65% 35%;
     h1 {
       padding-left: 15px;
@@ -540,7 +567,7 @@
 }
 @media screen and (max-width: 499px) and (min-width: 400px) {
   #main .banner {
-    background-position: 110% 10%;
+    background-position: 110% 30%;
     p {
       padding-top: 125px;
       width: 375px;
