@@ -344,7 +344,7 @@ header {
   }
 
   #submenu-dots li a::after {
-    content: url("images/submenu-underline.png");
+    content: "";
     width: 50px;
     height: 5px;
     position: absolute;
@@ -402,7 +402,7 @@ header {
     grid-row: 3 / 5;
   }
   h1::after {
-    content: url("images/submenu-underline.png");
+    content: "";
     color: $navy-darker;
     width: 100px;
     height: 10px;
@@ -440,10 +440,10 @@ h3 {
   color: $navy-darker;
 }
 h3::after {
-  content: url("images/submenu-underline.png");
+  content: "";
   width: 100px;
   position: absolute;
-  padding-top: 10px;
+  padding-top: 35px;
   border-bottom: solid;
   border-color: $orange;
   margin-left: -125px;

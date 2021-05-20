@@ -212,23 +212,23 @@ function openCloseCategories() {
 //   }
 // }
 
-function highlightFeatured() {
-  let featured = document.getElementsByClassName("featured");
-  if (featured) {
-    var i;
-    for (i = 0; i <= featured.length; i++) {
-      let ribbon = document.createElement("div");
-      ribbon.classList.add("ribbon");
-
-      let ribbonText = document.createElement("div");
-      ribbonText.classList.add("ribbon-text");
-      ribbonText.append("featured");
-
-      ribbon.appendChild(ribbonText);
-      featured[i].appendChild(ribbon);
-    }
-  }
-}
+// window.onload = () => {
+//   let featured = document.getElementsByClassName("featured");
+//   if (featured) {
+//     let i;
+//     for (i = 0; i < featured.length; i++) {
+//       let ribbon = document.createElement("div");
+//       ribbon.classList.add("ribbon");
+//
+//       let ribbonText = document.createElement("div");
+//       ribbonText.classList.add("ribbon-text");
+//       ribbonText.append("featured");
+//
+//       ribbon.appendChild(ribbonText);
+//       featured[i].appendChild(ribbon);
+//     }
+//   }
+// };
 // based on: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb
 // function resizeGridItem() {
 //   grid = document.getElementsByClassName("categories-grid")[0];
@@ -270,3 +270,30 @@ function highlightFeatured() {
 //   card = instance.elements[0];
 //   resizeGridCard(card);
 // }
+
+window.onload = () => {
+  // add ribbon to `.featured` grid items
+  let featured = document.getElementsByClassName("featured");
+  if (featured) {
+    let i;
+    for (i = 0; i < featured.length; i++) {
+      let ribbon = document.createElement("div");
+      ribbon.classList.add("ribbon");
+
+      let ribbonText = document.createElement("div");
+      ribbonText.classList.add("ribbon-text");
+      ribbonText.append("featured");
+
+      ribbon.appendChild(ribbonText);
+      featured[i].appendChild(ribbon);
+    }
+  }
+
+  // grid grid masonry
+  const grid = document.querySelector(".categories-grid");
+  console.log(grid);
+  const masonry = new Masonry(grid, {
+    itemSelector: ".grid-item",
+    horizontalOrder: false
+  });
+};

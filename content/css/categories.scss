@@ -144,8 +144,15 @@ $header-height: 90px;
 .categories-grid > * {
   margin-bottom: 0;
 }
-.grid-sizer {
-  width: 23.5%;
+.categories-grid {
+  display: block;
+  margin-left: 0;
+  padding-left: 23%;
+}
+
+.grid-item {
+  width: 23%;
+  padding-right: 2.5%;
 }
 
 .card {
@@ -156,7 +163,7 @@ $header-height: 90px;
   -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
   border-radius: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 1);
   border-top-color: rgba(0, 0, 0, 0.1);
   border-bottom-color: rgba(0, 0, 0, 0.1);
   height: fit-content;
@@ -249,6 +256,7 @@ $header-height: 90px;
   }
 
   .card {
+    width: 100%;
     margin-bottom: 1.55em;
     order: 2;
   }
@@ -272,7 +280,7 @@ $header-height: 90px;
   content: "";
   position: absolute;
   top: 20px;
-  left: 105px;
+  left: 104px;
   border-left: 5px solid transparent;
   border-right: 5px solid $orange;
   border-top: 5px solid transparent;
@@ -458,12 +466,14 @@ $header-height: 90px;
   .checkbox-container input:checked + .custom-checkmark {
     background-color: $black;
   }
-}
 
-@media screen and (max-width: 993px) {
   .categories-grid {
-    justify-content: center;
-    grid-template-columns: auto;
+    padding-left: 1%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid-item {
+    width: 30%;
   }
 }
 
@@ -479,6 +489,10 @@ $header-height: 90px;
     max-width: 100%;
     grid-template-columns: auto;
     grid-gap: 0.5%;
+    padding-left: 0;
+  }
+  .grid-item {
+    width: 100%;
   }
   .card {
     order: 2;
