@@ -157,120 +157,6 @@ function openCloseCategories() {
   }
 }
 
-// based on the masonry design from https://css-tricks.com/a-lightweight-masonry-solution/
-
-// function gridMasonry() {
-//   let grids = document.getElementById("categories-grid");
-//   if (
-//     grids.length &&
-//     getComputedStyle(grids[0]).gridTemplateRows !== "masonry"
-//   ) {
-//     grids = grids.map(grid => ({
-//       _el: grid,
-//       gap: parseFloat(getComputedStyle(grid).gridRowGap),
-//       items: [...grid.childNodes].filter(c => c.nodeType === 1),
-//       ncol: 0
-//     }));
-//
-//     function layout() {
-//       grids.forEach(grid => {
-//         /* get the post relayout number of columns */
-//         let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(" ")
-//           .length;
-//
-//         /* if the number of columns has changed */
-//         if (grid.ncol !== ncol) {
-//           /* update number of columns */
-//           grid.ncol = ncol;
-//
-//           /* revert to initial positioning, no margin */
-//           grid.items.forEach(c => c.style.removeProperty("margin-top"));
-//
-//           /* if we have more than one column */
-//           if (grid.ncol > 1) {
-//             grid.items.slice(ncol).forEach((c, i) => {
-//               let prev_fin = grid.items[i].getBoundingClientRect()
-//                   .bottom /* bottom edge of item above */,
-//                 curr_ini = c.getBoundingClientRect()
-//                   .top; /* top edge of current item */
-//
-//               c.style.marginTop = `${prev_fin + grid.gap - curr_ini}px`;
-//             });
-//           }
-//         }
-//       });
-//     }
-//
-//     addEventListener(
-//       "load",
-//       e => {
-//         layout(); /* initial load */
-//         addEventListener("resize", layout, false); /* on resize */
-//       },
-//       false
-//     );
-//   }
-// }
-
-// window.onload = () => {
-//   let featured = document.getElementsByClassName("featured");
-//   if (featured) {
-//     let i;
-//     for (i = 0; i < featured.length; i++) {
-//       let ribbon = document.createElement("div");
-//       ribbon.classList.add("ribbon");
-//
-//       let ribbonText = document.createElement("div");
-//       ribbonText.classList.add("ribbon-text");
-//       ribbonText.append("featured");
-//
-//       ribbon.appendChild(ribbonText);
-//       featured[i].appendChild(ribbon);
-//     }
-//   }
-// };
-// based on: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb
-// function resizeGridItem() {
-//   grid = document.getElementsByClassName("categories-grid")[0];
-//   console.log(grid);
-//   card = document.querySelector(".card");
-//   console.log(card);
-//   rowHeight = parseInt(
-//     window.getComputedStyle(grid).getPropertyValue("grid-auto-rows")
-//   );
-//   console.log(rowHeight);
-//   rowGap = parseInt(
-//     window.getComputedStyle(grid).getPropertyValue("grid-row-gap")
-//   );
-//   console.log(rowGap);
-//   rowSpan = Math.ceil(
-//     (card.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap)
-//   );
-//   console.log(rowSpan);
-//   card.style.gridRowEnd = "span " + rowSpan;
-// }
-//
-// function resizeAllGridItems() {
-//   allItems = document.getElementsByClassName("card");
-//   for (x = 0; x < allItems.length; x++) {
-//     resizeGridItem(allItems[x]);
-//   }
-// }
-//
-// window.onload = resizeAllGridItems();
-//
-// window.addEventListener("resize", resizeAllGridItems);
-//
-// allItems = document.getElementsByClassName("card");
-// for (x = 0; x < allItems.length; x++) {
-//   imagesLoaded(allItems[x], resizeInstance);
-// }
-//
-// function resizeInstance(instance) {
-//   card = instance.elements[0];
-//   resizeGridCard(card);
-// }
-
 window.onload = () => {
   // add ribbon to `.featured` grid items
   let featured = document.getElementsByClassName("featured");
@@ -289,7 +175,7 @@ window.onload = () => {
     }
   }
 
-  // grid grid masonry
+  // initialize grid masonry
   const grid = document.querySelector(".categories-grid");
   console.log(grid);
   const masonry = new Masonry(grid, {
