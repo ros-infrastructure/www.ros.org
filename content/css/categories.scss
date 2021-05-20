@@ -135,7 +135,7 @@ $header-height: 90px;
 .categories-grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 23.5%);
+  grid-template-columns: repeat(3, 24%);
   grid-column-gap: 2%;
   grid-auto-rows: auto;
   padding-bottom: 25px;
@@ -143,6 +143,9 @@ $header-height: 90px;
 }
 .categories-grid > * {
   margin-bottom: 0;
+}
+.grid-sizer {
+  width: 23.5%;
 }
 
 .card {
@@ -194,6 +197,7 @@ $header-height: 90px;
     font-weight: 500;
   }
   a {
+    padding-left: 5%;
     text-decoration: underline;
     color: $aqua;
   }

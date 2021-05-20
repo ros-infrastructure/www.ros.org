@@ -281,6 +281,15 @@
             }
           });
         });
+
+        $(document).ready(function() {
+          $(".categories-grid").masonry({
+            itemSelector: ".grid-item",
+            gutter: 20,
+            horizontalOrder: true,
+            columnWidth: ".grid-sizer"
+          });
+        });
       </script>
     </footer>
   </body>
