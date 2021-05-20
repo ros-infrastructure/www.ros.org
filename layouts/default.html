@@ -26,7 +26,7 @@
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body id="body" onclick="closeMenus(this)" onload="highlightFeatured()">
+  <body id="body" onclick="closeMenus(this)">
     <header>
       <div id="navbar">
         <div class="logo">
@@ -279,15 +279,6 @@
                 items: 3
               }
             }
-          });
-        });
-
-        $(document).ready(function() {
-          $(".categories-grid").masonry({
-            itemSelector: ".grid-item",
-            gutter: 20,
-            horizontalOrder: true,
-            columnWidth: ".grid-sizer"
           });
         });
       </script>
