@@ -1,15 +1,3 @@
-// width debugger
-
-function whatIsTooBig() {
-  var docWidth = document.documentElement.offsetWidth;
-
-  [].forEach.call(document.querySelectorAll("*"), function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  });
-}
-
 function closeMenus(menuId, event) {
   let dots = document.getElementById("submenu-dots");
   let topDot = document.getElementById("dot-top");
@@ -177,9 +165,21 @@ window.onload = () => {
 
   // initialize grid masonry
   const grid = document.querySelector(".categories-grid");
-  console.log(grid);
-  const masonry = new Masonry(grid, {
-    itemSelector: ".grid-item",
-    horizontalOrder: false
-  });
+  if (grid) {
+    const masonry = new Masonry(grid, {
+      itemSelector: ".grid-item",
+      horizontalOrder: false
+    });
+  }
+
+  // width debugger
+  // function whatIsTooBig() {
+  //   var docWidth = document.documentElement.offsetWidth;
+  //
+  //   [].forEach.call(document.querySelectorAll("*"), function(el) {
+  //     if (el.offsetWidth > docWidth) {
+  //       console.log(el);
+  //     }
+  //   });
+  // }
 };

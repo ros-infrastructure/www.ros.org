@@ -281,6 +281,26 @@
             }
           });
         });
+
+        $(document).ready(function() {
+          $("#description-image-slider").owlCarousel({
+            items: 3,
+            loop: true,
+            nav: false,
+            dots: false,
+            center: true,
+            padding: 20,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              480: {
+                items: 3
+              }
+            }
+          });
+        });
       </script>
     </footer>
   </body>
