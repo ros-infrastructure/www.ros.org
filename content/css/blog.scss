@@ -229,13 +229,13 @@ p {
   .bg-light,
   .bg-dark,
   .bg-photo {
-    height: 30vh;
+    height: 35vh;
     background-position: 20% 50%;
+    padding-top: 35%;
     h1 {
-      font-size: 60px;
-      line-height: 60px;
-      width: 67vw;
-      padding-top: 15px;
+      font-size: 55px;
+      line-height: 1;
+      width: 80vw;
       padding-left: 15px;
     }
     h2 {
@@ -294,15 +294,15 @@ p {
   .bg-light,
   .bg-dark,
   .bg-photo {
-    height: 30vh;
+    height: 40vh;
+    padding-top: 35%;
     padding-left: 7%;
     h1 {
-      width: 67vw;
-      padding-top: 55px;
+      width: 75vw;
       padding-left: 15px;
     }
     h2 {
-      width: 67vw;
+      width: 75vw;
       font-size: 22px;
       line-height: 24px;
       padding-top: 15px;
@@ -334,8 +334,8 @@ p {
   .bg-lighter {
     h1 {
       font-size: 50px;
-      line-height: 50px;
-      width: 75vw;
+      line-height: 1;
+      width: 90vw;
     }
   }
 
