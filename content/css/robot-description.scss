@@ -36,10 +36,10 @@ $description-header-height: 300px;
   grid-column-gap: 30px;
 }
 
-.bg-robot-r2 {
+.bg-header-robot {
   height: $description-header-height;
   padding-top: 5%;
-  background-image: url("/images/maybe-it-is-the-droid-im-looking-for.png");
+  background-image: url("/images/rover.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 11%;
@@ -133,7 +133,7 @@ $description-header-height: 300px;
 }
 
 @media screen and (max-width: 767px) {
-  .bg-robot-r2 {
+  .bg-header-robot {
     height: 30vh;
     background-position: 20% -85%;
     h1 {
@@ -180,7 +180,7 @@ $description-header-height: 300px;
   .page-wrapper {
     padding-top: 0;
   }
-  .bg-robot-r2 {
+  .bg-header-robot {
     height: 60vh;
     padding-left: 7%;
     h1 {

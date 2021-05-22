@@ -36,11 +36,16 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $aqua;
 }
 
 p {
   color: $gray-darker;
+}
+
+ul {
+  list-style: none;
 }
 
 .btn {
