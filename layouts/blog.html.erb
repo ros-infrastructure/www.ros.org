@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render '/_head.*' %>
+  <body id="body" onclick="closeMenus(this)">
+    <%= render '/_header.*' %>
+
+    <div id="main">
+      <div class="blog-wrapper">
+        <div class="blog-grid-main">
+          <div class="bg-photo">
+            <h1><%= @item[:title] %></h1>
+            <h2>
+              This is an h2 blog subtitle that you can make all about robots
+            </h2>
+          </div>
+          <div class="blog-post-main">
+            <%= yield %>
+          </div>
+          <div class="blog-sidebar">
+            <h1>Articles</h1>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-title">
+                <a href="#"><h2>Blog Title About Robots</h2></a>
+              </div>
+              <div class="recent-post-author-date">
+                <h3>12/21/2020 - Sarah Writingstaff</h3>
+              </div>
+            </div>
+            <div class="newsletter-signup">
+              <h2>Stay Up-to-Date - Subscribe Now!</h2>
+              <input placeholder="Name" />
+              <input placeholder="Email Address" />
+              <button class="btn-subscribe">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= render '/_footer.*' %>
+  </body>
+</html>
