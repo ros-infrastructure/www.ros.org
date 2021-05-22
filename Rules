@@ -3,6 +3,18 @@
 compile '/**/*.html' do
   layout '/default.*'
 
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/blog/*' do
+  # filter :erb
+  filter :kramdown
+  layout '/blog.*'
   if item.identifier =~ '**/index.*'
     write item.identifier.to_s
   else

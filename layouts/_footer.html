@@ -1,0 +1,130 @@
+<footer>
+  <div class="footer-main">
+    <img src="/images/logo-white.png" class="logo" />
+    <div class="footer-menu">
+      <ul>
+        <li class="link-home"><a href="#">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-submenu-mob">
+      <ul>
+        <li><a href="#">answers.ros.org/questions</a></li>
+        <li><a href="#">discourse.ros.org</a></li>
+        <li><a href="#">index.res.org</a></li>
+        <li><a href="#">roscon.ros.org/2020</a></li>
+        <li><a href="#">wiki.ros.org</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-sub">
+    <div class="footer-sub-menu">
+      <ul>
+        <li><a href="#">answers.ros.org/questions</a></li>
+        <li><a href="#">discourse.ros.org</a></li>
+        <li><a href="#">index.res.org</a></li>
+        <li><a href="#">roscon.ros.org/2020</a></li>
+        <li><a href="#">wiki.ros.org</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>
+        ©2021 Open Ropbodics | Brought to you by Open Robotics. Donate today!
+        Except where otherwise noted, the ros.org web pages are licensed under
+        Creative Commons Attributions 3.0
+      </p>
+    </div>
+  </div>
+  <script src="/javascript/owlcarousel/jquery.min.js"></script>
+  <script src="/javascript/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#video-carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        center: true,
+        stagePadding: 10,
+        videoWidth: 500,
+        videoHeight: 280,
+        merge: false,
+        loop: true,
+        margin: 0,
+        lazyLoad: false,
+        center: true,
+        responsive: {
+          500: {
+            items: 1
+          },
+          501: {
+            items: 3
+          },
+          1200: {
+            items: 5
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#support-carousel").owlCarousel({
+        items: 3,
+        nav: false,
+        center: true,
+        merge: false,
+        stagePadding: 0,
+        padding: 0,
+        loop: true,
+        rewind: true,
+        lazyLoad: false,
+        responsive: {
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#blog-image-slider").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        dots: false,
+        center: true,
+        padding: 20,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#description-image-slider").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        dots: false,
+        center: true,
+        padding: 20,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</footer>

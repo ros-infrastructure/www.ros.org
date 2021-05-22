@@ -1,0 +1,136 @@
+<header>
+  <div id="navbar">
+    <div class="logo">
+      <a href="/"><img src="/images/logo-white.png"/></a>
+    </div>
+    <ul class="main-menu">
+      <li class="nav-item">
+        <a
+          href="#"
+          id="about"
+          class="hide-after"
+          onclick="openCloseAbout(), closeMenus(this)"
+          >About</a
+        >
+        <!-- The submenu for About is at the bottom of the header tag -->
+      </li>
+      <li class="nav-item"><a href="#">Why ROS</a></li>
+      <li class="nav-item"><a href="#">Getting Started</a></li>
+      <li class="nav-item"><a href="#">Community</a></li>
+      <li class="nav-item"><a href="#">Ecosystem</a></li>
+    </ul>
+    <div id="dropdown-dots" onclick="openCloseDotsMenu(), closeMenus(this)">
+      <img src="/images/dot.png" id="dot-top" class="dropdown-dot-top" />
+      <img src="/images/dot.png" class="dropdown-dot-middle dot-1" />
+      <img src="/images/dot.png" class="dropdown-dot-middle dot-2" />
+      <img src="/images/dot.png" class="dropdown-dot-middle dot-3" />
+      <img src="/images/dot.png" id="dot-bottom" class="dropdown-dot-bottom" />
+    </div>
+    <ul id="submenu-dots" class="hidden" onclick="closeMenus(this)">
+      <div class="grid-mob-menu">
+        <a class="twitter-icon" href="#"
+          ><img src="/images/twitter-icon.svg"
+        /></a>
+        <a class="discourse-icon" href="#"
+          ><img src="/images/discourse-icon.svg"
+        /></a>
+        <a class="github-icon" href="#"><img src="/images/github-icon.svg"/></a>
+        <a class="mob-nav-item-1" href="/blog/">Blog</a>
+        <a class="mob-nav-item-2" href="#">Wiki</a>
+        <a class="mob-nav-item-3" href="#">About</a>
+        <a class="mob-nav-item-4" href="#">contact</a>
+      </div>
+      <li class="sub-item">
+        <a href="#">sub-item 1</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 1</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 1</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 2</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 3</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 4</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+      <li class="sub-item">
+        <a href="#">sub-item 5</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+      </li>
+    </ul>
+    <div class="menu-blog-link"><a href="/blog/">Read the ROS blog</a></div>
+  </div>
+  <div id="submenu-about" class="hidden" onclick="closeMenus(this)">
+    <ul>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">History</a>
+      </li>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">What is ROS</a>
+        <ul>
+          <li><a href="#">Core ROS Capabilities</a></li>
+          <li><a href="#">ROS Packages</a></li>
+          <li><a href="#">Build Tools</a></li>
+          <li><a href="#">Sibling Libraries</a></li>
+          <li><a href="#">Community Resources</a></li>
+        </ul>
+      </li>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">TSC</a>
+        <ul>
+          <li><a href="#">Working Groups</a></li>
+          <li><a href="#">Road Map</a></li>
+          <li><a href="#">Contributors</a></li>
+        </ul>
+      </li>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">DISTROS</a>
+      </li>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">LEGAL</a>
+        <ul>
+          <li><a href="#">Brand Guidelines</a></li>
+          <li><a href="#">License</a></li>
+        </ul>
+      </li>
+      <li class="submenu-list wide">
+        <a href="#" class="submenu-title">How is ROS Developed</a>
+      </li>
+      <li class="submenu-list">
+        <a href="#" class="submenu-title">Contact</a>
+      </li>
+    </ul>
+  </div>
+</header>
