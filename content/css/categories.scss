@@ -12,6 +12,9 @@ $header-height: 90px;
   padding-top: 50px;
   width: 80%;
   margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
   h1 {
     color: $navy-darker;
     font-size: 48px;
@@ -54,6 +57,7 @@ $header-height: 90px;
   width: clamp(90px, 100px, 130px);
   font-size: 14px;
   line-height: 14px;
+  text-decoration: none;
   &:hover {
     background-color: $navy-darker;
     color: $white;
@@ -150,6 +154,9 @@ $header-height: 90px;
     font-weight: 600;
     letter-spacing: 0.5px;
   }
+  h1 + * {
+    padding-top: 0;
+  }
   h2 {
     padding-left: 5%;
     font-size: 14px;
@@ -157,6 +164,9 @@ $header-height: 90px;
     font-weight: 500;
     font-style: italic;
     color: $gray-light;
+  }
+  h2 + * {
+    padding-top: 0;
   }
   a img,
   img {
@@ -226,6 +236,9 @@ $header-height: 90px;
   border-left: 17px solid transparent;
   border-right: 17px solid transparent;
   transform: rotate(45deg);
+  h2 + * {
+    padding-top: 10px;
+  }
 }
 .ribbon::before {
   content: "";
@@ -281,13 +294,6 @@ $header-height: 90px;
   .row-buttons {
     display: none;
   }
-
-  // .categories a {
-  //   display: none;
-  //   .card a {
-  //     display: block;
-  //   }
-  // }
 
   .row-buttons-mob {
     display: block;

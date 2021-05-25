@@ -148,6 +148,7 @@ p {
   grid-column: 2 / 3;
   grid-row: 2 / 5;
   background-color: $white;
+  padding-top: 5%;
 }
 
 .blog-post-main .image-large img {
@@ -174,6 +175,9 @@ p {
     font-size: 30px;
     letter-spacing: -1px;
     font-weight: 900;
+  }
+  h1 + * {
+    padding-top: 0;
   }
   h2 {
     color: $black;
@@ -265,6 +269,7 @@ p {
 
   .blog-post-main .image-large {
     padding: 0;
+    padding-top: 1em;
     margin-left: -8vw;
     width: 100vw;
   }
@@ -275,6 +280,7 @@ p {
   }
 
   .recent-post {
+    padding-top: 0;
     padding-left: 10px;
   }
   .blog-sidebar {
@@ -324,6 +330,7 @@ p {
   }
   .blog-grid-main {
     padding: 0;
+    grid-template-columns: auto 50% 33% auto;
   }
 }
 @media screen and (max-width: 449px) {

@@ -31,7 +31,7 @@
     background-repeat: no-repeat;
     background-position: 135% 20%;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 45px 60px 20% auto;
+    grid-template-rows: 90px 60px 20% auto;
     grid-column-gap: 10px;
     h1 {
       padding-top: 10px;
@@ -47,6 +47,7 @@
     }
     p {
       font-size: 21px;
+      padding-top: 115px;
       padding-left: 20px;
       width: 335px;
       grid-row: 5 / 6;
@@ -376,7 +377,7 @@
   }
 
   .footer-main {
-    margin-top: 50px;
+    margin-top: 0;
     padding-bottom: 15px;
 
     .logo {
@@ -489,10 +490,12 @@
   .banner {
     background-position: 150% 30%;
     grid-template-columns: 90% 10%;
+    grid-template-rows: 90px 60px 20% auto;
     h1 {
       padding-top: 5px;
     }
     p {
+      padding-top: 125px;
       width: 300px;
     }
   }

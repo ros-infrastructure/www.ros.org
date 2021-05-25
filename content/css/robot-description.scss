@@ -66,9 +66,14 @@ $description-header-height: 300px;
 }
 
 .description-main-content {
+  padding-top: 5%;
   grid-column: 2 / 3;
   grid-row: 2 / 5;
   background-color: $white;
+  h3 + * {
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+  }
 }
 
 .description-main-content ul {
@@ -141,7 +146,7 @@ $description-header-height: 300px;
 @media screen and (max-width: 767px) {
   .bg-header-robot {
     height: 30vh;
-    background-position: 20% -85%;
+    background-position: 20% -5%;
     h1 {
       font-size: 60px;
       line-height: 60px;
