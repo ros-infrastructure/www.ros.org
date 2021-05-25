@@ -71,6 +71,12 @@ $description-header-height: 300px;
   background-color: $white;
 }
 
+.description-main-content ul {
+  list-style: none;
+  li {
+    padding-top: 0.5em;
+  }
+}
 .description-main-content .image-large img {
   max-width: 100%;
   grid-column: 2 / 3;

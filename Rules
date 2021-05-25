@@ -12,7 +12,6 @@ compile '/**/*.html' do
 end
 
 compile '/blog/*' do
-  # filter :erb
   filter :kramdown
   layout '/blog.*'
   if item.identifier =~ '**/index.*'
@@ -22,8 +21,17 @@ compile '/blog/*' do
   end
 end
 
+compile '/markdown.*' do
+  filter :kramdown
+  layout '/general.*'
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
 compile '/robots/*' do
-  # filter :erb
   filter :kramdown
   layout '/robot.*'
   if item.identifier =~ '**/index.*'

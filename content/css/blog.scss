@@ -196,6 +196,12 @@ p {
   max-width: 300px;
   margin-left: 15px;
   margin-top: 25px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .newsletter-signup {

@@ -85,7 +85,7 @@
   .videos {
     padding-top: 0;
     h3 {
-      width: 110px;
+      width: 145px;
       text-align: center;
       overflow-y: hidden;
       font-weight: bolder;
@@ -129,7 +129,7 @@
       overflow-y: hidden;
       padding: 25px 0 20px 0;
       height: 30px;
-      width: 60px;
+      width: 80px;
       margin-left: 0;
       grid-column: 1 / 5;
       grid-row: 1 / 2;
@@ -212,7 +212,7 @@
     padding-bottom: 50px;
     h3 {
       border-bottom: 4px solid $orange;
-      width: 80px;
+      width: 105px;
       &::after {
         display: none;
       }
@@ -333,12 +333,10 @@
 
     .highlighted-post-subtitle h2 {
       font-size: 16px;
-      line-height: 16px;
       color: $navy-darker;
     }
-
-    .highlighted-post-author-date h3 {
-      line-height: 10px;
+    .highlighted-post-content {
+      margin-top: 10px;
     }
 
     a.read-more {
@@ -435,43 +433,6 @@
   }
 }
 
-@media screen and (max-width: 330px) {
-  .banner {
-    background-position: 150% 30%;
-    grid-template-columns: 90% 10%;
-    h1 {
-      padding-top: 5px;
-    }
-    p {
-      width: 300px;
-    }
-  }
-
-  .news {
-    h2,
-    p {
-      width: 90vw;
-    }
-
-    .btn-event {
-      width: 70vw;
-    }
-  }
-
-  .install .release-img-2 {
-    transform: scale(0.4);
-  }
-
-  .blog-newsletter .newsletter-signup input {
-    width: 250px;
-    height: 25px;
-  }
-
-  .blog-newsletter .newsletter-signup .btn-subscribe {
-    width: 254px;
-  }
-}
-
 @media screen and (max-width: 992px) and (max-height: 450px) {
   .banner {
     background-size: 200px;
@@ -509,9 +470,10 @@
 }
 @media screen and (max-width: 500px) {
   .banner {
-    background-size: 300px;
-    background-position: 110% 30%;
+    background-size: 250px;
+    background-position: 125% 25%;
     grid-template-columns: auto;
+    margin-top: 0;
     h1 {
       font-size: 20vw;
       line-height: 20vw;
@@ -520,5 +482,50 @@
 
   .blog-newsletter .btn-subsribe {
     width: clamp(250px, 380px, 85vw);
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .banner {
+    background-position: 150% 30%;
+    grid-template-columns: 90% 10%;
+    h1 {
+      padding-top: 5px;
+    }
+    p {
+      width: 300px;
+    }
+  }
+
+  .news-wrapper {
+    height: 245px;
+  }
+
+  .news {
+    h2,
+    p {
+      width: 90vw;
+    }
+
+    .btn-event {
+      width: 70vw;
+    }
+  }
+
+  .install .release-img-2 {
+    transform: scale(0.4);
+    margin-right: -25px;
+    margin-bottom: 50px;
+  }
+
+  .blog-newsletter .newsletter-signup input {
+    margin-left: 5%;
+    width: 90%;
+    height: 25px;
+  }
+
+  .blog-newsletter .newsletter-signup .btn-subscribe {
+    margin-left: 5%;
+    width: 90%;
   }
 }

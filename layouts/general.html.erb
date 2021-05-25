@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render '/_head.*' %>
+  <body id="body" onclick="closeMenus(this)">
+    <%= render '/_header.*' %>
+    <div id="main">
+      <div class="general">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render '/_footer.*' %>
+  </body>
+</html>

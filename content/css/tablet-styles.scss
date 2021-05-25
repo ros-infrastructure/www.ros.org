@@ -28,7 +28,7 @@
       font-size: clamp(25px, 80px, 90px);
       grid-row: 3 / 6;
       &::after {
-        left: 5%;
+        left: 7%;
       }
     }
     p {
@@ -62,6 +62,7 @@
 
   .videos {
     padding-top: 0;
+    margin-top: -1px;
     h3 {
       width: 15vw;
       text-align: center;
@@ -112,7 +113,7 @@
       padding: 25px 0 20px 0;
       margin-left: 50px;
       height: 30px;
-      width: 60px;
+      width: 80px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
@@ -505,9 +506,9 @@
 
 @media screen and (max-width: 993px) and (min-width: 600px) {
   .banner {
-    background-position: 100% 20%;
+    background-position: 100% 85%;
     p {
-      margin-top: 25px;
+      margin-top: 35px;
     }
   }
   .install .release-img-2 {

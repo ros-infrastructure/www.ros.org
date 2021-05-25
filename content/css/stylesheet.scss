@@ -33,6 +33,62 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: visible;
+  padding-top: 0;
+}
+h1 {
+  padding-top: 1em;
+  font-size: 68px;
+  line-height: 1.1;
+  kerning: -50;
+  font-weight: medium;
+  color: $navy-darker;
+}
+
+h1 + * {
+  padding-top: 1.5em;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h2 + * {
+  padding-top: 0.5em;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+h3 + * {
+  padding-top: 0.5em;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.2;
+  kerning: -50;
+}
+
+h4 + * {
+  padding-top: 0.25em;
+}
+
+h5 {
+  font-size: 14px;
+  kerning: -50;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+h5 + * {
+  padding-top: 0.165em;
+}
+
+h6 {
 }
 
 a {
@@ -42,12 +98,96 @@ a {
 
 p {
   color: $gray-darker;
+  kerning: 0;
+  line-height: 1.4;
+  font-weight: lighter;
+  font-size: 18px;
 }
 
-ul {
-  list-style: none;
+ul,
+ol {
+  color: $gray-darker;
+  font-weight: lighter;
+  padding-left: 2.5%;
 }
 
+/**
+ * Nested numbered list with correct indentation.
+ *
+ * Tested on Firefox 32, Chromium 37, IE 9 and Android Browser. Doesn't work on IE 7 and previous.
+ * Source: https://gist.github.com/jirutka/32049196ab75547b7f47
+ */
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+  font-size: 20px;
+  line-height: 1.1;
+  p {
+    font-size: 20px;
+  }
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.7em;
+}
+
+li ol > li {
+  margin: 0;
+  white-space: nowrap;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+/* end ordered list with correct indendation */
+
+hr {
+  width: 95%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 0px;
+  border-width: 4px;
+  border-color: orange;
+  border-style: solid;
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 2%;
+}
+
+.videos,
+.install,
+.support,
+.blog-newsletter {
+  h3 {
+    width: 175px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 30px;
+    color: $navy-darker;
+  }
+  h3::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    padding-top: 35px;
+    border-bottom: solid;
+    border-color: $orange;
+    margin-left: -125px;
+  }
+}
 .btn {
   text-align: center;
   padding-top: 8px;
@@ -71,7 +211,7 @@ ul {
     height: 25px;
     width: 25px;
     margin-left: -40px;
-    margin-top: -15px;
+    margin-top: -5px;
   }
 }
 
@@ -151,6 +291,7 @@ header {
     width: 100vw;
     display: flex;
     top: 0;
+    margin-top: 0;
     overflow-y: hidden;
     .logo {
       padding-top: 25px;
@@ -181,15 +322,21 @@ header {
       right: 15%;
       display: inline-flex;
       justify-content: space-between;
+      margin-top: 0;
+      padding-top: 0;
     }
     li.nav-item {
       height: 14px;
       white-space: nowrap;
       padding-top: 60px;
       a {
+        text-decoration: none;
         position: relative;
         font-weight: 700;
         color: $white;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     li.nav-item.wide-text {
@@ -211,6 +358,7 @@ header {
       position: absolute;
       top: 45px;
       right: 100px;
+      padding-top: 0;
       padding-bottom: 1px;
       font-size: 10px;
       display: grid;
@@ -273,10 +421,10 @@ header {
     width: 90%;
     background-color: $white;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
-
   #submenu-about ul {
-    width: 100%;
+    width: 95%;
     list-style: none;
     display: inline-flex;
     background-color: $white;
@@ -309,6 +457,7 @@ header {
   }
 
   #submenu-about ul li ul li {
+    padding-top: 0;
     padding-left: 5px;
     height: 20px;
     width: 100px;
@@ -318,16 +467,21 @@ header {
     color: $navy-darker;
     text-decoration: underline;
     font-size: 12px;
+    padding-top: 0;
+  }
+
+  #submenu-about li.submenu-list {
+    padding-top: 0;
   }
 
   #submenu-about li.submenu-list.wide {
-    width: 250px;
+    width: 310px;
   }
 
   #submenu-dots {
     position: fixed;
     top: $header-height;
-    right: 5%;
+    right: 8%;
     list-style: none;
     height: 550px;
     width: 210px;
@@ -361,6 +515,12 @@ header {
 
   #submenu-dots a {
     color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   #submenu-dots p {
@@ -385,6 +545,14 @@ header {
 #main {
   z-index: -1;
   background-color: $navy-darker;
+  padding-top: 0;
+}
+
+.general {
+  background-color: $white;
+  margin-top: $header-height;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 
 .banner {
@@ -400,7 +568,8 @@ header {
   justify-content: center;
   padding-bottom: 25px;
   h1 {
-    font-weight: 900;
+    color: $white;
+    font-weight: 700;
     letter-spacing: -1px;
     font-size: clamp(50px, 70px, 80px);
     grid-column: 1 / 2;
@@ -418,7 +587,7 @@ header {
     left: 10%;
   }
   p {
-    padding-top: 125px;
+    padding-top: 175px;
     color: $white;
     font-size: 22px;
     font-weight: 500;
@@ -435,23 +604,6 @@ header {
       object-fit: contain;
     }
   }
-}
-
-h3 {
-  width: 175px;
-  margin: 0 auto;
-  padding-top: 50px;
-  font-size: 30px;
-  color: $navy-darker;
-}
-h3::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  padding-top: 35px;
-  border-bottom: solid;
-  border-color: $orange;
-  margin-left: -125px;
 }
 
 .news-wrapper {
@@ -472,9 +624,6 @@ h3::after {
   h2 {
     color: $navy-darker;
   }
-  p {
-    padding-bottom: 15px;
-  }
   .btn-event {
     margin: 0;
   }
@@ -489,7 +638,7 @@ h3::after {
   h3 {
     padding-bottom: 10px;
     border-bottom: 4px solid $orange;
-    width: 120px;
+    width: 151px;
   }
   h3::after {
     display: none;
@@ -579,7 +728,7 @@ button.owl-next {
   height: auto;
   display: grid;
   grid-template-columns: 22.5% 22.5% 25px 22.5% 22.5%;
-  grid-template-rows: 90px 1fr 1fr 0.5fr;
+  grid-template-rows: 90px 90px 33% 33% 15%;
   grid-row-gap: 5px;
   grid-column-gap: 10px;
   justify-content: center;
@@ -634,7 +783,7 @@ button.owl-next {
     min-width: 350px;
     max-width: 400px;
     grid-column: 4 / 5;
-    grid-row: 2 / 6;
+    grid-row: 2 / 4;
   }
   .install-text-2 {
     grid-column: 5 / 6;
@@ -655,7 +804,7 @@ button.owl-next {
   height: auto;
   overflow: hidden;
   h3 {
-    width: 90px;
+    width: 105px;
     padding-bottom: 10px;
     border-bottom: 4px solid $orange;
   }
@@ -773,36 +922,32 @@ button.owl-next {
     overflow-y: visible;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
+    padding-top: 0;
   }
   .highlighted-post-title,
   .highlighted-post-subtitle,
   .highlighted-post-author-date {
     height: 30px;
+    padding-top: 0;
   }
 
   .highlighted-post-title h1,
   .recent-posts h1 {
     font-size: 18px;
     font-weight: 700;
-    height: 20px;
+    line-height: 1.2;
   }
 
   .highlighted-post-subtitle h2 {
     font-size: 16px;
     font-weight: 400;
-    height: 20px;
+    padding-top: 0.5em;
   }
 
-  .recent-post-title h2 {
-    font-size: 12px;
-    font-weight: 700;
-    height: 20px;
-  }
-
-  .highlighted-post-author-date h3,
-  .recent-post-author-date h3 {
+  .highlighted-post-author-date h3 {
     width: inherit;
-    padding-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 12px;
     font-style: italic;
     color: $gray-light;
@@ -838,6 +983,25 @@ button.owl-next {
     height: auto;
   }
 
+  .recent-post-title h2 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .recent-post-author-date h3 {
+    width: inherit;
+    padding-top: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: $gray-light;
+    margin-top: -10px;
+    margin-left: 0 auto;
+    &::after {
+      display: none;
+    }
+  }
+
   a.read-more {
     color: $aqua;
     text-decoration: underline;
@@ -852,8 +1016,10 @@ button.owl-next {
 
   .newsletter-signup {
     white-space: pre-line;
-    grid-column-start: 2;
-    grid-row-start: 3;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: start;
+    margin-top: -25px;
     h2 {
       font-size: 12px;
       font-weight: 700;
@@ -901,6 +1067,7 @@ button.owl-next {
   .footer-menu li {
     max-width: 100px;
     text-align: center;
+    padding-top: 0;
   }
 
   .footer-menu a {
@@ -908,6 +1075,7 @@ button.owl-next {
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
+
     &:hover {
       text-decoration: underline;
     }
@@ -931,6 +1099,7 @@ button.owl-next {
   .footer-sub-menu li {
     max-width: 180px;
     text-align: center;
+    padding-top: 0;
   }
 
   .footer-sub-menu a {
