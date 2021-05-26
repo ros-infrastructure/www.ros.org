@@ -1,3 +1,7 @@
+AllCops:
+  Exclude:
+    - '**/*.html.erb'
+
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
