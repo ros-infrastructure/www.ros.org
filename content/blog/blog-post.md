@@ -1,6 +1,5 @@
 ---
 title: Blog Post
-layout: blog
 ---
 
 ### This is a Robotics Blog Post Title
