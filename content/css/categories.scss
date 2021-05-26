@@ -53,16 +53,19 @@ $header-height: 90px;
   color: $navy-darker;
   font-weight: 800;
   border: 3px solid $navy-darker;
-  padding: 5px 75px 5px 10px;
-  width: clamp(90px, 100px, 130px);
+  padding: 5px 56px 5px 10px;
   font-size: 14px;
   line-height: 14px;
   text-decoration: none;
-  &:hover {
+  &.active, &:hover {
     background-color: $navy-darker;
     color: $white;
     transition-property: background-color;
     transition-duration: 0.2s;
+  }
+  &.active:hover {
+    background-color: inherit;
+    color: inherit;
   }
   span {
     padding-left: 30px;
@@ -128,7 +131,7 @@ $header-height: 90px;
 
 .grid-item {
   width: 23%;
-  padding-right: 2.5%;
+  padding-left: 2.5%;
 }
 
 .card {
@@ -208,7 +211,6 @@ $header-height: 90px;
   grid-row-gap: 10px;
   grid-column-gap: 3px;
   justify-content: center;
-  margin-bottom: 25px;
   margin-left: 1%;
   .card-fact {
     color: $aqua;
@@ -358,6 +360,7 @@ $header-height: 90px;
 
     .submenu-category {
       display: grid;
+      color: $navy-darker;
       background-color: $gray-lighter;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -373,10 +376,12 @@ $header-height: 90px;
       }
       p {
         text-transform: uppercase;
+        font-weight: bold;
         color: $gray-light;
         margin: 0 auto;
         grid-column: 2 / 3;
         width: 100%;
+        &.selected { color: inherit; }
       }
       input {
         margin-left: auto;
@@ -457,6 +462,7 @@ $header-height: 90px;
   }
   .grid-item {
     width: 100%;
+    padding: 0;
   }
   .card {
     order: 2;

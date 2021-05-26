@@ -5,23 +5,16 @@
     <%= yield %>
     <a href="#"><h3>Find Robots by Category</h3></a>
     <div class="row-buttons">
-      <a href="#" class="btn-category btn-aerial"
-        ><i class="fas fa-plane"></i><span>aerial</span></a
-      >
-      <a href="#" class="btn-category"
-        ><i class="fas fa-wrench"></i><span>component</span></a
-      >
-      <a href="#" class="btn-category"
-        ><i class="fas fa-truck-monster"></i><span>ground</span></a
-      >
-      <a href="#" class="btn-category btn-manipulator">
-        <img src="/images/robotic-arm.svg" class="manipulator" /><span
-          >manipulator</span
-        ></a
-      >
-      <a href="#" class="btn-category"
-        ><i class="fas fa-ship"></i><span>marine</span></a
-      >
+      <% all_robot_categories.each do |category| %>
+        <% if @item == category %>
+        <a class="btn-category active" href="/robots/"><!-- click to remove category filter -->
+        <% else %>
+        <a class="btn-category" href="<%= category_url(category[:category]) %>">
+        <% end %>
+          <%= category[:icon] %>
+          <span><%= category[:name] %></span>
+        </a>
+      <% end %>
     </div>
     <div class="row-buttons-mob">
       <div id="submenu-categories">
@@ -41,46 +34,19 @@
           ></i>
         </div>
         <div id="menu-expanded" class="menu-expanded hidden">
-          <div class="submenu-category">
-            <i class="fas fa-plane"></i>
-            <p class="text">aerial</p>
+          <% all_robot_categories.each do |category| %>
+          <% selected = @item == category %>
+          <a class="submenu-category" href="<%= selected ? "/robots/" : category_url(category[:category]) %>">
+            <%= category[:icon] %>
+            <p class="text <%= 'selected' if selected %>">
+              <%= category[:name] %>
+            </p>
             <label class="checkbox-container">
-              <input type="checkbox" value="0" class="checkbox" />
+              <input type="checkbox" value="0" class="checkbox" <%= 'checked="checked"' if selected %> />
               <span class="custom-checkmark"></span>
             </label>
-          </div>
-          <div class="submenu-category">
-            <i class="fas fa-wrench"></i>
-            <p class="text">component</p>
-            <label class="checkbox-container">
-              <input type="checkbox" value="0" class="checkbox" />
-              <span class="custom-checkmark"></span>
-            </label>
-          </div>
-          <div class="submenu-category">
-            <i class="fas fa-truck-monster"></i>
-            <p class="text">ground</p>
-            <label class="checkbox-container">
-              <input type="checkbox" value="0" class="checkbox" />
-              <span class="custom-checkmark"></span>
-            </label>
-          </div>
-          <div class="submenu-category">
-            <img src="/images/robotic-arm.svg" class="manipulator" />
-            <p class="text">manipulator</p>
-            <label class="checkbox-container">
-              <input type="checkbox" value="0" class="checkbox" />
-              <span class="custom-checkmark"></span>
-            </label>
-          </div>
-          <div class="submenu-category">
-            <i class="fas fa-ship"></i>
-            <p class="text">marine</p>
-            <label class="checkbox-container">
-              <input type="checkbox" value="0" class="checkbox" />
-              <span class="custom-checkmark"></span>
-            </label>
-          </div>
+          </a>
+          <% end %>
         </div>
       </div>
     </div>
@@ -121,7 +87,8 @@
       </div>
       <div class="categories-grid" id="categories-grid">
 
-        <% all_robots_sorted_featured_first.each do |robot| %>
+        <% robots = @item[:category] ? all_robots_in_category(@item[:category]) : all_robots_sorted_featured_first %>
+        <% robots.each do |robot| %>
         <div class="grid-item">
           <div class="card <%= 'featured' if robot[:featured] %>">
             <a href="<%= robot_url(robot) %>">
@@ -157,3 +124,14 @@
   </div>
 </div>
 <% end %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".checkbox-container input[type=checkbox]").click(function(e) {
+      // cancel click event so that checkbox remains unchecked
+      e.preventDefault();
+      console.log($(e.target).closest('a'));
+      $(e.target).parent().trigger('click');
+    })
+  });
+</script>

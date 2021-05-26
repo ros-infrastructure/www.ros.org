@@ -11,6 +11,18 @@ def all_robots_sorted_featured_first
   end
 end
 
+def all_robot_categories
+  @items.find_all('/robots/_categories/*.md')
+end
+
+def all_robots_in_category(string)
+  all_robots_sorted_featured_first.select { |each| robot_categories(each).include?(string) }
+end
+
+def category_url(string)
+  "/robots/#{string}.html"
+end
+
 def robot_url(item)
   "#{item.identifier.without_ext}/"
 end

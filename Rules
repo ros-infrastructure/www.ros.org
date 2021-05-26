@@ -30,6 +30,12 @@ compile '/markdown.*' do
   end
 end
 
+compile '/robots/_categories/*' do
+  filter :kramdown
+  layout '/robots.*'
+  write "/robots/#{item[:category]}.html"
+end
+
 compile '/robots/*' do
   filter :kramdown
   layout '/robot.*'
