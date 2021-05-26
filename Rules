@@ -36,14 +36,10 @@ compile '/robots/_categories/*' do
   write "/robots/#{item[:category]}.html"
 end
 
-compile '/robots/*' do
+compile '/robots/*/index.md' do
   filter :kramdown
   layout '/robot.*'
-  if item.identifier =~ '**/index.*'
-    write item.identifier.to_s
-  else
-    write item.identifier.without_ext + '/index.html'
-  end
+  write item.identifier.without_ext + '.html'
 end
 
 compile '/**/*.md' do

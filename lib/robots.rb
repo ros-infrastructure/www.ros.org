@@ -1,5 +1,5 @@
 def all_robots
-  @items.find_all('/robots/*.md')
+  @items.find_all('/robots/*/index.md')
 end
 
 def all_robots_sorted_featured_first
@@ -24,7 +24,7 @@ def category_url(string)
 end
 
 def robot_url(item)
-  "#{item.identifier.without_ext}/"
+  "/#{item.identifier.components[0..-2].join('/')}/"
 end
 
 def robot_image_url(item, key)
