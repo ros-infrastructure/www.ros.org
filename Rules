@@ -3,7 +3,6 @@
 compile '/**/*.html' do
   layout '/default.*'
 
-
   if item.identifier =~ '**/index.*'
     write item.identifier.to_s
   else
@@ -43,7 +42,7 @@ end
 
 compile '/**/*.md' do
   filter :kramdown
-  layout '/default.*'
+  layout item[:layout] || '/default.*'
 
   if item.identifier =~ '**/index.*'
     write item.identifier.to_s

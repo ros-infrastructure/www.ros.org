@@ -1,0 +1,157 @@
+<% render '/default.*' do %>
+
+<div class="categories-wrapper">
+  <div class="categories">
+    <%= yield %>
+    <a href="#"><h3>Find Robots by Category</h3></a>
+    <div class="row-buttons">
+      <a href="#" class="btn-category btn-aerial"
+        ><i class="fas fa-plane"></i><span>aerial</span></a
+      >
+      <a href="#" class="btn-category"
+        ><i class="fas fa-wrench"></i><span>component</span></a
+      >
+      <a href="#" class="btn-category"
+        ><i class="fas fa-truck-monster"></i><span>ground</span></a
+      >
+      <a href="#" class="btn-category btn-manipulator">
+        <img src="/images/robotic-arm.svg" class="manipulator" /><span
+          >manipulator</span
+        ></a
+      >
+      <a href="#" class="btn-category"
+        ><i class="fas fa-ship"></i><span>marine</span></a
+      >
+    </div>
+    <div class="row-buttons-mob">
+      <div id="submenu-categories">
+        <div class="menu-collapsed" id="top-item">
+          <div class="text">
+            Find Robots by Category
+          </div>
+          <i
+            class="fas fa-plus show-grid"
+            id="plus"
+            onclick="openCloseCategories()"
+          ></i>
+          <i
+            class="fas fa-minus hidden"
+            id="minus"
+            onclick="openCloseCategories()"
+          ></i>
+        </div>
+        <div id="menu-expanded" class="menu-expanded hidden">
+          <div class="submenu-category">
+            <i class="fas fa-plane"></i>
+            <p class="text">aerial</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <i class="fas fa-wrench"></i>
+            <p class="text">component</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <i class="fas fa-truck-monster"></i>
+            <p class="text">ground</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <img src="/images/robotic-arm.svg" class="manipulator" />
+            <p class="text">manipulator</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+          <div class="submenu-category">
+            <i class="fas fa-ship"></i>
+            <p class="text">marine</p>
+            <label class="checkbox-container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="custom-checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="col-tags">
+        <a class="tag">Tag Long</a>
+        <a class="tag">Tag 2</a>
+        <a class="tag">Tag 3</a>
+        <a class="tag">Tag 4</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 5</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 6</a>
+        <a class="tag">Tag Long</a>
+        <a class="tag">Tag 8</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 9</a>
+        <a class="tag">Tag 10</a>
+        <a class="tag">Tag 11</a>
+        <a class="tag">Tag 12</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 13</a>
+        <a class="tag">Tag 14</a>
+        <a class="tag">Tag 15</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 6</a>
+        <a class="tag">Tag 7</a>
+        <a class="tag">Tag 8</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 9</a>
+        <a class="tag">Tag 10</a>
+        <a class="tag">Tag 11</a>
+        <a class="tag">Tag 12</a>
+        <a class="tag">Tag Longer</a>
+        <a class="tag">Tag 13</a>
+        <a class="tag">Tag 14</a>
+        <a class="tag">Tag 15</a>
+      </div>
+      <div class="categories-grid" id="categories-grid">
+
+        <% all_robots_sorted_featured_first.each do |robot| %>
+        <div class="grid-item">
+          <div class="card <%= 'featured' if robot[:featured] %>">
+            <a href="<%= robot_url(robot) %>">
+              <% if robot[:image] %>
+              <img src="<%= robot_image_url(robot, :image) %>">
+              <% end %>
+            </a>
+            <a href="<%= robot_url(robot) %>">
+              <h1><%= robot[:title] %></h1>
+            </a>
+            <h2><%= robot[:subtitle] %></h2>
+            <% if robot[:summary] %>
+            <div class="card-description">
+              <p><%= robot[:summary] %></p>
+              <a href="<%= robot_url(robot) %>">Read More...</a>
+            </div>
+            <% end %>
+            <% if !robot_features(robot).empty? %>
+            <div class="card-facts">
+              <% robot[:features].each do |feature| %>
+              <h3><%= feature %></h3>
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <% end %>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

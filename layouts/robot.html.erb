@@ -1,7 +1,8 @@
 <% render '/default.*' do %>
 <div class="page-wrapper">
   <div class="description-grid-main">
-    <div class="bg-header-robot" <%= @item[:header_image]%>>
+    <% header_style = @item[:header_image] ? "background-image: url(#{robot_image_url(@item, :header_image)})" : '' %>
+    <div class="bg-header-robot" style="<%= header_style %>">
       <h1><%= @item[:title] %></h1>
       <h2><%= @item[:subtitle] %></h2>
     </div>
@@ -12,13 +13,13 @@
     <div class="description-sidebar">
       <h1>Robot Category</h1>
       <div class="tags-wrapper-sidebar">
-        <% @item[:categories].each do |category| %>
+        <% robot_categories(@item).each do |category| %>
           <a href='#' class='tag'><%= category %></a>
         <% end %>
       </div>
       <h1>Robot Tags</h1>
       <div class="tags-wrapper-sidebar">
-        <% @item[:tags].each do |tag| %>
+        <% robot_tags(@item).each do |tag| %>
           <a class='tag'><%= tag %></a>
         <% end %>
       </div>
