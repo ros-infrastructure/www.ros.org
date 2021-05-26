@@ -3,8 +3,8 @@
   <div class="description-grid-main">
     <% header_style = @item[:header_image] ? "background-image: url(#{robot_image_url(@item, :header_image)})" : '' %>
     <div class="bg-header-robot" style="<%= header_style %>">
-      <h1><%= @item[:title] %></h1>
-      <h2><%= @item[:subtitle] %></h2>
+      <h1><%= h(@item[:title]) %></h1>
+      <h2><%= h(@item[:subtitle]) if @item[:subtitle] %></h2>
     </div>
     <div class="description-main-content">
       <%= yield %>
