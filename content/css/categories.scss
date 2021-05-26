@@ -145,19 +145,19 @@ $header-height: 90px;
   padding-bottom: 10px;
   margin-bottom: 1.5em;
   order: 2;
-  a h1,
-  h1 {
+  .card-title {
     padding-top: 10px;
     padding-left: 5%;
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    a { color: inherit; }
   }
-  h1 + * {
+  .card-title + * {
     padding-top: 0;
   }
-  h2 {
+  .card-subtitle {
     padding-left: 5%;
     font-size: 14px;
     line-height: 14px;
@@ -165,7 +165,7 @@ $header-height: 90px;
     font-style: italic;
     color: $gray-light;
   }
-  h2 + * {
+  .card-subtitle + * {
     padding-top: 0;
   }
   a img,
@@ -210,7 +210,7 @@ $header-height: 90px;
   justify-content: center;
   margin-bottom: 25px;
   margin-left: 1%;
-  h3 {
+  .card-fact {
     color: $aqua;
     font-size: 12px;
     line-height: 12px;

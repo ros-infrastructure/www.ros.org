@@ -129,10 +129,12 @@
               <img src="<%= robot_image_url(robot, :image) %>">
               <% end %>
             </a>
-            <a href="<%= robot_url(robot) %>">
-              <h1><%= robot[:title] %></h1>
-            </a>
-            <h2><%= robot[:subtitle] %></h2>
+            <div class='card-title'>
+              <a href="<%= robot_url(robot) %>"><%= robot[:title] %></a>
+            </div>
+            <div class='card-subtitle'>
+              <%= robot[:subtitle] %>
+            </div>
             <% if robot[:summary] %>
             <div class="card-description">
               <p><%= robot[:summary] %></p>
@@ -142,14 +144,14 @@
             <% if !robot_features(robot).empty? %>
             <div class="card-facts">
               <% robot[:features].each do |feature| %>
-              <h3><%= feature %></h3>
+              <div class='card-fact'><%= feature %></div>
               <% end %>
             </div>
             <% end %>
           </div>
         </div>
         <% end %>
-        
+
       </div>
     </div>
   </div>
