@@ -57,7 +57,8 @@ $header-height: 90px;
   font-size: 14px;
   line-height: 14px;
   text-decoration: none;
-  &.active, &:hover {
+  &.active,
+  &:hover {
     background-color: $navy-darker;
     color: $white;
     transition-property: background-color;
@@ -83,7 +84,7 @@ $header-height: 90px;
 
 .manipulator {
   height: 20px;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 
 .btn-manipulator span {
@@ -155,7 +156,9 @@ $header-height: 90px;
     line-height: 20px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
   }
   .card-title + * {
     padding-top: 0;
@@ -381,7 +384,9 @@ $header-height: 90px;
         margin: 0 auto;
         grid-column: 2 / 3;
         width: 100%;
-        &.selected { color: inherit; }
+        &.selected {
+          color: inherit;
+        }
       }
       input {
         margin-left: auto;
@@ -397,8 +402,8 @@ $header-height: 90px;
       }
 
       .manipulator {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         margin-top: -5px;
         padding-left: 15px;
       }
