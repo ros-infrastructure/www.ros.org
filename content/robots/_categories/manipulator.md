@@ -1,7 +1,7 @@
 ---
 category: manipulator
 name: Manipulator
-icon: <img src="/images/robotic-arm.svg" class="manipulator" />
+icon: <img src="/images/manipulator.svg" class="manipulator" />
 
 title: Manipulator Robots
 ---
