@@ -39,8 +39,9 @@ $header-height: 90px;
 .row-buttons {
   padding-top: 85px;
   padding-bottom: 75px;
+  max-width: 75vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .btn-category {
@@ -53,7 +54,7 @@ $header-height: 90px;
   color: $navy-darker;
   font-weight: 800;
   border: 3px solid $navy-darker;
-  padding: 5px 56px 5px 10px;
+  padding: 5px 30px 5px 10px;
   font-size: 14px;
   line-height: 14px;
   text-decoration: none;
@@ -69,7 +70,7 @@ $header-height: 90px;
     color: inherit;
   }
   span {
-    padding-left: 30px;
+    padding-left: 15px;
     padding-top: 5px;
   }
   .fas {
@@ -83,8 +84,19 @@ $header-height: 90px;
 }
 
 .manipulator {
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+}
+.manipulator::before {
+  content: url("/images/manipulator.svg");
   height: 20px;
   margin-left: 0px;
+}
+
+.active > .manipulator,
+.btn-category:hover > .manipulator {
+  filter: brightness(0) invert(1);
 }
 
 .btn-manipulator span {
@@ -276,7 +288,7 @@ $header-height: 90px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 3px;
+  margin-top: 4px;
   white-space: nowrap;
 }
 
