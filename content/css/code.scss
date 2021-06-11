@@ -1,0 +1,18 @@
+@import 'colors';
+
+code {
+  font-family: "Liberation Mono", Monaco, Consolas, "Courier New", monospace;
+  border: solid $gray-light 2px;
+  border-radius: 2px;
+  white-space: pre-wrap;
+}
+
+pre code {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+  border-width: 7px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: scroll;
+}

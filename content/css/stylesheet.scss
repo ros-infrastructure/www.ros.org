@@ -153,7 +153,6 @@ li ol > li:before {
 /* end ordered list with correct indendation */
 
 hr {
-  width: 95%;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 0px;
@@ -553,8 +552,7 @@ header {
 .general {
   background-color: $white;
   margin-top: $header-height;
-  padding-left: 5%;
-  padding-bottom: 5%;
+  padding: 0 5% 5% 5%;
 }
 
 .banner {
@@ -1141,4 +1139,5 @@ footer a {
 @import "robot-description";
 @import "tablet-styles";
 @import "mobile-styles";
+@import "code";
 @import "tables";
