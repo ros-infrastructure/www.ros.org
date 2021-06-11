@@ -1,7 +1,8 @@
+<% header_image = @item[:header_image] || '/images/rover.png' %>
 <% render '/default.*' do %>
 <div class="blog-wrapper">
   <div class="blog-grid-main">
-    <div class="bg-photo">
+    <div class="bg-photo" style="background-image: url('<%= h header_image %>')">
       <h1><%= @item[:title] %></h1>
       <h2>
         This is an h2 blog subtitle that you can make all about robots

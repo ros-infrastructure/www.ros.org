@@ -1,5 +1,6 @@
 ---
 title: Blog Post
+header_image: /images/quadcopter.png # Optional, default defined in blog layout
 ---
 
 ### This is a Robotics Blog Post Title
