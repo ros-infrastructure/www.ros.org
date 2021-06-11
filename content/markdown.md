@@ -67,6 +67,13 @@ Then you should be able to browse to `localhost:3000` and see the site.
 
 ![Tux, the Linux mascot](https://markdownguide.org/assets/images/tux.png)
 
+## Tables
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
 ## Horizontal Rules
 
 Part 1

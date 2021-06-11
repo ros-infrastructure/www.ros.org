@@ -1,0 +1,23 @@
+@import 'colors';
+
+table {
+  border-collapse: collapse;
+
+  thead {
+    background-color: $aqua;
+    th, td {
+      color: white;
+    }
+  }
+
+  tbody {
+    tr:hover {
+      background-color: lighten($aqua, 30%);
+    }
+  }
+
+  td, th {
+    border: solid #e7e7e7 1px;
+    padding: 5px 20px;
+  }
+}
