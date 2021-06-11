@@ -1,5 +1,6 @@
 ---
-title: Blog Post
+title: Blog Post that is really kind of long
+subtitle: This is a blog post about robots # Optional, no default
 header_image: /images/quadcopter.png # Optional, default defined in blog layout
 ---
 

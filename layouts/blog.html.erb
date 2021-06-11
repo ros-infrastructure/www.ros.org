@@ -4,9 +4,9 @@
   <div class="blog-grid-main">
     <div class="bg-photo" style="background-image: url('<%= h header_image %>')">
       <h1><%= @item[:title] %></h1>
-      <h2>
-        This is an h2 blog subtitle that you can make all about robots
-      </h2>
+      <% if @item[:subtitle] %>
+      <h2><%= h @item[:subtitle] %></h2>
+      <% end %>
     </div>
     <div class="blog-post-main">
       <%= yield %>
