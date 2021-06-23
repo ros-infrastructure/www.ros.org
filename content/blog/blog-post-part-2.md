@@ -3,7 +3,7 @@ title: Blog Post with a really long title. Seriously, it's quite the long title.
 subtitle: This is a really long subtitle about robots. The quick brown robot jumped over the other, lazier robot, and other fun stories.
 ---
 
-### This is a Robotics Blog Post Title
+### This is a Robotics h3 tag
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
