@@ -39,7 +39,7 @@ h1 {
   padding-top: 1em;
   font-size: 68px;
   line-height: 1.1;
-  kerning: -50;
+  letter-spacing: -1px;
   font-weight: medium;
   color: $navy-darker;
 }
@@ -70,7 +70,7 @@ h3 + * {
 h4 {
   font-size: 18px;
   line-height: 1.2;
-  kerning: -50;
+  letter-spacing: -1px;
 }
 
 h4 + * {
@@ -79,7 +79,7 @@ h4 + * {
 
 h5 {
   font-size: 14px;
-  kerning: -50;
+  letter-spacing: -1px;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -98,7 +98,7 @@ a {
 
 p {
   color: $gray-darker;
-  kerning: 0;
+  letter-spacing: 0;
   line-height: 1.4;
   font-weight: lighter;
   font-size: 18px;
