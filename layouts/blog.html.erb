@@ -1,8 +1,10 @@
-<% header_image = @item[:header_image] || '/images/rover.png' %>
+<% header_classes = ['bg-photo', 'bg-dark,' 'bg-light', 'bg-lighter']%>
+<% header_class = @item[:header_class] && header_classes.include?(@item[:header_class]) ? @item[:header_class] : 'bg-dark'%>
+<% header_image = @item[:header_class] == 'bg-photo' &&  @item[:header_image] ? @item[:header_image] : '' %>
 <% render '/default.*' do %>
 <div class="blog-wrapper">
   <div class="blog-grid-main">
-    <div class="bg-photo" style="background-image: url('<%= h header_image %>')">
+    <div class="<%= header_class %>" style="background-image: url('<%= h header_image %>')">
       <h1><%= @item[:title] %></h1>
       <% if @item[:subtitle] %>
       <h2><%= h @item[:subtitle] %></h2>
