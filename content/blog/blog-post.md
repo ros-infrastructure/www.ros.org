@@ -1,7 +1,9 @@
 ---
 title: Blog Post that is really kind of long
 subtitle: This is a blog post about robots # Optional, no default
-header_class: bg-photo #optional, default and  class options defined in blog layout
+created_at: 2021-06-15 09:00:00 +0000
+kind: article
+header_class: bg-photo #optional, default defined in blog layout, 'bg-photo' is automatically assigned if header image_ is defined
 header_image: /images/quadcopter.png # Optional, default defined in blog layout
 ---
 
