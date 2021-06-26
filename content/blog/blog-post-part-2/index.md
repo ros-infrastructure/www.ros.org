@@ -1,5 +1,8 @@
 ---
 title: Blog Post with a really long title. Seriously, it's quite the long title. And with this text, it just got even longer.
+author: Jeremiah Doe
+created_at: 2021-06-15 09:00:00 +0000
+kind: article
 subtitle: This is a really long subtitle about robots. The quick brown robot jumped over the other, lazier robot, and other fun stories.
 header_class: test #this is not an option, so it defaults to the class defined in blog layout
 ---

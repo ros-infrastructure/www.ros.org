@@ -1,7 +1,7 @@
 <% header_classes = ['bg-photo', 'bg-dark,' 'bg-light', 'bg-lighter']%>
 <% header_class = @item[:header_class] && header_classes.include?(@item[:header_class]) ? @item[:header_class] : 'bg-dark'%>
 <% header_image = @item[:header_image] ? @item[:header_image] : '' %>
-<% @item[:header_image] ? header_class = 'bg-photo' : header_class = header_class %>
+<% @item[:header_image] && @item[:header_image] != '' ? header_class = 'bg-photo' : header_class = header_class %>
 <% render '/default.*' do %>
 <div class="blog-wrapper">
   <div class="blog-grid-main">
@@ -16,62 +16,17 @@
     </div>
     <div class="blog-sidebar">
       <h1>Articles</h1>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
+      <% sorted_articles.first(5).each do |post| %>
+        <div class="recent-post">
+          <div class="recent-post-title">
+            <a href="<%= post.path %>"><h2><%= post[:title] %></h2></a>
+          </div>
+          <div class="recent-post-author-date">
+            <h3><%="#{post[:created_at].strftime('%m/%d/%Y')} - #{post[:author]}"%></h3>
+          </div>
         </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <a href="#"><h2>Blog Title About Robots</h2></a>
-        </div>
-        <div class="recent-post-author-date">
-          <h3>12/21/2020 - Sarah Writingstaff</h3>
-        </div>
-      </div>
+      <% end %>
+
       <div class="newsletter-signup">
         <h2>Stay Up-to-Date - Subscribe Now!</h2>
         <input placeholder="Name" />

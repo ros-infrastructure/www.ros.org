@@ -10,6 +10,16 @@ compile '/**/*.html' do
   end
 end
 
+compile '/markdown.*' do
+  filter :kramdown
+  layout '/general.*'
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
 compile '/blog/*' do
   filter :kramdown
   layout '/blog.*'
@@ -20,14 +30,10 @@ compile '/blog/*' do
   end
 end
 
-compile '/markdown.*' do
+compile '/blog/*/index.md' do
   filter :kramdown
-  layout '/general.*'
-  if item.identifier =~ '**/index.*'
-    write item.identifier.to_s
-  else
-    write item.identifier.without_ext + '/index.html'
-  end
+  layout '/blog.*'
+  write item.identifier.without_ext + '.html'
 end
 
 compile '/robots/_categories/*' do
@@ -41,6 +47,7 @@ compile '/robots/*/index.md' do
   layout '/robot.*'
   write item.identifier.without_ext + '.html'
 end
+
 
 compile '/**/*.md' do
   filter :kramdown
