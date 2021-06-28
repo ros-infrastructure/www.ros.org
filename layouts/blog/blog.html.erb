@@ -1,0 +1,20 @@
+<% render '/default.*' do %>
+<div class="blog-wrapper">
+  <div class="blog-grid-main">
+    <%= render '/blog/_header.*' %>
+    <div class="blog-post-main">
+      <% sorted_articles.first(3).each do |post| %>
+        <% if post[:published] == true %>
+          <h2><%= link_to post[:title], post.path %></h2>
+          <% post_date_author = post[:author] ? "#{post[:created_at].strftime('%m/%d/%Y')}, #{post[:author]}" : "#{post[:created_at].strftime('%m/%d/%Y')}" %>
+          <h3><%= post_date_author %></h3>
+          <%= post.compiled_content %>
+          <br />
+          <br />
+        <% end  %>
+      <% end %>
+    </div>
+    <%= render '/blog/_sidebar.*' %>
+  </div>
+</div>
+<% end %>

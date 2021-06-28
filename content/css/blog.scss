@@ -162,6 +162,15 @@ p {
   padding-top: 5%;
 }
 
+.blog-post-main h1 a,
+.blog-post-main h2 a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .blog-post-main .image-large img {
   max-width: 100%;
 }
@@ -211,7 +220,10 @@ p {
   max-width: 300px;
   margin-left: 15px;
   margin-top: 25px;
-  a {
+  h1 a,
+  h2 a,
+  h3 a {
+    color: $black;
     text-decoration: none;
     &:hover {
       text-decoration: underline;

@@ -1,0 +1,11 @@
+<% render '/default.*' do %>
+<div class="blog-wrapper">
+  <div class="blog-grid-main">
+    <%= render '/blog/_header.*' %>
+    <div class="blog-post-main">
+      <%= yield %>
+    </div>
+    <%= render '/blog/_sidebar.*' %>
+  </div>
+</div>
+<% end %>

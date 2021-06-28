@@ -1,0 +1,10 @@
+<% header_classes = ['bg-photo', 'bg-dark,' 'bg-light', 'bg-lighter']%>
+<% header_class = @item[:header_class] && header_classes.include?(@item[:header_class]) ? @item[:header_class] : 'bg-dark'%>
+<% header_image = @item[:header_image] ? @item[:header_image] : '' %>
+<% @item[:header_image] && @item[:header_image] != '' ? header_class = 'bg-photo' : header_class = header_class %>
+<div class="<%= header_class %>" style="background-image: url('<%= h header_image %>')">
+  <h1><%= @item[:title] %></h1>
+  <% if @item[:subtitle] %>
+  <h2><%= h @item[:subtitle] %></h2>
+  <% end %>
+</div>

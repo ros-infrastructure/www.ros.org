@@ -1,0 +1,23 @@
+<div class="blog-sidebar">
+  <h1>Articles</h1>
+  <% sorted_articles.each do |recent_post| %>
+    <% if recent_post[:published] == true %>
+      <div class="recent-post">
+        <div class="recent-post-title">
+          <h2><%= link_to recent_post[:title], recent_post.path %></h2>
+        </div>
+        <div class="recent-post-author-date">
+          <% recent_post_date_author = recent_post[:author] ? "#{recent_post[:created_at].strftime('%m/%d/%Y')} - #{recent_post[:author]}" : "#{recent_post[:created_at].strftime('%m/%d/%Y')}" %>
+          <h3><%= recent_post_date_author %></h3>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="newsletter-signup">
+    <h2>Stay Up-to-Date - Subscribe Now!</h2>
+    <input placeholder="Name" />
+    <input placeholder="Email Address" />
+    <button class="btn-subscribe">Subscribe</button>
+  </div>
+</div>

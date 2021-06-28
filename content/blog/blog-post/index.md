@@ -6,6 +6,7 @@ created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
 header_image: /images/quadcopter.png # Optional, default defined in blog layout
+published: true
 ---
 
 ### This is a Robotics Blog Post Title
