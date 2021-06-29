@@ -3,7 +3,7 @@
   <div class="blog-grid-main">
     <%= render '/blog/_header.*' %>
     <div class="blog-post-main">
-      <% sorted_articles.first(3).each do |post| %>
+      <% sorted_articles.first(5).each do |post| %>
         <% if post[:published] == true %>
           <h2><%= link_to post[:title], post.path %></h2>
           <% post_date_author = post[:author] ? "#{post[:created_at].strftime('%m/%d/%Y')}, #{post[:author]}" : "#{post[:created_at].strftime('%m/%d/%Y')}" %>

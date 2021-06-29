@@ -30,18 +30,16 @@ compile '/blog/*' do
   end
 end
 
-compile '/blog/*/index.md' do
+compile '/blog/archive/index.md' do
   filter :kramdown
-  layout '/blog/blog_post.*'
+  layout '/blog/archive.*'
   write item.identifier.without_ext + '.html'
 end
 
 compile '/blog/*/index.md' do
-  if item[:published] == true
     filter :kramdown
     layout '/blog/blog_post.*'
     write item.identifier.without_ext + '.html'
-  end
 end
 
 compile '/robots/_categories/*' do

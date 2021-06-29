@@ -29,7 +29,6 @@ task :new_post, :title do |t, args|
     post.puts 'kind: article'
     post.puts "header_class:  # Default defined in blog layout"
     post.puts "header_image:  # Optional. If image specified, header_class automatically assigned, else default"
-    post.puts 'published: false'
     post.puts "---\n\n"
   end
 

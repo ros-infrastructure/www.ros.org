@@ -5,7 +5,6 @@ created_at: 2021-06-15 09:00:00 +0000
 kind: article
 subtitle: This is a really long subtitle about robots. The quick brown robot jumped over the other, lazier robot, and other fun stories.
 header_class: test #this is not an option, so it defaults to the class defined in blog layout
-published: true
 ---
 
 ### This is a Robotics h3 tag

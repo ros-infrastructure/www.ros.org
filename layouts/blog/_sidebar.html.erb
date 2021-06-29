@@ -1,6 +1,6 @@
 <div class="blog-sidebar">
   <h1>Articles</h1>
-  <% sorted_articles.each do |recent_post| %>
+  <% sorted_articles.first(8).each do |recent_post| %>
     <% if recent_post[:published] == true %>
       <div class="recent-post">
         <div class="recent-post-title">
