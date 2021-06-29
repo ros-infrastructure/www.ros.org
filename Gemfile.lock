@@ -27,6 +27,7 @@ GEM
     ffi (1.15.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
+    highline (2.0.3)
     http_parser.rb (0.6.0)
     json_schema (0.21.0)
     kramdown (2.3.1)
@@ -89,6 +90,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     slow_enumerator_tools (1.1.0)
+    stringex (2.8.5)
     tty-color (0.6.0)
     tty-command (0.10.1)
       pastel (~> 0.8)
@@ -102,10 +104,12 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
+  highline
   kramdown
   nanoc (~> 4.12.1)
   nanoc-live
   sass
+  stringex
   webrick
 
 BUNDLED WITH
