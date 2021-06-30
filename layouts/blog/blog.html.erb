@@ -4,15 +4,16 @@
     <%= render '/blog/_header.*' %>
     <div class="blog-post-main">
       <% sorted_articles.first(5).each do |post| %>
-        <% if post[:published] == true %>
-          <h2><%= link_to post[:title], post.path %></h2>
-          <% post_date_author = post[:author] ? "#{post[:created_at].strftime('%m/%d/%Y')}, #{post[:author]}" : "#{post[:created_at].strftime('%m/%d/%Y')}" %>
-          <h3><%= post_date_author %></h3>
-          <%= post.compiled_content %>
-          <br />
-          <br />
-        <% end  %>
+        <h2><%= link_to post[:title], post.path %></h2>
+        <% post_date_author = post[:author] ? "#{post[:created_at].strftime('%m/%d/%Y')}, #{post[:author]}" : "#{post[:created_at].strftime('%m/%d/%Y')}" %>
+        <h3><%= post_date_author %></h3>
+        <%= post.compiled_content %>
+        <br />
+        <br />
       <% end %>
+      <div class="blog-post-main--archive">
+        <%= link_to 'ROS Blog Archive', '/blog/archive', class: 'blog-post-main--archive__link'%>
+      </div>
     </div>
     <%= render '/blog/_sidebar.*' %>
   </div>

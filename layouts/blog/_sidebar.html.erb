@@ -1,19 +1,19 @@
 <div class="blog-sidebar">
   <h1>Articles</h1>
   <% sorted_articles.first(8).each do |recent_post| %>
-    <% if recent_post[:published] == true %>
-      <div class="recent-post">
-        <div class="recent-post-title">
-          <h2><%= link_to recent_post[:title], recent_post.path %></h2>
-        </div>
-        <div class="recent-post-author-date">
-          <% recent_post_date_author = recent_post[:author] ? "#{recent_post[:created_at].strftime('%m/%d/%Y')} - #{recent_post[:author]}" : "#{recent_post[:created_at].strftime('%m/%d/%Y')}" %>
-          <h3><%= recent_post_date_author %></h3>
-        </div>
+    <div class="recent-post">
+      <div class="recent-post-title">
+        <h2><%= link_to recent_post[:title], recent_post.path %></h2>
       </div>
-    <% end %>
+      <div class="recent-post-author-date">
+        <% recent_post_date_author = recent_post[:author] ? "#{recent_post[:created_at].strftime('%m/%d/%Y')} - #{recent_post[:author]}" : "#{recent_post[:created_at].strftime('%m/%d/%Y')}" %>
+        <h3><%= recent_post_date_author %></h3>
+      </div>
+    </div>
   <% end %>
-
+  <div class="blog-sidebar--archive">
+    <%= link_to 'ROS Blog Archive', '/blog/archive/', class: 'blog-sidebar--archive__link' %>
+  </div>
   <div class="newsletter-signup">
     <h2>Stay Up-to-Date - Subscribe Now!</h2>
     <input placeholder="Name" />

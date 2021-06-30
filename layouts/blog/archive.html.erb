@@ -1,0 +1,24 @@
+<% render '/default.*' do %>
+<div class="blog-archive-wrapper">
+  <div class="blog-archive-body__header">
+    <h1><%= @item[:title] %></h1>
+  </div>
+  <div class="blog-archive-body">
+    <% years = sorted_articles.map{ |each| each[:created_at].strftime('%Y') }.uniq %>
+    <% years.each do |year| %>
+      <div class="blog-archive-year"><%= year %></div>
+        <% sorted_articles.each do |post| %>
+          <% if post[:created_at].strftime('%Y') == year %>
+            <div class="blog-archive-post">
+              <%= link_to post[:title], post.path, class: 'blog-archive-post__title' %>
+              <div class="blog-archive-post__date-author">
+                <% author_date = post[:author] ? "#{post[:author]} - #{post[:created_at].strftime('%m/%d/%Y')}" : post[:created_at].strftime('%m/%d/%Y') %>
+                <h4><%= author_date %></h4>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+    <% end %>
+    </div>
+</div>
+<% end %>

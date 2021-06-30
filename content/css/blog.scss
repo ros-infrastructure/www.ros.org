@@ -56,7 +56,6 @@ p {
     color: $white;
   }
   height: $blog-header-height;
-  padding-top: 5%;
   background-color: $navy-darker;
   grid-column: 1 / 5;
   grid-row: 1 / 2;
@@ -174,6 +173,16 @@ p {
 .blog-post-main .image-large img {
   max-width: 100%;
 }
+
+.blog-post-main--archive {
+  padding-bottom: 35px;
+}
+
+.blog-post-main--archive__link {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .blog-image-row {
   display: flex;
   justify-content: space-between;
@@ -183,7 +192,7 @@ p {
 }
 
 .blog-sidebar {
-  padding-left: 15px;
+  padding: 0 15px 70px 15px;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   background-color: $gray-lighter;
@@ -217,7 +226,7 @@ p {
 }
 
 .blog-sidebar .recent-post {
-  max-width: 300px;
+  max-width: 90%;
   margin-left: 15px;
   margin-top: 25px;
   h1 a,
@@ -231,14 +240,27 @@ p {
   }
 }
 
+.blog-sidebar--archive {
+  padding: 25px 0 0 15px;
+}
+
+.blog-sidebar--archive__link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .newsletter-signup {
+  // This could be hooked up to an external tool for to allow for newsletter subscribers
+  // Since it's not hooked up at present, it's been turned off.
+  display: none;
+
   margin-top: 25px;
   margin-bottom: 25px;
   h2 {
     width: 300px;
   }
   input {
-    width: 95%;
+    width: 98%;
     padding: 8px 0 8px 0;
     margin-top: 10px;
     &::placeholder {
@@ -252,12 +274,65 @@ p {
 
 .blog-sidebar .btn-subscribe {
   margin-top: 10px;
-  width: 96%;
+  width: 100%;
 }
+
+.blog-archive-wrapper {
+  width: 100%;
+  min-height: 65vh;
+  background: $white;
+  padding-top: calc(#{$header-height} + 5px);
+}
+
+.blog-archive-body__header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $navy-darker;
+  height: $blog-header-height;
+  h1 {
+    padding-left: 10%;
+    color: $white;
+  }
+}
+
+.blog-archive-body {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.blog-archive-year {
+  @extend h1;
+  font-size: 44px;
+  padding-top: 50px;
+}
+
+.blog-archive-post {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blog-archive-post__title {
+  font-size: 24px;
+  color: $navy-darker;
+  text-decoration: none;
+  line-height: 26px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.blog-archive-post__date-author {
+  font-size: 18px;
+  color: $gray-dark;
+  padding-top: 0;
+}
+
 @media screen and (max-width: 767px) {
   .blog-wrapper {
     padding-top: 0;
   }
+
   .bg-lighter,
   .bg-light,
   .bg-dark,
@@ -298,10 +373,15 @@ p {
     grid-row: 5 / 6;
   }
 
+  .blog-sidebar--archive {
+    padding-left: 0;
+  }
+
   .recent-post {
     padding-top: 0;
     padding-left: 10px;
   }
+
   .blog-sidebar {
     .newsletter-signup {
       width: 90%;
@@ -314,6 +394,10 @@ p {
         width: 91%;
       }
     }
+  }
+
+  .blog-archive-wrapper {
+    padding-top: $header-height;
   }
 }
 
@@ -332,6 +416,7 @@ p {
     grid-template-columns: auto 50% 33% auto;
   }
 }
+
 @media screen and (max-width: 449px) {
   .blog-grid-main {
     padding: 0;
@@ -339,6 +424,7 @@ p {
   .bg-photo {
   }
 }
+
 @media screen and (max-width: 380px) {
   .bg-photo,
   .bg-dark,
