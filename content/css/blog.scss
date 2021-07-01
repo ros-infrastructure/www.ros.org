@@ -1,5 +1,4 @@
 @import "colors";
-$header-height: 45px;
 $blog-header-height: fit-content;
 
 h1 {
@@ -24,7 +23,6 @@ p {
 }
 
 .blog-wrapper {
-  padding-top: $header-height;
   background-color: $white;
   h1,
   h2 {
@@ -73,6 +71,7 @@ p {
 }
 
 .blog-grid-main {
+  margin-top: -1px;
   overflow: hidden;
   padding-bottom: 75px;
   display: grid;
@@ -280,17 +279,17 @@ p {
   width: 100%;
   min-height: 65vh;
   background: $white;
-  padding-top: $header-height;
 }
 
 .blog-archive-body__header {
   width: 100%;
   margin: 0 auto;
-  background-color: $gray-lighter;
+  margin-top: -1px;
+  background-color: $navy-darker;
   height: $blog-header-height;
   h1 {
     padding-left: 10%;
-    color: $navy-darker;
+    color: $white;
   }
 }
 
@@ -338,7 +337,6 @@ p {
   .bg-photo {
     background-position: 20% 50%;
     grid-template-columns: auto 95% auto;
-    padding-top: $header-height;
     h1 {
       font-size: 55px;
       line-height: 1;
@@ -393,10 +391,6 @@ p {
         width: 91%;
       }
     }
-  }
-
-  .blog-archive-wrapper {
-    padding-top: $header-height;
   }
 }
 
