@@ -37,3 +37,39 @@ task :new_post, :title do |t, args|
 stat = File.stat('.git')
 sh "chown -Rf #{stat.uid}:#{stat.gid} content/blog"
 end
+
+
+
+desc "Create a new robot"
+task :new_robot, :title do |t, args|
+  mkdir_p './content/robots'
+  args.with_defaults(:title => 'New Robot')
+  title = args.title
+
+  dirname = "./content/robots/#{title}"
+  filename = "#{dirname}/index.md"
+
+  if Dir.exists?(dirname)
+      abort('rake aborted! Directory name already exists.') if ask("#{dirname} already exists. Want to overwrite? y, n", ['y', 'n']) == 'n'
+  end
+
+  mkdir_p dirname
+
+  puts "Creating new robot: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts '---'
+    post.puts "featured: false"
+    post.puts "title: \"#{title}\""
+    post.puts "subtitle:"
+    post.puts "image:"
+    post.puts "header_image:"
+    post.puts "categories:"
+    post.puts "tags:"
+    post.puts "---\n\n"
+  end
+
+
+# Autogenerating was causing a permissions issue, so chown all robot files to belong to user
+stat = File.stat('.git')
+sh "chown -Rf #{stat.uid}:#{stat.gid} content/robots"
+end
