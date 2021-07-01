@@ -1,4 +1,5 @@
 $header-height: 90px;
+$navbar-small-height: 45px;
 $banner-height: 550px;
 $news-height: 140px;
 $video-height: 400px;
@@ -257,6 +258,11 @@ blockquote {
   display: grid;
 }
 
+.hover:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid $orange;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -335,9 +341,6 @@ header {
         position: relative;
         font-weight: 700;
         color: $white;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
     li.nav-item.wide-text {
@@ -401,6 +404,9 @@ header {
         grid-row: 3 / 4;
       }
     }
+    #dropdown-dots.dropdown-dots-small {
+      top: 10px;
+    }
   }
 
   .menu-blog-link a {
@@ -424,6 +430,11 @@ header {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
+
+  #submenu-about.submenu-about-small {
+    margin-top: $navbar-small-height;
+  }
+
   #submenu-about ul {
     width: 95%;
     list-style: none;
@@ -435,7 +446,6 @@ header {
 
   #submenu-about ul li {
     margin: 15px;
-    width: 150px;
     justify-content: space-around;
   }
 
@@ -476,7 +486,7 @@ header {
   }
 
   #submenu-about li.submenu-list.wide {
-    width: 310px;
+    white-space: nowrap;
   }
 
   #submenu-dots {
@@ -490,6 +500,10 @@ header {
     padding: 20px 25px 50px 10px;
     z-index: 5;
     overflow-y: scroll;
+  }
+
+  #submenu-dots.submenu-dots-small {
+    top: $navbar-small-height;
   }
 
   #submenu-dots li {
@@ -540,6 +554,29 @@ header {
         background-color: rgba(255, 255, 255, 0.5);
       }
     }
+  }
+}
+
+#header-small {
+  height: $navbar-small-height;
+}
+
+#navbar-small {
+  @extend #navbar;
+}
+
+header #navbar-small {
+  height: $navbar-small-height;
+  .logo-small {
+    margin-left: 10%;
+  }
+  .logo-small img {
+    padding-top: 10px;
+    width: 100px;
+  }
+
+  ul.main-menu .nav-item {
+    padding-top: 15px;
   }
 }
 

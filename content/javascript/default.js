@@ -11,6 +11,9 @@ function closeMenus(menuId, event) {
   let aboutList = document.getElementById("submenu-about");
   let aboutClasses = aboutList.classList;
 
+  let navItemHover = document.getElementById("nav-item-hover");
+  let navItemHoverClasses = navItemHover.classList;
+
   // stop checking in parent elements further up the DOM
   window.event.stopPropagation();
   const menuIds = ["about", "submenu-about", "dropdown-dots", "submenu-dots"];
@@ -33,6 +36,8 @@ function closeMenus(menuId, event) {
 
     aboutLinkClasses.remove("show-after");
     aboutLinkClasses.add("hide-after");
+
+    navItemHoverClasses.add("hover");
   }
 }
 
@@ -86,10 +91,14 @@ function openCloseAbout() {
   let dotBottomClasses = bottomDot.classList;
   let aboutLink = document.getElementById("about");
   let aboutLinkClasses = aboutLink.classList;
+  let navItemHover = document.getElementById("nav-item-hover");
+  let navItemHoverClasses = navItemHover.classList;
 
   if (classes.contains("hidden")) {
     classes.remove("hidden");
     classes.add("show");
+
+    navItemHoverClasses.remove("hover");
 
     aboutLinkClasses.remove("hide-after");
     aboutLinkClasses.add("show-after");
@@ -107,6 +116,7 @@ function openCloseAbout() {
     classes.add("hidden");
     aboutLinkClasses.remove("show-after");
     aboutLinkClasses.add("hide-after");
+    navItemHoverClasses.add("hover");
   }
 }
 

@@ -23,7 +23,8 @@
     width: auto;
   }
 
-  header #navbar #dropdown-dots {
+  header #navbar #dropdown-dots,
+  header #navbar-small #dropdown-dots .dropdown-dots-small {
     top: 10px;
     right: 20px;
     width: 20px;

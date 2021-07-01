@@ -1,4 +1,4 @@
 ---
-title: ROS Blog Archive
+title: Blog Archive
 layout: "/blog/blog_archive.*"
 ---

@@ -1,5 +1,5 @@
 @import "colors";
-$header-height: 90px;
+$header-height: 45px;
 $blog-header-height: fit-content;
 
 h1 {
@@ -74,7 +74,6 @@ p {
 
 .blog-grid-main {
   overflow: hidden;
-  padding-top: 5px;
   padding-bottom: 75px;
   display: grid;
   grid-template-columns: auto 50% 25% auto;
@@ -281,17 +280,17 @@ p {
   width: 100%;
   min-height: 65vh;
   background: $white;
-  padding-top: calc(#{$header-height} + 5px);
+  padding-top: $header-height;
 }
 
 .blog-archive-body__header {
   width: 100%;
   margin: 0 auto;
-  background-color: $navy-darker;
+  background-color: $gray-lighter;
   height: $blog-header-height;
   h1 {
     padding-left: 10%;
-    color: $white;
+    color: $navy-darker;
   }
 }
 
@@ -339,7 +338,7 @@ p {
   .bg-photo {
     background-position: 20% 50%;
     grid-template-columns: auto 95% auto;
-    padding-top: calc(#{$header-height} + 10px);
+    padding-top: $header-height;
     h1 {
       font-size: 55px;
       line-height: 1;

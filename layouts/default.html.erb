@@ -2,7 +2,11 @@
 <html lang="en">
   <%= render '/_head.*' %>
   <body id="body" onclick="closeMenus(this)">
-    <%= render '/_header.*' %>
+    <% if @item[:title] == 'Home' %>
+      <%= render '/_header_home.*' %>
+    <% else %>
+      <%= render '/_header.*' %>
+    <% end %>
     <div id="main">
       <%= yield %>
     </div>

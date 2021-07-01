@@ -14,8 +14,9 @@ features:
 tags:
   - R2 Unit
   - good robot
-  - a longer tag about the robot
-  - 01010010 00110010 01000100 00110010
+  - longer tag about robot
+  - 01010010 00110010
+  - 01000100 00110010
   - another tag
   - robot description
 ---

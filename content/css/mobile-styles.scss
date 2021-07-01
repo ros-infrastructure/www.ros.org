@@ -15,10 +15,6 @@
     text-align: right;
   }
 
-  #main {
-    margin-top: calc(#{0 - $header-height});
-  }
-
   .content-wrapper {
     height: 100%;
     width: 100%;
