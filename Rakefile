@@ -32,13 +32,10 @@ task :new_post, :title do |t, args|
     post.puts "---\n\n"
   end
 
-
-# Autogenerating was causing a permissions issue, so chown all blog files to belong to user
-stat = File.stat('.git')
-sh "chown -Rf #{stat.uid}:#{stat.gid} content/blog"
+  # Autogenerating was causing a permissions issue, so chown all blog files to belong to user
+  stat = File.stat('.git')
+  sh "chown -Rf #{stat.uid}:#{stat.gid} content/blog"
 end
-
-
 
 desc "Create a new robot"
 task :new_robot, :title do |t, args|
@@ -60,16 +57,17 @@ task :new_robot, :title do |t, args|
     post.puts '---'
     post.puts "featured: false"
     post.puts "title: \"#{title}\""
-    post.puts "subtitle:"
     post.puts "image:"
     post.puts "header_image:"
-    post.puts "categories:"
-    post.puts "tags:"
+    post.puts "subtitle:"
+    post.puts "summary:"
+    post.puts "categories: # e.g. - manipulator"
+    post.puts "tags: # e.g. - android"
+    post.puts "features: # e.g. - 100kg payload"
     post.puts "---\n\n"
   end
 
-
-# Autogenerating was causing a permissions issue, so chown all robot files to belong to user
-stat = File.stat('.git')
-sh "chown -Rf #{stat.uid}:#{stat.gid} content/robots"
+  # Autogenerating was causing a permissions issue, so chown all robot files to belong to user
+  stat = File.stat('.git')
+  sh "chown -Rf #{stat.uid}:#{stat.gid} content/robots"
 end
