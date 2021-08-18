@@ -2,6 +2,13 @@ version: '3'
 services:
   compile: &default
     build: .
+    command: bundle exec nanoc compile
+    volumes:
+      - .:/usr/src/ros
+
+  compilewatch:
+    <<: *default
+    build: .
     command: bundle exec nanoc compile -W
     volumes:
       - .:/usr/src/ros
