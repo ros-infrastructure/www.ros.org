@@ -653,10 +653,14 @@ header #navbar-small {
 }
 
 .news {
-  background-color: $white;
-  margin-left: 15%;
+  background-color: thistle;
+  //background-color: $white;
+  //margin-left: 15%;
+  //  width: 70%;
+  margin-left: 30%;
   padding: 20px;
-  width: 70%;
+  width: 40%;
+	     
   border-radius: 5px;
   box-shadow: 1px 1px 1px $gray-light;
   height: auto;
