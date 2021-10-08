@@ -3,7 +3,9 @@
     <div class="logo">
       <a href="/"><img src="/images/logo-white.png"/></a>
     </div>
+
     <ul class="main-menu">
+    <!-- DISABLE DROP DOWN MENU FOR THE MOMENT
       <li id="nav-item-hover" class="nav-item hover">
         <a
           href="javascript:void(0);"
@@ -12,13 +14,17 @@
           onclick="openCloseAbout(), closeMenus(this)"
           >About</a
         >
+      </li>	
+	-->
+
         <!-- The submenu for About is at the bottom of the header tag -->
-      </li>
-      <li class="nav-item hover"><a href="/blog/why-ros">Why ROS</a></li>
+      <li class="nav-item hover"><a href="/blog/why-ros">Why ROS?</a></li>
       <li class="nav-item hover"><a href="/blog/getting-started">Getting Started</a></li>
       <li class="nav-item hover"><a href="/blog/community">Community</a></li>
       <li class="nav-item hover"><a href="/blog/ecosystem">Ecosystem</a></li>
     </ul>
+
+    <!--
     <div id="dropdown-dots" onclick="openCloseDotsMenu(), closeMenus(this)">
       <img src="/images/dot.png" id="dot-top" class="dropdown-dot-top" />
       <img src="/images/dot.png" class="dropdown-dot-middle dot-1" />
@@ -34,4 +40,5 @@
   <div id="submenu-about" class="hidden" onclick="closeMenus(this)">
     <%= render '/_submenu_about.*' %>
   </div>
+  -->
 </header>

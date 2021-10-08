@@ -4,21 +4,25 @@
       <a href="/"><img src="/images/logo-white.png" /></a>
     </div>
     <ul class="main-menu">
-      <li class="nav-item hover"><a href="/">Home</a></li>
-      <li class="nav-item hover"><a href="/blog/">Blog</a></li>
-      <li class="nav-item hover"><a href="#">Wiki</a></li>
+      <li class="nav-item hover"><a href="/blog/about">About</a></li>
+      <li class="nav-item hover"><a href="/blog/why-ros">Why ROS?</a></li>
+      <li class="nav-item hover"><a href="/blog/getting-started/#">Getting Started</a></li>
+      <li class="nav-item hover"><a href="/blog/community">Community</a></li>
+      <li class="nav-item hover"><a href="/blog/ecosystem">Ecosystem</a></li>
+      <!-- The submenu for About is at the bottom of the header tag -->
+      <!--
       <li id="nav-item-hover" class="nav-item hover">
         <a
           href="javascript:void(0);"
           id="about"
           class="hide-after"
           onclick="openCloseAbout(), closeMenus(this)"
-          >About</a
-        >
-        <!-- The submenu for About is at the bottom of the header tag -->
+          >About</a>
       </li>
-      <li class="nav-item hover"><a href="#">Contact</a></li>
+      -->
     </ul>
+
+    <!--
     <div id="dropdown-dots" class='dropdown-dots-small' onclick="openCloseDotsMenu(), closeMenus(this)">
       <img src="/images/dot.png" id="dot-top" class="dropdown-dot-top" />
       <img src="/images/dot.png" class="dropdown-dot-middle dot-1" />
@@ -29,8 +33,11 @@
     <ul id="submenu-dots" class="hidden submenu-dots-small" onclick="closeMenus(this)">
       <%= render '/_submenu_dots.*' %>
     </ul>
+    -->
   </div>
+  <!--
   <div id="submenu-about" class="hidden submenu-about-small" onclick="closeMenus(this)">
     <%= render '/_submenu_about.*' %>
   </div>
+  -->
 </header>
