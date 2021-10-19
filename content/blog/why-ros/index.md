@@ -5,77 +5,86 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/subt1.png # Optional, default defined in blog layout
+header_image: /images/subt-huskies.jpg # Optional, default defined in blog layout
 ---
 
-### This is a Robotics Blog Post Title
+ROS (Robot Operating System) is an open source software development kit for
+robotics applications. ROS offers a standard software platform to developers
+across industries that will carry them from research and prototyping through to
+deployment and production.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+**Don't reinvent the wheel. Create something new and do it faster and better by building on ROS!**
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+### Global community
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+Over 10+ years the ROS project has produced a vast ecosystem of software for
+robotics by nurturing a global community of millions of developers and users
+who contribute to and improve that software. ROS is developed by and for that
+community, who will be its stewards into the future.
 
-<div class="image-large">
-  <img src="/images/post-image-1.png" />
-</div>
+### Proven in use
 
-### Another h3 Tag
+ROS is relied upon throughout the robotics industry. It's the norm for
+[teaching robotics](http://wiki.ros.org/Courses). It's the basis for most
+robotics research, from [single-student
+projects](https://www.makr.org/2021/scorpio) to [multi-institution
+collaborations](http://swarms.eu) and [large-scale
+competitions](https://www.subtchallenge.com/). And it's inside robots that are
+running in production all around the world today. In the autonomous mobile
+robot (AMR) alone, ROS has helped to create
+[billions](https://locusrobotics.com/our_news/meet-the-newest-robotics-unicorn-locus-robotics-raises-150-million-at-a-1-billion-valuation-on-surging-e-commerce-sales/)
+of
+[dollars](https://investors.teradyne.com/news-releases/news-release-details/teradyne-and-mobile-industrial-robots-mir-announce-teradynes/)
+[in](https://news.shopify.com/shopify-to-acquire-6-river-systems#)
+[value](https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2021/zebra-technologies-to-acquire-fetch-robotics.html).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+### Shorten time to market
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+ROS provides the tools, libraries, and capabilities that you need to develop
+your robotics applications, allowing you to spend your time on the work that is
+important for your business. Because it is open source, you have the
+flexibility to decide where and how to use ROS, as well as the freedom to
+customize it for your needs.
 
-### A third h3 Tag
+### Multi-domain
 
-<div id="blog-image-slider" class="owl-carousel owl-theme">
-  <img class="item" src="/images/robot-face.png" />
-  <img class="item" src="/images/robot.png" />
-  <img class="item" src="/images/drone.png" />
-</div>
+ROS is ready for use across a wide array of robotics applications, from indoor
+to outdoor, home to automotive, underwater to space, and consumer to
+industrial.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+### Multi-platform
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+ROS 2 is supported and tested on Linux, Windows, and macOS, as well as various
+embedded platforms (via [micro-ROS](https://micro.ros.org/)), allowing seamless
+development and deployment of on-robot autonomy, back-end management, and user
+interfaces. The tiered support model allows for ports to new platforms, such as
+real-time and embedded OSs, to be introduced and promoted as they gain interest
+and investment.
+
+### 100% open
+
+ROS is and always will be open source, ensuring that our global community has
+free and unfettered access to a high-quality, best-in-class, fully featured
+robotics SDK. We build ROS atop other open source projects and we leverage and
+follow open standards (such as [OMG's
+DDS](https://design.ros2.org/articles/ros_on_dds.html)) wherever possible.
+
+### Commercial-friendly
+
+While we earnestly encourage open source contributions to ROS from our user
+community, we never demand it. We distribute ROS under permissive open source
+licenses, with [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
+being our default. You're welcome to modify ROS, mix it together with your own
+and others' non-open software, and distribute the result in your proprietary
+product, and you don't even need to tell us about it. Of course, we always
+enjoy hearing what our users are up to with ROS, so please do [let us
+know](https://discourse.ros.org/c/ros-projects) if you're able!
+
+
+### Industry support
+
+As demonstrated by the membership of the [ROS 2 Technical Steering
+Committee](https://docs.ros.org/en/rolling/Governance.html), industry support
+for ROS 2 is strong.  Companies large and small from around the world are
+committing their resources to making open source contributions to ROS 2, in
+addition to developing products on top.
