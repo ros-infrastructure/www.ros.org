@@ -17,6 +17,33 @@ $navy-darker: #15253e;
 $orange: #fb9401;
 $white: #fff;
 
+// Kat added for ROS explainer video 
+.explainer {
+    color: $gray-lighter; 
+    background-color: $gray-lighter;
+    height: 768;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    h1 {
+	text-align: center;
+	color: $navy-darker;
+	font-weight: 700;
+	letter-spacing: -1px;
+	font-size: clamp(50px, 70px, 80px);
+	grid-column: 1 / 2;
+	grid-row: 3 / 5;
+    }
+    .wrap{
+	text-align:center;
+	  width: 100%;
+	  height: auto;
+	  padding: 0;
+	  overflow: hidden;
+    }
+}
+
+
 * {
   font-family: "Overpass", sans-serif;
   margin: 0;
