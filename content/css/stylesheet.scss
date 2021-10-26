@@ -8,7 +8,8 @@ $support-height: 575px;
 $blog-newsletter-height: 585px;
 $footer-main-height: 150px;
 $subfooter-height: 100px;
-$aqua: #74c4b7;
+$aqua: #46a493;
+// $aqua: #74c4b7; old value
 $black: #000;
 $gray-darker: #222;
 $gray-light: #9c9c9c;
@@ -661,7 +662,7 @@ header #navbar-small {
     width: 100px;
     height: 10px;
     padding-top: 80px;
-    border-bottom: solid;
+    border-botwtom: solid;
     border-color: $orange;
     position: absolute;
     left: 10%;
