@@ -138,7 +138,7 @@ p {
   grid-row: 1 / 2;
 }
 .bg-light {
-  background-color: $gray-lighter;
+    background-color: $white; //$gray-lighter;
 }
 .bg-lighter {
   background-color: $white;
@@ -195,7 +195,7 @@ p {
   padding: 0 15px 70px 15px;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  background-color: $gray-lighter;
+  background-color: $white;//$gray-lighter;
   h1 {
     height: 50px;
     max-width: 330px;
