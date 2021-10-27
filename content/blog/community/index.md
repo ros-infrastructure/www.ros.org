@@ -15,9 +15,9 @@ The ROS community is a loosely affiliated collection of engineers and hobbyists 
 <br>
 
 <div id="blog-image-slider" class="owl-carousel owl-theme">
-<img class="item"   src="/images/roscon2019.png" />
-  <img class="item"  src="/images/rosworld.png" />
-  <img class="item"  src="/images/rosconjp.jpg" />
+	<a href="https://roscon.ros.org/2019/"><img class="item"   src="/images/roscon2019.png" /></a>
+	<a href="https://roscon.ros.org/world/2021/"><img class="item"  src="/images/rosworld.png" /></a>
+	<a href="https://roscon.jp/"><img class="item"  src="/images/rosconjp.jpg" /></a>
 </div>
 
 <br>
@@ -97,7 +97,7 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
 
 ## PX4 
 
-[PX4](https://px4.io/) is an open source flight control software for drones and other unmanned vehicles. The project provides a flexible set of tools for drone developers to share technologies to create tailored solutions for drone applications. PX4 is hosted by Dronecode, a Linux Foundation non-profit.
+[PX4](https://px4.io/) is an open source flight control software for drones and other unmanned vehicles. The project provides a flexible set of tools for drone developers to share technologies to create tailored solutions for drone applications. PX4 is hosted by [Dronecode](https://www.dronecode.org/), a Linux Foundation non-profit.
 
 
 <div class="image-large">
