@@ -59,16 +59,15 @@ The ROS ecosystem is a cornucopia of robot software.
 Whether you need a device driver for your GPS, or a walk and balance controller
 for your quadruped, or a mapping system for your mobile robot, ROS has
 something for you.
-From drivers to algorithms for perception, planning, and control, to user
-interfaces, ROS provides the building blocks that allow you to focus on your
-application.
+From drivers to algorithms, to user interfaces, ROS provides the building
+blocks that allow you to focus on your application.
 
 The goal of the ROS project is to continually raise the bar on what is taken
 for granted, and thus to lower the barrier to entry to building robot
-applications, so that anyone with a good idea for a useful (or fun, or
-interesting) robot can make that idea real, without having to understand
-everything about the underlying hardware and software.
-
+applications.
+Anyone with a good idea for a useful (or fun, or interesting) robot should be
+able to make that idea real, without having to understand everything about the
+underlying hardware and software.
 
 #### Community
 
@@ -77,20 +76,10 @@ From students and hobbyists to multinational corporations and government
 agencies, it takes people and organizations of all stripes to keep the ROS
 project going.
 
-The hub and neutral steward for this community is [Open
+The community hub and neutral steward for the project is [Open
 Robotics](https://www.openrobotics.org), who hosts the shared online services
 (such as this website), create and manage distribution releases (including
-those binary packages you install), and develop and maintain much of the core
+the binary packages that you install), and develop and maintain much of the core
 software within ROS.
 *Open Robotics also offers [engineering
 services](https://www.openrobotics.org/solutions) related to ROS.*
-
-
-
-
-<!--div id="blog-image-slider" class="owl-carousel owl-theme">
-  <img class="item" src="/images/robot-face.png" />
-  <img class="item" src="/images/robot.png" />
-  <img class="item" src="/images/drone.png" />
-</div-->
-
