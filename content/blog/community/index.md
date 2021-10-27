@@ -5,7 +5,7 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/community.jpg # Optional, default defined in blog layout
+header_image: /images/roscon2019-group.jpg # Optional, default defined in blog layout
 ---
 
 ## The ROS Community
