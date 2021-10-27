@@ -53,7 +53,7 @@ In addition to the official documentation for ROS packages, the wiki contains tw
 
 ### [ROS Package Documentation <i style="font-size: 1rem;" class="fas fa-file-code"></i>](https://docs.ros.org)
 Documentation for core ROS packages as well as package specific content is hosted on [docs.ros.org](https://docs.ros.org).
-On this site you can find the core tutorials and docuemntation for the project as well as generated API documentation for individual packges.
+On this site you can find the core tutorials and documentation for the project as well as generated API documentation for individual packages.
 
 ### [ROS Answers <i style="font-size: 1rem;" class="fas fa-question-circle"></i>](https://answers.ros.org)
 If the wiki doesn't address your problem, [ROS Answers](https://answers.ros.org) is next.

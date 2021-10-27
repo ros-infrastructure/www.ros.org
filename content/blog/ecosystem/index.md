@@ -35,6 +35,7 @@ This approach encourages a number of good practices in your software
 development, including fault isolation, separation of concerns, and clear
 interfaces, resulting in systems that are easier to maintain, contribute to,
 and reuse.
+
 Along the way you can take advantage of the vast community experience that has
 resulted in the standard ROS message formats that are used today for
 interacting with everything from lidars and cameras to localization algorithms
@@ -61,6 +62,7 @@ something for you.
 From drivers to algorithms for perception, planning, and control, to user
 interfaces, ROS provides the building blocks that allow you to focus on your
 application.
+
 The goal of the ROS project is to continually raise the bar on what is taken
 for granted, and thus to lower the barrier to entry to building robot
 applications, so that anyone with a good idea for a useful (or fun, or
@@ -70,7 +72,19 @@ everything about the underlying hardware and software.
 
 #### Community
 
-TODO
+The ROS [community](/blog/community) is large, diverse, and global.
+From students and hobbyists to multinational corporations and government
+agencies, it takes people and organizations of all stripes to keep the ROS
+project going.
+
+The hub and neutral steward for this community is [Open
+Robotics](https://www.openrobotics.org), who hosts the shared online services
+(such as this website), create and manage distribution releases (including
+those binary packages you install), and develop and maintain much of the core
+software within ROS.
+*Open Robotics also offers [engineering
+services](https://www.openrobotics.org/solutions) related to ROS.*
+
 
 
 
