@@ -34,16 +34,10 @@ A number of ROS groups have grown to the point where they are large enough to be
   <img  width=400 src="/images/autoware.jpg" />
 </div>
 
-## Autoware 
+## The Autoware Foundation
 
-[Autoware]() is an ROS-affiliated group that develops software for vehicle autonomy. 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+[The Autoware Foundation](https://www.autoware.org/) is an ROS-affiliated non-profit organization supporting open-source projects enabling self-driving mobility. The Autoware Foundation creates synergies between corporate development and academic research, enabling autonomous driving technology for everyone.
+
 
 
 <div class="image-large">
@@ -52,16 +46,8 @@ mollit anim id est laborum.
 
 ## F1 Tenth
 
-[Autoware]() is an ROS-affiliated group that develops software for vehicle autonomy. 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-
-
+[F1 Tenth](https://f1tenth.org/) 
+F1TENTH is an international community of researchers, engineers, and autonomous systems enthusiasts. It was originally founded at the University of Pennsylvania in 2016 but has since spread to many other institutions worldwide. Their mission is to foster interest, excitement, and critical thinking about the increasingly ubiquitous field of autonomous systems. 
 
 
 <div class="image-medium">
@@ -70,13 +56,9 @@ mollit anim id est laborum.
 
 ## microROS
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+[micro-ROS](https://micro.ros.org/) is bridging the gap between resource-constrained microcontrollers and larger processors in robotic applications that are based on the Robot Operating System. micro-ROS runs on a wide variety of embedded hardware and brings ROS closer to robot hardware.
+
+
 
 
 <br>
@@ -86,13 +68,8 @@ mollit anim id est laborum.
 
 ## MoveIt
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+[MoveIt](https://moveit.ros.org/) is a set of ROS packages for forward and inverse kinematics and planning using ROS. Generally, these tools are used to build advanced behaviors for robot arms. MoveIt can now be used on most major robot arms and is used by many large companies. 
+
 
 
 
@@ -102,13 +79,7 @@ mollit anim id est laborum.
 
 ## Nav 2
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of the ROS Navigation Stack. This project seeks to find a safe way to have a mobile robot move from point A to point B. It can also be applied in other applications that involve robot navigation, like following dynamic points. This will complete dynamic path planning, compute velocities for motors, avoid obstacles, and structure recovery behaviors. 
 
 
 
@@ -117,15 +88,7 @@ mollit anim id est laborum.
 </div> 
 
 ## OpenCV 
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-
+[OpenCV](https://opencv.org/) (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize and modify the code.
 
 
 <div class="image-large">
@@ -134,14 +97,7 @@ mollit anim id est laborum.
 
 ## PX4 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-
+[PX4](https://px4.io/) is an open source flight control software for drones and other unmanned vehicles. The project provides a flexible set of tools for drone developers to share technologies to create tailored solutions for drone applications. PX4 is hosted by Dronecode, a Linux Foundation non-profit.
 
 
 <div class="image-large">
@@ -150,12 +106,4 @@ mollit anim id est laborum.
 
 ## ROS Industrial
 
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-
+[ROS Industrial](https://rosindustrial.org/) is an open-source project that extends the advanced capabilities of ROS software to industrial relevant hardware and applications.
