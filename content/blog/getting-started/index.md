@@ -70,7 +70,7 @@ When you want to find out information about a specific package the [index](https
 It connects you to all the important locations relevant to a package.
 In addition to the official documentation for ROS packages, the wiki contains two key resources you should consult: the Troubleshooting guide and the FAQ. Solutions to many common problems are covered in these two pages. If you have ever used [PyPI](https://pypi.org/) you should feel right at home on ROS Index. 
 
-### [Issue trackers <i style="font-size: 1rem;" class="fas fa-bug"></i>](https://github.com/ros2/ros2/issues)
+### [Issue Trackers <i style="font-size: 1rem;" class="fas fa-bug"></i>](https://github.com/ros2/ros2/issues)
 
 When you've identified a bug (e.g., as a result of a discussion at [ROS Answers](https://answers.ros.org)), or when you want to request a new feature, head to the issue trackers.
 Links are provided in the packages metadata available on [ROS Index](https://index.ros.org).
