@@ -35,27 +35,19 @@ $white: #fff;
 	font-size: clamp(30px, 40px, 60px);
 	grid-column: 1 / 2;
 	grid-row: 3 / 5;
+	
+
     }
-    h1::after {
-	content: "";
-	//text-align: center;
-	color: $navy-darker;
-	width: 230px;
-	height: 10px;
-	padding-top: 60px;
+    h1::after{
+	padding-top: 70px;
 	border-bottom: solid;
 	border-color: $orange;
+	content: "";
+	width: 220px;
 	position: absolute;
-	left: 42%;
+	margin-left: -230px;
     }
     
-    .wrap{
-	text-align:center;
-	  width: 100%;
-	  height: auto;
-	  padding: 0;
-	  overflow: hidden;
-    }
 }
 
 
