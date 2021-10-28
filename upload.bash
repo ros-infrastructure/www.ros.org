@@ -1,4 +1,6 @@
 #!/bin/bash
 
 
-rsync -av --delete output/ ros1.osuosl.org:/var/www/beta.ros.org --exclude .well-known
+# todo read --delete when excludes are verified
+
+rsync -av output/ ros1.osuosl.org:/var/www/beta.ros.org --exclude-from=upload_exclusions.txt
