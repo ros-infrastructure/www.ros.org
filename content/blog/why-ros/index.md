@@ -15,14 +15,14 @@ deployment and production.
 
 **Don't reinvent the wheel. Create something new and do it faster and better by building on ROS!**
 
-### Global community
+### Global Community
 
 For over 10+ years the ROS project has produced a vast ecosystem of software for
 robotics by nurturing a global community of millions of developers and users
 who contribute to and improve that software. ROS is developed by and for that
 community, who will be its stewards into the future.
 
-### Proven in use
+### Proven in Use
 
 ROS is relied upon throughout the robotics industry. It's the norm for
 [teaching robotics](http://wiki.ros.org/Courses). It's the basis for most
@@ -38,7 +38,7 @@ of
 [in](https://news.shopify.com/shopify-to-acquire-6-river-systems#)
 [value](https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2021/zebra-technologies-to-acquire-fetch-robotics.html).
 
-### Shorten time to market
+### Shorten Time to Market
 
 ROS provides the tools, libraries, and capabilities that you need to develop
 your robotics applications, allowing you to spend more time on the work that is
@@ -61,7 +61,7 @@ interfaces. The tiered support model allows for ports to new platforms, such as
 real-time and embedded operating systems, to be introduced and promoted as they gain interest
 and investment.
 
-### 100% Open-Source
+### 100% Open-source
 
 ROS is and always will be open-source, ensuring that our global community has
 free and unfettered access to a high-quality, best-in-class, fully featured
@@ -69,7 +69,7 @@ robotics SDK. We build ROS atop other open source projects and we leverage and
 follow open standards (such as [OMG's
 DDS](https://design.ros2.org/articles/ros_on_dds.html)) wherever possible.
 
-### Commercial-friendly
+### Commercial Friendly
 
 While we earnestly encourage open source contributions to ROS from our user
 community, we never demand it. We distribute ROS under permissive open source
@@ -81,7 +81,7 @@ enjoy hearing what our users are up to with ROS, so please do [let us
 know](https://discourse.ros.org/c/ros-projects) if you're able!
 
 
-### Industry support
+### Industry Support
 
 As demonstrated by the membership of the [ROS 2 Technical Steering
 Committee](https://docs.ros.org/en/rolling/Governance.html), industry support
