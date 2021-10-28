@@ -25,20 +25,20 @@ And it's all open source.
 
 #### Plumbing
 
-At its core, ROS provides a message-passing system, often called middleware or plumbing.
+At its core, ROS provides a message-passing system, often called "middleware" or "plumbing".
 Communication is one of the first needs to arise when implementing a new robot
 application, or really any software system that will interact with hardware.
 ROS's built-in and well-tested messaging system saves you time by managing the
 details of communication between distributed *nodes* via an anonymous
 publish/subscribe pattern.
-This approach encourages a number of good practices in your software
+This approach encourages good practices in your software
 development, including fault isolation, separation of concerns, and clear
-interfaces, resulting in systems that are easier to maintain, contribute to,
+interfaces. Using ROS results in systems that are easier to maintain, contribute to,
 and reuse.
 
 Along the way you can take advantage of the vast community experience that has
-resulted in the standard ROS message formats that are used today for
-interacting with everything from lidars and cameras to localization algorithms
+resulted in standard ROS message formats; these standards are used for
+interacting with everything from LIDAR and cameras to localization algorithms
 and user interfaces.
 
 #### Tools
@@ -47,16 +47,14 @@ Building robot applications is challenging.
 You have all the difficulties of any software development effort combined with
 the need to interact asynchronously with the physical world, through sensors
 and actuators.
-To build applications efficiently, you need good developer tools.
-And ROS has them, including: launch, introspection, debugging, visualization,
-plotting, logging, and playback.
-In addition to accelerating the progress of your dev team, the ROS tools can be
+To build applications efficiently, you need good developer tools. ROS has them, including: launch, introspection, debugging, visualization,
+plotting, logging, and playback. These tools accelerate the progress of your dev team, and they can be
 included with your product when you ship it.
 
 #### Capabilities
 
 The ROS ecosystem is a cornucopia of robot software.
-Whether you need a device driver for your GPS, or a walk and balance controller
+Whether you need a device driver for your GPS, a walk and balance controller
 for your quadruped, or a mapping system for your mobile robot, ROS has
 something for you.
 From drivers to algorithms, to user interfaces, ROS provides the building
@@ -73,7 +71,7 @@ underlying hardware and software.
 
 The ROS [community](/blog/community) is large, diverse, and global.
 From students and hobbyists to multinational corporations and government
-agencies, it takes people and organizations of all stripes to keep the ROS
+agencies, people and organizations of all stripes keep the ROS
 project going.
 
 The community hub and neutral steward for the project is [Open
@@ -83,3 +81,4 @@ the binary packages that you install), and develop and maintain much of the core
 software within ROS.
 *Open Robotics also offers [engineering
 services](https://www.openrobotics.org/solutions) related to ROS.*
+ 
