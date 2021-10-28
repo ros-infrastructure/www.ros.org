@@ -1,0 +1,12 @@
+.well-known
+news
+reps
+wordpress
+wp-content
+wp-config.php
+images
+wp-config.php
+mt-static
+index.php
+favicon.ico
+mt.cgi
