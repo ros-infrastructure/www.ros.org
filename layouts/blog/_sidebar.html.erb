@@ -3,6 +3,9 @@
 <!-- I added the nbsp to keep proportionality until we can fill it up. -->
 
 <div class="blog-sidebar">
+    <h2>Recent ROS Discourse Posts</h2>
+    <d-topics-list discourse-url="https://discourse.ros.org" category="8" per-page="10"></d-topics-list>
+
   <!-- <h1>Articles</h1> -->
   <% sorted_articles.first(8).each do |recent_post| %>
 
