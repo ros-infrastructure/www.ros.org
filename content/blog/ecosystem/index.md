@@ -20,7 +20,7 @@ faster.
 And it's all open source.
 
 <div class="image-large">
-  <img src="/images/ros-equation.svg" />
+  <img src="/images/ros-equation.png" />
 </div>
 
 #### Plumbing
