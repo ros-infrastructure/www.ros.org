@@ -5,7 +5,7 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/galactic.png # Optional, default defined in blog layout
+header_image: /imgs/galactic.png # Optional, default defined in blog layout
 ---
 
 ### ROS Has Solutions to Your Robot Problems
@@ -20,7 +20,7 @@ faster.
 And it's all open source.
 
 <div class="image-large">
-  <img src="/images/ros-equation.png" />
+  <img src="/imgs/ros-equation.png" />
 </div>
 
 #### Plumbing

@@ -5,7 +5,7 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/roscon2019-group.jpg # Optional, default defined in blog layout
+header_image: /imgs/roscon2019-group.jpg # Optional, default defined in blog layout
 ---
 
 ## The ROS Community
@@ -15,9 +15,9 @@ The ROS community is a loosely affiliated collection of engineers and hobbyists 
 <br>
 
 <div id="blog-image-slider" class="owl-carousel owl-theme">
-	<a href="https://roscon.ros.org/2019/"><img class="item"   src="/images/roscon2019.png" /></a>
-	<a href="https://roscon.ros.org/world/2021/"><img class="item"  src="/images/rosworld.png" /></a>
-	<a href="https://roscon.jp/"><img class="item"  src="/images/rosconjp.jpg" /></a>
+	<a href="https://roscon.ros.org/2019/"><img class="item"   src="/imgs/roscon2019.png" /></a>
+	<a href="https://roscon.ros.org/world/2021/"><img class="item"  src="/imgs/rosworld.png" /></a>
+	<a href="https://roscon.jp/"><img class="item"  src="/imgs/rosconjp.jpg" /></a>
 </div>
 
 <br>
@@ -31,7 +31,7 @@ Many  ROS groups have grown to the point where they are large enough to be consi
 
 
 <div class="image-large">
-  <img  width=400 src="/images/autoware.jpg" />
+  <img  width=400 src="/imgs/autoware.jpg" />
 </div>
 
 ## The Autoware Foundation
@@ -41,7 +41,7 @@ Many  ROS groups have grown to the point where they are large enough to be consi
 
 
 <div class="image-large">
-  <img  width=200 src="/images/f1tenth.gif" />
+  <img  width=200 src="/imgs/f1tenth.gif" />
 </div>
 
 ## F1 Tenth
@@ -51,7 +51,7 @@ F1TENTH is an international community of researchers, engineers, and autonomous 
 
 
 <div class="image-medium">
-  <img width=400 src="/images/microros.png" />
+  <img width=400 src="/imgs/microros.png" />
 </div>
 
 ## microROS
@@ -63,7 +63,7 @@ F1TENTH is an international community of researchers, engineers, and autonomous 
 
 <br>
 <div class="image-medium">
-  <img  width=400 src="/images/moveit.png" />
+  <img  width=400 src="/imgs/moveit.png" />
 </div>
 
 ## MoveIt
@@ -74,7 +74,7 @@ F1TENTH is an international community of researchers, engineers, and autonomous 
 
 
 <div class="image-medium">
-  <img  width=200 src="/images/nav2.png" />
+  <img  width=200 src="/imgs/nav2.png" />
 </div>
 
 ## Nav 2
@@ -84,7 +84,7 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
 
 
 <div class="image-large">
-  <img  width=200 src="/images/opencv.png" />
+  <img  width=200 src="/imgs/opencv.png" />
 </div> 
 
 ## OpenCV 
@@ -92,7 +92,7 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
 
 
 <div class="image-large">
-  <img  width=400 src="/images/px4.png" />
+  <img  width=400 src="/imgs/px4.png" />
 </div>
 
 ## PX4 
@@ -101,7 +101,7 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
 
 
 <div class="image-large">
-  <img  width=400 src="/images/rosindustrial.png" />
+  <img  width=400 src="/imgs/rosindustrial.png" />
 </div>
 
 ## ROS Industrial

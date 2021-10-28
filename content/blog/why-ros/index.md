@@ -5,7 +5,7 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/subt-huskies.jpg # Optional, default defined in blog layout
+header_image: /imgs/subt-huskies.jpg # Optional, default defined in blog layout
 ---
 
 ROS (Robot Operating System) is an open source software development kit for

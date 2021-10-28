@@ -5,7 +5,7 @@ author: Katherine Scott
 created_at: 2021-06-15 09:00:00 +0000
 kind: article
 header_class: bg-photo
-header_image: /images/quadcopter.png # Optional, default defined in blog layout
+header_image: /imgs/quadcopter.png # Optional, default defined in blog layout
 ---
 
 ## Installation
@@ -16,7 +16,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <tr>
 <td style="border: none;">
 <a href="http://wiki.ros.org/noetic/Installation/Ubuntu">
-<img src="/images/noetic.png" alt="ROS Noetic Ninjemys logo" style="float: center; max-height: 120px; vertical-align: middle">
+<img src="/imgs/noetic.png" alt="ROS Noetic Ninjemys logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
 <p><b>Get ROS Noetic Ninjemys on Ubuntu Linux</b></p>
 <p>(Recommended for Latest ROS 1 LTS)</p>
@@ -25,7 +25,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 </td>
 <td style="border: none;">
 <a href="https://index.ros.org/doc/ros2/Installation/Foxy/">
-<img src="/images/foxy.png" alt="ROS Foxy Fitzroy logo" style="float: center; max-height: 120px; vertical-align: middle">
+<img src="/imgs/foxy.png" alt="ROS Foxy Fitzroy logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
 <p><b>Get ROS Foxy Fitzroy on Ubuntu Linux, macOS, or Windows 10</b></p>
 <p>(Recommended for Latest ROS 2 LTS)</p>
@@ -34,7 +34,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 </td>
 <td style="border: none;">
 <a href="https://docs.ros.org/en/galactic/Installation.html">
-<img src="/images/galactic.png" alt="ROS Galactic Geochelone logo" style="float: center; max-height: 120px; vertical-align: middle">
+<img src="/imgs/galactic.png" alt="ROS Galactic Geochelone logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
 <p><b>Get ROS Galactic Gechelone on Ubuntu Linux, macOS, or Windows 10</b></p>
 <p>(Recommended for Latest ROS 2)</p>
