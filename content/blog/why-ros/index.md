@@ -10,14 +10,14 @@ header_image: /images/subt-huskies.jpg # Optional, default defined in blog layou
 
 ROS (Robot Operating System) is an open source software development kit for
 robotics applications. ROS offers a standard software platform to developers
-across industries that will carry them from research and prototyping through to
+across industries that will carry them from research and prototyping all the way through to
 deployment and production.
 
 **Don't reinvent the wheel. Create something new and do it faster and better by building on ROS!**
 
 ### Global community
 
-Over 10+ years the ROS project has produced a vast ecosystem of software for
+For over 10+ years the ROS project has produced a vast ecosystem of software for
 robotics by nurturing a global community of millions of developers and users
 who contribute to and improve that software. ROS is developed by and for that
 community, who will be its stewards into the future.
@@ -41,10 +41,10 @@ of
 ### Shorten time to market
 
 ROS provides the tools, libraries, and capabilities that you need to develop
-your robotics applications, allowing you to spend your time on the work that is
-important for your business. Because it is open source, you have the
+your robotics applications, allowing you to spend more time on the work that is
+important for your business. Because it is open-source, you have the
 flexibility to decide where and how to use ROS, as well as the freedom to
-customize it for your needs.
+customize it for your needs. Moreover, ROS isn't exclusive, you don't need to choose between ROS or some other software stack; ROS easily integrates with your existing software to bring its tools to your problem. 
 
 ### Multi-domain
 
@@ -58,12 +58,12 @@ ROS 2 is supported and tested on Linux, Windows, and macOS, as well as various
 embedded platforms (via [micro-ROS](https://micro.ros.org/)), allowing seamless
 development and deployment of on-robot autonomy, back-end management, and user
 interfaces. The tiered support model allows for ports to new platforms, such as
-real-time and embedded OSs, to be introduced and promoted as they gain interest
+real-time and embedded operating systems, to be introduced and promoted as they gain interest
 and investment.
 
-### 100% open
+### 100% Open-Source
 
-ROS is and always will be open source, ensuring that our global community has
+ROS is and always will be open-source, ensuring that our global community has
 free and unfettered access to a high-quality, best-in-class, fully featured
 robotics SDK. We build ROS atop other open source projects and we leverage and
 follow open standards (such as [OMG's
