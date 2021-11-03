@@ -2,8 +2,16 @@
 @import "mobile-heights";
 @import "colors";
 
+
+
+
 @media screen and (max-width: 600px) {
-  body {
+    .forkme {
+	display: none;
+    }
+
+    
+    body {
     height: auto;
   }
 
@@ -466,7 +474,11 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .banner {
+    .forkme {
+	display: none;
+    }
+
+    .banner {
     background-size: 250px;
     background-position: 125% 25%;
     grid-template-columns: auto;
@@ -483,7 +495,12 @@
 }
 
 @media screen and (max-width: 330px) {
-  .banner {
+
+    .forkme {
+	display: none;
+    }
+
+    .banner {
     background-position: 150% 30%;
     grid-template-columns: 90% 10%;
     grid-template-rows: 90px 60px 20% auto;
