@@ -40,9 +40,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ### An h3 Tag for an image slider
 
 <div id="description-image-slider" class="owl-carousel owl-theme">
-  <img class="item" src="/images/robot-face.png" />
-  <img class="item" src="/images/robot.png" />
-  <img class="item" src="/images/drone.png" />
+  <img class="item" src="/imgs/robot-face.png" />
+  <img class="item" src="/imgs/robot.png" />
+  <img class="item" src="/imgs/drone.png" />
 </div>
 
 ### An h3 tag with some other kind of robot information
@@ -79,7 +79,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 - [Other Link](#)
 
 <div class="image-large">
-  <img src="/images/quadcopter.png" />
+  <img src="/imgs/quadcopter.png" />
 </div>
 <p class="subtitle">
   This is a p with a 'subtitle' class that makes the text smaller, gray, and in italics. This is what happens when the subtitle is

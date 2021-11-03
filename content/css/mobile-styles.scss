@@ -2,8 +2,16 @@
 @import "mobile-heights";
 @import "colors";
 
+
+
+
 @media screen and (max-width: 600px) {
-  body {
+    .github-corner {
+	display: none;
+    }
+
+    
+    body {
     height: auto;
   }
 
@@ -21,7 +29,7 @@
   }
 
   .banner {
-    background-image: url("/images/noetic-background.png");
+    background-image: url("/imgs/noetic-background.png");
     background-attachment: fixed;
     background-size: 250px;
     background-repeat: no-repeat;
@@ -466,7 +474,11 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .banner {
+    .github-corner {
+	display: none;
+    }
+
+    .banner {
     background-size: 250px;
     background-position: 125% 25%;
     grid-template-columns: auto;
@@ -483,7 +495,12 @@
 }
 
 @media screen and (max-width: 330px) {
-  .banner {
+
+    .github-corner {
+	display: none;
+    }
+
+    .banner {
     background-position: 150% 30%;
     grid-template-columns: 90% 10%;
     grid-template-rows: 90px 60px 20% auto;

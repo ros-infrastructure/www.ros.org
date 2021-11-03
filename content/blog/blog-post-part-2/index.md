@@ -34,7 +34,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
 
 <div class="image-large">
-  <img src="/images/post-image-1.png" />
+  <img src="/imgs/post-image-1.png" />
 </div>
 
 ### Another h3 Tag
@@ -58,9 +58,9 @@ mollit anim id est laborum.
 ### A third h3 Tag
 
 <div id="blog-image-slider" class="owl-carousel owl-theme">
-  <img class="item" src="/images/robot-face.png" />
-  <img class="item" src="/images/robot.png" />
-  <img class="item" src="/images/drone.png" />
+  <img class="item" src="/imgs/robot-face.png" />
+  <img class="item" src="/imgs/robot.png" />
+  <img class="item" src="/imgs/drone.png" />
 </div>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

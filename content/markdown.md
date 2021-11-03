@@ -65,7 +65,7 @@ Then you should be able to browse to `localhost:3000` and see the site.
 
 ## Images
 
-![Tux, the Linux mascot](https://markdownguide.org/assets/images/tux.png)
+![Tux, the Linux mascot](https://markdownguide.org/assets/imgs/tux.png)
 
 ## Tables
 
