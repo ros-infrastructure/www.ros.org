@@ -27,14 +27,30 @@ $white: #fff;
     
 }
 
+
+.list-view{
+d-topics-list iframe{
+	width: 300px !important;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+	font-weight: 700;
+	
+}}
+
+.full-view{
 d-topics-list iframe{
 	width: 600px !important;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 22px;
+	background-color: #FFFFFF;
+	font-size: 20px;
 	font-weight: 700;
 	font-color: $black;
-}
+}}
+
+
+
 
 // Kat added for ROS explainer video 
 .explainer {
@@ -404,6 +420,9 @@ header {
       }
       .main-menu-mobile {
         display: none;
+      }
+      .recent-posts{
+	  display:none;
       }
     }
 

@@ -159,17 +159,18 @@ title: Home
     <div class="blog-grid">
       <h4>Recent Highlights from ROS Discourse</h4>
       <div class="highlighted-post">
-	
+	<div class="full-view">
         <!-- <d-topics-list class="discourse-big" discourse-url="https://discourse.ros.org" category="8" per-page="1" template="complete" top-period="quarterly" theme="ROSOrgEmbed"></d-topics-list> -->
-        <d-topics-list discourse-url="https://discourse.ros.org" category="8" per-page="6" top-period="quarterly" template="basic"></d-topics-list>
-
-
+        <d-topics-list class="full-view" discourse-url="https://discourse.ros.org" category="8" per-page="3" top-period="weekly" template="complete"></d-topics-list>
+	</div>
       </div>
-      <!-- <div class="recent-posts"> -->
-      <!--   <h1>Recent ROS Discourse Posts</h1> -->
-
-      <!--   <\!-- <a href="/blog/archive/" class="blog-archives">blog archive</a> -\-> -->
-      <!-- </div> -->
+      <div class="recent-posts">
+        <h1>Top  Discourse Posts</h1>
+	<div class="list-view">
+	  <d-topics-list  discourse-url="https://discourse.ros.org" category="8" per-page="5" top-period="quarterly" template="basic"></d-topics-list>
+        <!-- <a href="/blog/archive/" class="blog-archives">blog archive</a> -->
+	</div>
+      </div>
       <!-- <div class="newsletter-signup"> -->
       <!--   <h2>Stay Up-to-Date - Subscribe Now!</h2> -->
       <!--   <input placeholder="Name" /> -->
