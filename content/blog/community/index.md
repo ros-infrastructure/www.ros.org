@@ -87,7 +87,17 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
 
 
 <div class="image-large">
-  <img  width=400 src="/imgs/px4.png" />
+  <img  width=500 src="/imgs/openrobotics.jpg" />
+</div> 
+
+## Open Robotics
+[Open Robotics](https://www.openrobotics.org/) works with the global ROS community to create open software and hardware platforms for robotics including  ROS 1, ROS 2, the Gazebo simulator, and the Ignition simulator. Open Robotics uses these platforms to solve important problems and help others to do the same by offering software and hardware development services for a variety of client organizations.
+
+
+
+
+<div class="image-large">
+  <img  width=350 src="/imgs/px4.png" />
 </div>
 
 ## PX4 
