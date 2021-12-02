@@ -917,6 +917,9 @@ button.owl-next {
   justify-content: center;
   background-color: $white;
   p {
+    padding-top: unset;
+    width: unset;
+    height: unset;
     text-align: center;
     font-size: 18px;
   }
