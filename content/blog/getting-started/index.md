@@ -55,7 +55,7 @@ On this site you can find the core tutorials and documentation for the project a
 
 ### [ROS Answers <i style="font-size: 1rem;" class="fas fa-question-circle"></i>](https://answers.ros.org)
 If the documentation doesn't address your problem, [ROS Answers](https://answers.ros.org) is next.
-Take heart: it is very likely that someone else has faced the same problem before, and that it's covered among the more than 10,000 questions at ROS Answers.
+Take heart: it is very likely that someone else has faced the same problem before, and that it's covered among the more than 60,000 questions at ROS Answers.
 Start by searching for questions similar to yours; if your question isn't already asked, post a new one. Be sure to check the guidelines on how to prepare your question before posting.
 
 ### [ROS Discourse Forums <i style="font-size: 1rem;" class="fas fa-comments"></i>](https://discourse.ros.org)
