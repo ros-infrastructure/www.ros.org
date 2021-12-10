@@ -912,12 +912,15 @@ button.owl-next {
 
 .support-grid {
   display: grid;
-  grid-template-columns: 175px 100px 175px 100px 175px;
+  grid-template-columns: 175px 100px 175px 100px 175px 100px 175px;
   grid-template-rows: 175px 50px 150px;
   justify-content: center;
   background-color: $white;
   p {
-    text-align: justify;
+    padding-top: unset;
+    width: unset;
+    height: unset;
+    text-align: center;
     font-size: 18px;
   }
   strong {
@@ -974,6 +977,21 @@ button.owl-next {
   }
   .blurb-3 {
     grid-column-start: 5;
+    grid-row-start: 3;
+  }
+  .img-4 {
+    justify-self: center;
+    height: 75px;
+    grid-column-start: 7;
+    grid-row-start: 1;
+  }
+  .img-caption-4 {
+    font-size: 22px;
+    grid-column-start: 7;
+    grid-row-start: 2;
+  }
+  .blurb-4 {
+    grid-column-start: 7;
     grid-row-start: 3;
   }
 }
