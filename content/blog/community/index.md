@@ -109,6 +109,6 @@ The [Nav 2](https://navigation.ros.org/) project is the spiritual successor of t
   <img  width=400 src="/imgs/rosindustrial.png" />
 </div>
 
-## ROS Industrial
+## ROS-Industrial
 
-[ROS Industrial](https://rosindustrial.org/) is an open-source project that extends the advanced capabilities of ROS software to industrial relevant hardware and applications.
+[ROS-Industrial](https://rosindustrial.org/) is an open-source project that extends the advanced capabilities of ROS software to industrial relevant hardware and applications.
