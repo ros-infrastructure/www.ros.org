@@ -10,6 +10,9 @@
 	display: none;
     }
 
+    .recent-posts{
+	display:none;
+    }
     
     body {
     height: auto;
@@ -461,7 +464,11 @@
 }
 
 @media screen and (max-width: 992px) and (max-height: 450px) {
-  .banner {
+    .recent-posts{
+	display:none;
+    }
+
+    .banner {
     background-size: 200px;
     background-position: 100% 200%;
     h1 {
@@ -476,7 +483,11 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 500px) and (max-height: 450px) and (min-height: 200px) {
-  .banner {
+    .recent-posts{
+	display:none;
+    }
+
+    .banner {
     background-size: 300px;
     background-position: 110% -50%;
   }
@@ -496,6 +507,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+    .recent-posts{
+	display: none;
+    }
+
     .github-corner {
 	display: none;
     }
@@ -518,6 +533,11 @@
 
 @media screen and (max-width: 330px) {
 
+    .recent-posts{
+	display:none;
+    }
+
+    
     .github-corner {
 	display: none;
     }
