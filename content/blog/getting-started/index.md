@@ -36,7 +36,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <a href="https://docs.ros.org/en/galactic/Installation.html">
 <img src="/imgs/galactic.png" alt="ROS Galactic Geochelone logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
-<p><b>Get ROS Galactic Gechelone on Ubuntu Linux, macOS, or Windows 10</b></p>
+<p><b>Get ROS Galactic Geochelone on Ubuntu Linux, macOS, or Windows 10</b></p>
 <p>(Recommended for Latest ROS 2)</p>
 <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/galactic/Installation.html">Install</a>
 </p>
