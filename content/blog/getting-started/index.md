@@ -10,7 +10,7 @@ header_image: /imgs/quadcopter.png # Optional, default defined in blog layout
 
 ## Installation
 
-ROS is released as *distributions*, also called "distros", with more than one ROS distribution supported at a time. Some are releases come with long term support (LTS), meaning they are more stable and have undergone extensive testing. Other distributions are newer with shorter lifetimes, but with support for more recent platforms and more recent versions of their constituent ROS packages. See the [distributions list](http://docs.ros.org/) for more details. Generally a new ROS distro is released every year on [world turtle day](https://www.worldturtleday.org/), with LTS distros being released in even years. We currently recommend one of the versions below:
+ROS is released as *distributions*, also called "distros", with more than one ROS distribution supported at a time. Some releases come with long term support (LTS), meaning they are more stable and have undergone extensive testing. Other distributions are newer with shorter lifetimes, but with support for more recent platforms and more recent versions of their constituent ROS packages. See the [distributions list](http://docs.ros.org/) for more details. Generally a new ROS distro is released every year on [world turtle day](https://www.worldturtleday.org/), with LTS distros being released in even years. We currently recommend one of the versions below:
 
 <table style="text-align: center">
 <tr>
