@@ -19,6 +19,7 @@ High quality vector files of the  ROS "nine dot" Logo can be found in the [ROS P
 * [ROS Distro Logos](https://github.com/ros-infrastructure/artwork/tree/master/distributions)
 * [ROS Org Units](https://github.com/ros-infrastructure/artwork/tree/master/orgunits)
 * [ROS Brand Guide](/imgs/ROSBrandGuide.pdf)
+* [ROS Trademark Guide 2022](img/TrademarkRulesAndGuidelines2022.pdf)
 * [ROS Press Kit and Logos](/imgs/ROSPressKit.zip)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
