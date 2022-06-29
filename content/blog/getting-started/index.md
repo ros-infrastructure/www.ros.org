@@ -24,21 +24,12 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 </p>
 </td>
 <td style="border: none;">
-<a href="https://docs.ros.org/en/foxy/Installation.html">
-<img src="/imgs/foxy.png" alt="ROS Foxy Fitzroy logo" style="float: center; max-height: 120px; vertical-align: middle">
+<a href="https://docs.ros.org/en/humble/Installation.html">
+<img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
-<p><b>Get ROS Foxy Fitzroy on Ubuntu Linux, macOS, or Windows 10</b></p>
+<p><b>Get Humble Hawksbill on Ubuntu Linux, Windows 10, or RHEL 8</b></p>
 <p>(Recommended for Latest ROS 2 LTS)</p>
-<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/foxy/Installation.html">Install</a>
-</p>
-</td>
-<td style="border: none;">
-<a href="https://docs.ros.org/en/galactic/Installation.html">
-<img src="/imgs/galactic.png" alt="ROS Galactic Geochelone logo" style="float: center; max-height: 120px; vertical-align: middle">
-</a>
-<p><b>Get ROS Galactic Geochelone on Ubuntu Linux, macOS, or Windows 10</b></p>
-<p>(Recommended for Latest ROS 2)</p>
-<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/galactic/Installation.html">Install</a>
+<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a>
 </p>
 </td>
 </tr>
