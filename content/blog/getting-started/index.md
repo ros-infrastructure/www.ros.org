@@ -27,13 +27,29 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <a href="https://docs.ros.org/en/humble/Installation.html">
 <img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
-<p><b>Get Humble Hawksbill on Ubuntu Linux, Windows 10, or RHEL 8</b></p>
+<p><b>Get Humble Hawksbill on Ubuntu Linux 22.04, Windows 10</b></p>
 <p>(Recommended for Latest ROS 2 LTS)</p>
 <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a>
 </p>
 </td>
 </tr>
 </table>
+
+[Want to try ROS using Docker? Check out the latest distros on Dockerhub](https://hub.docker.com/_/ros/)
+
+**If this is your first time using ROS 1e *highly recommend* that you use a Tier 1 operating system as listed by [REP-2000](https://www.ros.org/reps/rep-2000.html) for your desired ROS Distro.**
+
+## Important Notes on Installation
+
+ROS is a complex piece of software that work's closely with your computer's operating system and system libraries.
+As such, we build and test each ROS distro with only a handful of the latest operating systems, we call these operating systems, "tier 1".
+Each ROS distro is built and tested for these tier 1 operating systems only, **other operating systems may require significantly more work to run a particular ROS distro**. 
+In practical terms this means that you'll get the best experience if you use a the tier 1 operating systems we recommended.
+For example, ROS 2 Humble Hawksbill works best on Ubuntu 22.04 Jammy Jellyfish, and Windows 10. 
+If you try to install ROS on any other operating system you may run into issues, **and we do not recommend this for new users**. 
+For more information about ROS distros and their tier 1 operating systems [please read REP-2000.](https://www.ros.org/reps/rep-2000.html)
+
+**If you are a new user and would like to install the latest version of ROS or ROS 2 on any operating system other than the listed tier 1 operating system we highly recommend that you install the recommended tier 1 operating system in a virtual machine and then install ROS inside of the virtual machine. Alternatively, if you are familiar with Docker, you can also use ROS in a [Docker container](https://hub.docker.com/_/ros/).** 
 
 ## Support
 
