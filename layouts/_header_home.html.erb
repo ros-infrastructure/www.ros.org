@@ -5,9 +5,19 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    
     gtag('config', 'UA-17821189-2');
   </script>
+
+  <!-- New Google Analytics Tag -->
+  <!-- These two tags will run concurrently until we test the new tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVD5Z6G6NH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EVD5Z6G6NH');
+  </script>
+
   <div id="navbar">
     <div class="logo">
       <a href="/"><img src="/imgs/logo-white.png"/></a>
