@@ -41,15 +41,36 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 
 ## Important Notes on Installation
 
-ROS is a complex piece of software that work's closely with your computer's operating system and system libraries.
-As such, we build and test each ROS distro with only a handful of the latest operating systems, we call these operating systems, "tier 1".
-Each ROS distro is built and tested for these tier 1 operating systems only, **other operating systems may require significantly more work to run a particular ROS distro**. 
-In practical terms this means that you'll get the best experience if you use a the tier 1 operating systems we recommended.
-For example, ROS 2 Humble Hawksbill works best on Ubuntu 22.04 Jammy Jellyfish, and Windows 10. 
-If you try to install ROS on any other operating system you may run into issues, **and we do not recommend this for new users**. 
-For more information about ROS distros and their tier 1 operating systems [please read REP-2000.](https://www.ros.org/reps/rep-2000.html)
+ROS is a complex piece of software that work's closely with your computer's
+operating system and system libraries.  As such, we build and test each ROS
+distro with only a handful of the latest operating systems, we call these
+operating systems, "tier 1".  Each ROS distro is built and tested for these tier
+1 operating systems only, **other operating systems may require significantly
+more work to run a particular ROS distro**.  In practical terms this means that
+you'll get the best experience if you use a the tier 1 operating systems we
+recommended.  For example, ROS 2 Humble Hawksbill works best on Ubuntu 22.04
+Jammy Jellyfish, and Windows 10.  If you try to install ROS on any other
+operating system you may run into issues, **and we do not recommend this for new
+users**.  For more information about ROS distros and their tier 1 operating
+systems [please read REP-2000.](https://www.ros.org/reps/rep-2000.html)
 
-**If you are a new user and would like to install the latest version of ROS or ROS 2 on any operating system other than the listed tier 1 operating system we highly recommend that you install the recommended tier 1 operating system in a virtual machine and then install ROS inside of the virtual machine. Alternatively, if you are familiar with Docker, you can also use ROS in a [Docker container](https://hub.docker.com/_/ros/).** 
+If you plan on using the [Gazebo simulator](https://gazebosim.org/home) with ROS
+we recommend that you consult the Gazebo documentation for the [recommended
+version of Gazebo for your ROS
+installation](https://gazebosim.org/docs/garden/ros_installation). Not all ROS
+and Gazebo versions are compatible, other versions are compatible but require
+that you build from source. Using the recommended combination of ROS and Gazebo
+will greatly improve your overall experience. No matter what combination you
+decide on, you'll need to use [ROS/GZ
+bridge](https://github.com/gazebosim/ros_gz) to connect the two pieces of
+software.
+
+**If you are a new user and would like to install the latest version of ROS or
+ROS 2 on any operating system other than the listed tier 1 operating system we
+highly recommend that you install the recommended tier 1 operating system in a
+virtual machine and then install ROS inside of the virtual
+machine. Alternatively, if you are familiar with Docker, you can also use ROS in
+a [Docker container](https://hub.docker.com/_/ros/).**
 
 ## Support
 
