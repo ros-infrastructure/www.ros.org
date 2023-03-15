@@ -5,7 +5,7 @@ subtitle: Connect with ROS, Gazebo, and Open-RMF Users
 created_at: 2023-03-14 16:21:05 -0700
 kind: article
 header_class:  bg-photo 
-header_image:  /images/discord.png 
+header_image:  /imgs/discord.png 
 ---
 
 
