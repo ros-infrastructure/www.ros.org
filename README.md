@@ -15,6 +15,28 @@ Browse to http://localhost:3000 to see the site. Changes you make to the content
 and layouts are automatically reloaded via a websocket on port 35729. The
 generated static site files will appear in `output` directory.
 
+
+## Local Development Setup
+
+``` shell
+sudo apt install ruby
+sudo gem install bundler 0v 2.3.26
+bundle install
+ruby Rakefile
+```
+
+Commands can be run as:
+
+``` shell
+rake new_post["My Post Name"]
+
+```
+New post will be created in `./blog/YYYY-MM-DD-My-Post-Name`
+
+
+## Directions from Developer
+
+
 ```
 web rake new_post
 web rake new_post['A clever blog post title']
