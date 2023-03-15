@@ -1,7 +1,7 @@
 ---
 title: "New Open Robotics Discord Server"
 author:  Kat Scott 
-subtitle: Connect with ROS, Gazebo and Open-RMF Users
+subtitle: Connect with ROS, Gazebo, and Open-RMF Users
 created_at: 2023-03-14 16:21:05 -0700
 kind: article
 header_class:  bg-photo 
