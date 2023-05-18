@@ -24,7 +24,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 </p>
 </td>
 <td style="border: none;">
-<a href="https://docs.ros.org/en/iron/Installation.html">
+<a href="https://docs.ros.org/en/humble/Installation.html">
 <img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
 <p><b>Get Humble Hawksbill on Ubuntu Linux 22.04, Windows 10</b></p>
