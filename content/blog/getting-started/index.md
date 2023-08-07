@@ -46,7 +46,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 
 [Want to try ROS using Docker? Check out the latest distros on Dockerhub](https://hub.docker.com/_/ros/)
 
-**If this is your first time using ROS 1e *highly recommend* that you use a Tier 1 operating system as listed by [REP-2000](https://www.ros.org/reps/rep-2000.html) for your desired ROS Distro.**
+**If this is your first time using ROS, we *highly recommend* that you use a Tier 1 operating system as listed by [REP-2000](https://www.ros.org/reps/rep-2000.html) for your desired ROS Distro.**
 
 ## Important Notes on Installation
 
@@ -85,7 +85,7 @@ a [Docker container](https://hub.docker.com/_/ros/).**
 
 There are several mechanisms in place to provide support to the ROS community,
 each with its own purpose: [package documentation](https://docs.ros.org), [Q&A
-forum](https://answers.ros.org), [discussion forum](https://discourse.ros.org),
+forum](https://robotics.stackexchange.com/), [discussion forum](https://discourse.ros.org),
 [package index](https://index.ros.org), and of course the issue trackers.  It is
 important to pick the right resource to reduce response time, avoid message
 duplication, and promote the discussion of new ideas.
@@ -96,9 +96,8 @@ hosted on [docs.ros.org](https://docs.ros.org).  On this site you can find the
 core tutorials and documentation for the project as well as generated API
 documentation for individual packages.
 
-### [ROS Answers <i style="font-size: 1rem;" class="fas fa-question-circle"></i>](https://answers.ros.org)
-If the documentation doesn't address your problem, [ROS
-Answers](https://answers.ros.org) is next.  Take heart: it is very likely that
+### [Robotics Stack Exchange <i style="font-size: 1rem;" class="fas fa-question-circle"></i>](https://robotics.stackexchange.com/)
+If the documentation doesn't address your problem, [Robotics Stack Exchange](https://robotics.stackexchange.com/) is next.  Take heart: it is very likely that
 someone else has faced the same problem before, and that it's covered among the
 more than 60,000 questions at ROS Answers.  Start by searching for questions
 similar to yours; if your question isn't already asked, post a new one. Be sure
@@ -132,8 +131,7 @@ problems are covered in these two pages. If you have ever used
 
 ### [Issue Trackers <i style="font-size: 1rem;" class="fas fa-bug"></i>](https://github.com/ros2/ros2/issues)
 
-When you've identified a bug (e.g., as a result of a discussion at [ROS
-Answers](https://answers.ros.org)), or when you want to request a new feature,
+When you've identified a bug (e.g., as a result of a discussion at [Robotics Stack Exchange](https://robotics.stackexchange.com/)), or when you want to request a new feature,
 head to the issue trackers.  Links are provided in the packages metadata
 available on [ROS Index](https://index.ros.org).  When reporting a bug, be sure
 to provide a detailed description of the problem, the environment in which it
