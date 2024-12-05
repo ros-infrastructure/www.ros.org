@@ -7,8 +7,8 @@ This is a static site built using Nanoc running in Docker.
 Requires `docker-compose`.
 
 ```
-$ docker-compose build
-$ docker-compose up
+$ docker compose build
+$ docker compose up
 ```
 
 Browse to http://localhost:3000 to see the site. Changes you make to the content
@@ -85,13 +85,13 @@ Host ros1.osuosl.org osuoslros
 Now build the site. 
 
 ```
-$ docker-compose build
+$ docker compose build
 ```
 
 If you would like to take a look at the website you can run `docker-compose up`. This should launch a local website at the location `localhost:3000`
 
 ```
-$ docker-compose up
+$ docker compose up
 ```
 
 Finally upload it to the host. 
