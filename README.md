@@ -16,6 +16,11 @@ and layouts are automatically reloaded via a websocket on port 35729. The
 generated static site files will appear in `output` directory.
 
 
+## Docker Compose Upgrade
+
+If you get an error like, `kwargs = kwargs_from_env(environment=environment, ssl_version=tls_version)` it may be related to docker-compose versions. [See this link](https://docs.docker.com/compose/releases/migrate/). On gLinux I had to [upgrade manually.](https://docs.docker.com/compose/install/linux/#install-the-plugin-manually)
+
+
 ## Local Development Setup
 
 ``` shell
