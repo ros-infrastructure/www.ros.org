@@ -16,29 +16,22 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <tr>
 <td style="border: none;">
 <a href="http://wiki.ros.org/noetic/Installation/Ubuntu">
-<img src="/imgs/noetic.png" alt="ROS Noetic Ninjemys logo" style="float: center; max-height: 120px; vertical-align: middle">
+<img src="/imgs/JazzyNoBG.png" alt="ROS Jazzy Jalisco logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
-<p><b>Get ROS Noetic Ninjemys on Ubuntu Linux</b></p>
-<p>(Recommended for Latest ROS 1 LTS)</p>
-<p><a class="btn btn-large btn-download" href="http://wiki.ros.org/noetic/Installation/Ubuntu">Install</a>
+<p><b>ROS 2 Jazzy Jalisco</b></p>
+<p><i>Ubuntu Linux 24.04, Windows 10</i></p>
+<p>(Latest ROS 2 LTS)</p>
+<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/jazzy/Installation.html">Install</a>
 </p>
 </td>
 <td style="border: none;">
 <a href="https://docs.ros.org/en/humble/Installation.html">
 <img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
-<p><b>Get Humble Hawksbill on Ubuntu Linux 22.04, Windows 10</b></p>
-<p>(Recommended for ROS 2 LTS)</p>
+<p><b>Get ROS 2 Humble Hawksbill</b></p>
+<p><i>Ubuntu Linux 22.04, Windows 10</i></p>
+<p>(Best upgrade path for ROS 1 users)</p>
 <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a>
-</p>
-</td>
-<td style="border: none;">
-<a href="https://docs.ros.org/en/jazzy/Installation.html">
-<img src="/imgs/jazzy.png" alt="ROS Jazzy Jalisco logo" style="float: center; max-height: 120px; vertical-align: middle">
-</a>
-<p><b>Get Iron Irwini on Ubuntu Linux 22.04, Windows 10</b></p>
-<p>(Recommended for Latest ROS 2)</p>
-<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/jazzy/Installation.html">Install</a>
 </p>
 </td>
 </tr>
