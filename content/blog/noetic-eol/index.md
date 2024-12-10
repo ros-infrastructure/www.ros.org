@@ -1,5 +1,5 @@
 ---
-title: "Upcomming ROS 1 End of Life"
+title: "Upcoming ROS 1 End of Life"
 author:  Kat Scott 
 subtitle: Migration Paths for ROS 1 Users
 created_at: 2024-12-16 16:21:05 -0700
@@ -32,7 +32,7 @@ In practical terms, this means that we will no longer be providing the following
 * Bug fixes, patches or support
 * Updated binaries
 
-In partical terms, this means that after May 31st, 2025 ROS 1 Noetic will progressively become more difficult to support or use.  
+After May 31st, 2025 ROS 1 Noetic will progressively become more difficult to support or use. ROS 1 users may find themselves open to un-patched security vulnerabilities and will be unable to easily address bugs encountered after this date. 
 
 It is also worth *noting the things that won’t change after ROS 1* goes end of life:
 
@@ -42,16 +42,14 @@ It is also worth *noting the things that won’t change after ROS 1* goes end of
 
 <br>
 
-### Advantages of ROS 2
-
-### What are My Upgrade Options?
+### ROS 2 Migration Options
 
 If you are still using ROS 1 it is time to consider switching to ROS 2 Humble Hawksbill ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)) or ROS 2 Jazzy Jalisco ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)).
-Which you choose is going to depend on the complexity of your ROS 1 system.
-This [migration heuristic tool](https://github.com/osrf/ros2-porting-heuristics) can provide you with estimate the complexity of your migration to ROS 2.  
-If you smaller ROS 1 project, or a reasonably de-coupled system you can most likely migrate directly to ROS 2 Jazzy Jalisco.
+Which distro you choose as your migration target  is going to depend on the complexity of your ROS 1 system.
+This [migration heuristic tool](https://github.com/osrf/ros2-porting-heuristics) can provide you with estimate the complexity of your migration to ROS 2.
+If have a you smaller ROS 1 project, or a reasonably de-coupled system, you can most likely migrate directly to ROS 2 Jazzy Jalisco.
 If your ROS 1 system is tightly coupled, has a number of un-ported dependencies, or is reasonably complex, you may want to take advantage of the [ROS 1 to ROS 2 bridge](https://github.com/ros2/ros1_bridge).
-Humble Hawksbill has [limited Tier 3 support for Ubuntu 20.04](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027), and the ROS 1 bridge can be used with Humble is you compile from source. 
+Humble Hawksbill has [limited Tier 3 support for Ubuntu 20.04](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027), and the ROS 1 bridge can be used with Humble if you compile from source. 
 
 **A few things worth noting for current ROS 1 users:**
 
@@ -59,12 +57,12 @@ Humble Hawksbill has [limited Tier 3 support for Ubuntu 20.04](https://www.ros.o
 * Nodelets in ROS 1 have been replaced with ROS 2's [composable nodes concept](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Composition.html).
 * Parameters have changed significantly in ROS 2, this [migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1/Migrating-Parameters.html) provides guidance on how to migrate your parameter set.
 * ROS 2 supports three types of launch files [YAML, Python, and XML](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html). There is a complete guide to [migrating your ROS 1 launch files](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1/Migrating-Launch-Files.html) available on docs.ros.org.
-* The ROS 2 [lifecycle node API](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Writing-a-Composable-Node.html) has standardized the lifecycle of ROS nodes. We recommend taking advantage of this feature when migraitng your ROS 1 projects. 
+* The ROS 2 [lifecycle node API](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Writing-a-Composable-Node.html) has standardized the lifecycle of ROS nodes. We recommend taking advantage of this feature when migrating your ROS 1 projects. 
 * ROS 2 users now have multiple official and unofficial ROS Middleware (RMWs) to choose from:
   * DDS-based RMW like [Fast-DDS](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/ros2_configure.html) and [Cyclone DDS](https://cyclonedds.io/docs/cyclonedds/latest/about_dds/eclipse_cyclone_dds.html). We recommend new DDS users read our [tuning guide](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html) and familiarize themselves with utilities like the [Fast-DDS Discovery Server](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html) when using WiFi networks.
   * A preview of [RMW-Zenoh](https://github.com/ros2/rmw_zenoh) is available in ROS 2 Jazzy when compiled from source. 
   * Other RMWs are supported by the community including [IceOryx2](https://discourse.ros.org/t/rmw-iceoryx2-v0-1-0-release/40996), [Gurum-DDS](https://github.com/ros2/rmw_gurumdds) and even, well, [e-mail](https://discourse.ros.org/t/ros-2-over-email-rmw-email-an-rmw-implementation/22360).
-* If your robot supports custom hardware, if may be worth investigaitng [microROS.](https://micro.ros.org/),
+* If your robot supports custom hardware, if may be worth investigating [microROS.](https://micro.ros.org/),
 * ROSBag performance has improved significantly in ROS 2. As of ROS 2 Humble [MCap](https://mcap.dev/guides) is the standard ROS Bag format. 
 * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are available. ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz)
 * Amazon has released a [migration tool for ROS 1 users](https://github.com/awslabs/ros2-migration-tools). 
@@ -87,7 +85,7 @@ If you simply need an extra set of hands to help with your migration you are wel
 
 <br>
 
-### Where Can I Find Help?
+### Where To Find Help
 
 There are a variety of ROSCon talks that cover the process of migrating from ROS 1 to ROS 2. 
 A non-exhaustive list of talks is given below.
@@ -110,7 +108,7 @@ Finally, if you have any questions about ROS 2, please do not hesitate to use th
 
 * [Discourse](https://discourse.ros.org/) --  -- our ROS discussion forum.
 * [ROS Discord](https://discord.com/servers/open-robotics-1077825543698927656)  -- our live discussion server.
-* [Robotics Stack Exchange](https://robotics.stackexchange.com/) -- our preffered Q&A forum
+* [Robotics Stack Exchange](https://robotics.stackexchange.com/) -- our preferred Q&A forum
 * [Official ROS 2 Documentation](https://docs.ros.org/)
 * [ROS Package API reference](https://docs.ros.org/en/rolling/p/)
 * [ROS Package Index](https://index.ros.org/)
