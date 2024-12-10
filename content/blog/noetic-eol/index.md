@@ -62,6 +62,7 @@ Humble Hawksbill has [limited Tier 3 support for Ubuntu 20.04](https://www.ros.o
   * DDS-based RMW like [Fast-DDS](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/ros2_configure.html) and [Cyclone DDS](https://cyclonedds.io/docs/cyclonedds/latest/about_dds/eclipse_cyclone_dds.html). We recommend new DDS users read our [tuning guide](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html) and familiarize themselves with utilities like the [Fast-DDS Discovery Server](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html) when using WiFi networks.
   * A preview of [RMW-Zenoh](https://github.com/ros2/rmw_zenoh) is available in ROS 2 Jazzy when compiled from source. 
   * Other RMWs are supported by the community including [IceOryx2](https://discourse.ros.org/t/rmw-iceoryx2-v0-1-0-release/40996), [Gurum-DDS](https://github.com/ros2/rmw_gurumdds) and even, well, [e-mail](https://discourse.ros.org/t/ros-2-over-email-rmw-email-an-rmw-implementation/22360).
+* We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo.](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/)
 * If your robot supports custom hardware, if may be worth investigating [microROS.](https://micro.ros.org/),
 * ROSBag performance has improved significantly in ROS 2. As of ROS 2 Humble [MCap](https://mcap.dev/guides) is the standard ROS Bag format. 
 * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are available. ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz)
@@ -76,8 +77,8 @@ Humble Hawksbill has [limited Tier 3 support for Ubuntu 20.04](https://www.ros.o
 
 We highly recommend you migrate your ROS 1 project to ROS 2 as soon as possible.
 Our experience is that most users found the migration process significantly less challenging that they initially expected.
-If you simply can't migrate your ROS 1 project right now you do have a few options.*
-*However, none of these solutions are officially recommended, and we can't speak to their long-term robustness.* 
+If you simply can't migrate your ROS 1 project right now you do have a few options.
+**However, none of these solutions are officially recommended, and we can't speak to their long-term robustness.** 
 Canonical, offers [extended security maintenance](https://ubuntu.com/robotics/docs/tutorial-ros-esm) for a number of ROS 1 host operating systems for a fee.
 [ROS-O](https://github.com/ros-o/ros-o) is a volunteer run effort to extend the support of ROS 1 projects.
 If you simply need an extra set of hands to help with your migration you are welcome to use our [ROS jobs board](https://discourse.ros.org/c/jobs/15) on ROS Discourse. 
@@ -106,8 +107,8 @@ We've listed a few relevant blog posts below:
 
 Finally, if you have any questions about ROS 2, please do not hesitate to use the ROS resources listed below. 
 
-* [Discourse](https://discourse.ros.org/) --  -- our ROS discussion forum.
-* [ROS Discord](https://discord.com/servers/open-robotics-1077825543698927656)  -- our live discussion server.
+* [Discourse](https://discourse.ros.org/) -- our ROS discussion forum.
+* [ROS Discord](https://discord.com/servers/open-robotics-1077825543698927656) -- our live discussion server.
 * [Robotics Stack Exchange](https://robotics.stackexchange.com/) -- our preferred Q&A forum
 * [Official ROS 2 Documentation](https://docs.ros.org/)
 * [ROS Package API reference](https://docs.ros.org/en/rolling/p/)
