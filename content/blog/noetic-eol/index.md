@@ -8,7 +8,7 @@ header_class:  bg-photo
 header_image:  /imgs/eol-bg.png 
 ---
 
-## ROS 1 Noetic Ninjemys goes End-of-Life 2024-05-31
+## ROS 1 Noetic Ninjemys goes End-of-Life 2025-05-31
 
 When we [announced](https://www.openrobotics.org/blog/2020/5/23/noetic-ninjemys-the-last-official-ros-1-release) ROS 1 Noetic Ninjemys on May 23rd, 2020 we made it very clear that it would be the last official ROS 1 distribution. 
 In the proceeding five years we focused our efforts on making ROS 2 a world class framework for professional robot development, and our user community seems to agree.
@@ -45,7 +45,7 @@ It is also worth *noting the things that won’t change after ROS 1* goes end of
 
 ### ROS 2 Migration Options
 
-**If you are still using ROS 1 it is time to consider switching to ROS 2 Humble Hawksbill ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)) or ROS 2 Jazzy Jalisco ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)).**
+**If you are still using ROS 1 it is time to consider switching to ROS 2 Humble Hawksbill ([migration guide](https://docs.ros.org/en/humble/How-To-Guides/Migrating-from-ROS1.html)) or ROS 2 Jazzy Jalisco ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)).**
 Which distro you choose as your migration target  is going to depend on the complexity of your ROS 1 system.
 This [migration heuristic tool](https://github.com/osrf/ros2-porting-heuristics) can provide you with estimate the complexity of  migrating your project to ROS 2.
 If have a you smaller ROS 1 project, or a reasonably de-coupled workspace, it is most likely that you can migrate ROS 2 Jazzy Jalisco directly.
@@ -84,9 +84,9 @@ We've collected a number of resources together to help you come up to speed with
 Most of the ROS 2 API should look familiar to ROS 1 users with a few notable exceptions. Where things have changed, they have changed to address shortcomings in ROS 1. Users will want to pay attention to the changes to parameters and composable nodes (formerly nodelets) as these are areas that may require more attention.
 
 
-* Nodelets in ROS 1 have been replaced with ROS 2's [composable nodes concept.](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Composition.html) ROS users can now compose their processing routines into the same process space using both compile time and run time composition. 
-* Parameters in ROS 2 now support namespacing, and there is an improved interface for loading, saving, and reconfiguring your parameters. This [migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1/Migrating-Parameters.html) provides guidance on how to migrate your parameter set.
-* ROS 2 supports three different types of launch files [YAML, Python, and XML](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html). There is a complete guide to [migrating your ROS 1 launch files](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1/Migrating-Launch-Files.html) available on docs.ros.org.
+* Nodelets in ROS 1 have been replaced with ROS 2's [composable nodes concept.](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Composition.html) ROS users can now compose their processing routines into the same process space using both compile time and run time composition. 
+* Parameters in ROS 2 now support namespacing, and there is an improved interface for loading, saving, and reconfiguring your parameters. This [migration guide](https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1/Migrating-Parameters.html) provides guidance on how to migrate your parameter set.
+* ROS 2 supports three different types of launch files [YAML, Python, and XML](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Launch/Creating-Launch-Files.html). There is a complete guide to [migrating your ROS 1 launch files](https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1/Migrating-Launch-Files.html) available on docs.ros.org.
 * The ROS 2 [lifecycle node API](https://foxglove.dev/blog/how-to-use-ros2-lifecycle-nodes) has standardized the lifecycle of ROS nodes. The process of starting and stopping ROs Nodes is now much more robust., We recommend taking advantage of this feature when migrating your ROS 1 projects. 
 * ROSBag performance has improved significantly in ROS 2, and new ROS 2 type adaptation makes it even easier to share data using ROS Bags. As of ROS 2 Humble [MCap](https://mcap.dev/guides) is now the standard ROSBag data format.
 * If you are looking for examples of common ROS 2 design patterns the [ROS 2 Cookbook](https://github.com/mikeferguson/ros2_cookbook) offers code samples for common ROS 2 tasks.
@@ -120,11 +120,11 @@ ROS 2 users now have multiple official and unofficial ROS Middleware (RMWs) to c
 
 Our sister project Gazebo is also in the process of migraitng to its second major release, and many ROS users are also making the switch to a modern version of Gazebo.
 We're happy to report that ROS 2 and modern Gazebo now work together better than ever! 
-Similarly, hardware interfaces to ROS have been greatly improved with the introduction of a microcontroller framework specifically for ROS called microROS.
+Similarly, hardware interfaces to ROS have been greatly improved with the introduction of a microcontroller framework specifically for ROS called [micro-ROS](https://micro.ros.org/).
 
-* We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo.](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/)
+* We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/).
 * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are available. ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz)
-* If your robot supports custom hardware, if may be worth investigating [microROS.](https://micro.ros.org/),
+* If your robot supports custom hardware, if may be worth investigating [micro-ROS](https://micro.ros.org/).
 
 
 
