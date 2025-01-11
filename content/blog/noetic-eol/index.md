@@ -23,9 +23,9 @@ We're sorry that we interrupted your work, but it is crucial that you know what 
 
 ### What Does End-of-Life Mean?
 
-Users often ask us, “what does end of life mean?” 
-To put it briefly, end of life means that the ROS team will no longer support that particular ROS release. 
-In practical terms, this means that after May 31st of 2025 we will no longer be providing the following for any ROS 1 release, including Noetic:
+End of life for ROS Noetic means that the ROS team will no longer support ROS 1. 
+After May 31st of 2025, the ROS team will no longer provide to ROS 1:
+
 
 * New features or capabilities
 * Security updates
