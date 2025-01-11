@@ -10,7 +10,7 @@ header_image:  /imgs/eol-bg.png
 
 ## ROS 1 Noetic Ninjemys goes End-of-Life 2025-05-31
 
-When we [announced](https://www.openrobotics.org/blog/2020/5/23/noetic-ninjemys-the-last-official-ros-1-release) ROS 1 Noetic Ninjemys on May 23rd, 2020 we made it very clear that it would be the last official ROS 1 distribution. 
+ROS Noetic Ninjemys, the [last ROS 1 release](https://www.openrobotics.org/blog/2020/5/23/noetic-ninjemys-the-last-official-ros-1-release), will reach End of Life in May 2025.
 In the proceeding five years we focused our efforts on making ROS 2 a world class framework for professional robot development, and our user community seems to agree.
 According to September 2024 download data from our servers ROS 2 downloads now make up almost 80% of all ROS downloads.
 We've now seen ROS 2 used successfully in production by a large number of companies, across dozens of industries, and we think it is time for the last remaining ROS users to make the switch. 
