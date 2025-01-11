@@ -34,11 +34,14 @@ After May 31st of 2025, the ROS team will no longer provide to ROS 1:
 
 After May 31st, 2025 ROS 1 Noetic may find themselves exposed to un-patched security vulnerabilities and bugs, with few avenues of support short of fixing these issues themselves and recompiling Noetic from source. 
 
-It is also worth *noting the things that won’t change after ROS 1* goes end of life.
+ROS 1 going end of life does **not** mean:
 
-* ROS 1 binaries will not suddenly disappear from our servers. They will continue to be hosted in the archive in perpetuity. 
-* ROS 1 projects will not suddenly stop working on May 31st. 
-* Users do not need to migrate immediately, but they should have migration plan and upgrade as soon as is reasonable
+* *ROS 1 binaries will suddenly disappear.*
+  * ROS 1 binaries will continue to be hosted on `packages.ros.org`
+* *ROS 1 projects will suddenly stop working on May 31st.*
+  * ROS 1 will continue to work, as it does today.
+* *Users must stop using ROS 1 immediately*,
+  * ROS 1 will continue to work, but you should have migration plan as soon as possible
 
 
 <br>
