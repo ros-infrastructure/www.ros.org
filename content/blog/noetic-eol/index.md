@@ -58,7 +58,7 @@ The ROS community has produced a number of migration tools which you may find he
 
 If your ROS 1 system is tightly coupled, has a number of un-ported dependencies, or is reasonably complex, you may want to take advantage of the [ROS 1 to ROS 2 Bridge](https://github.com/ros2/ros1_bridge).
 The ROS 1 to ROS 2 Bridge performs automated translation between major ROS versions and should allow you to migrate your project one package at a time. 
-Due to the operating system constraints for the curent active ROS releases (Noetic / Ubuntu  20.04, Humble / 22.04)  the only way to use the ROS Bridge is to use ROS 2 Humble Hawksbill compiled from source on Ubuntu 20.04, [which has limited Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027).
+Due to the operating system constraints for the current active ROS releases (Noetic / Ubuntu  20.04, Humble / 22.04)  the only way to use the ROS Bridge is to use ROS 2 Humble Hawksbill compiled from source on Ubuntu 20.04, [which has limited Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027).
 
 
 #### Other Migration Options
@@ -66,7 +66,7 @@ Due to the operating system constraints for the curent active ROS releases (Noet
 We highly recommend you migrate your ROS 1 project to ROS 2 as soon as possible.
 Most users have found the migration process less difficult than the initially expected. 
 If you simply can't migrate your ROS 1 project right now you do have a few options,
-**however, none of these solutions are officially recommended, and we can't speak to their long-term robustness.** 
+**however, none of these solutions are officially supported, and we can't speak to their long-term robustness.** 
 
 * Canonical, offers [extended security maintenance](https://ubuntu.com/robotics/docs/tutorial-ros-esm) for a number of ROS 1 host operating systems for a fee.
 * [ROS-O](https://github.com/ros-o/ros-o) is a volunteer run effort to extend the support lifetime of ROS 1 projects.
@@ -102,7 +102,7 @@ The list below outlines some of the larger changes to the ROS API found in versi
 
 **ROS Development**
 
-The ROS build and command line tools have also gotten a facelift in ROS 2. While there have been a few changes the way you build and run your ROS application should feel familiar. All of our new tools are self documenting, and you should can learn a lot by simply passing them the `--help` command. 
+The ROS build and command line tools have also gotten a face lift in ROS 2. While there have been a few changes the way you build and run your ROS application should feel familiar. All of our new tools are self documenting, and you should can learn a lot by simply passing them the `--help` command. 
 
 * The [ROS command line interface (CLI)](https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html) syntax has changed slightly in ROS 2. All your favorite commands are still there, but they syntax has been modernized.
 * ROS 2 has replaced Catkin for [Colcon](https://colcon.readthedocs.io/en/released/user/quick-start.html). The names have changed, but most of your favorite functionality is still there.
@@ -127,7 +127,7 @@ This new abstraction layer is called a ROS Middle Layer (RMW), and users can pic
 **Related Projects**
 
 Most of the major ROS packages and projects have already upgraded to ROS 2. 
-Our sister project, Gazebo, is also in the process of migraitng to its second major release, and many ROS users are also making the switch to a modern version of Gazebo.
+Our sister project, Gazebo, is also in the process of migrating to its second major release, and many ROS users are also making the switch to a modern version of Gazebo.
 You don't necessarily need to upgrade to upgrade both ROS and Gazebo at the same time, but it is important to note that [Gazebo Classic is also going end of life in 2025](https://community.gazebosim.org/t/gazebo-classic-end-of-life/2563).
 Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and improved releases that are production-ready for your robotics application!
 
@@ -144,7 +144,7 @@ Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and
 
 ### Where To Find Help
 
-You don't just have to take our word for it, a number of professionl ROS users have already made the jump to ROS 2 and written about their ROS migration experience. 
+You don't just have to take our word for it, a number of professional ROS users have already made the jump to ROS 2 and written about their ROS migration experience. 
 We've collected a few relevant blog posts below: 
 
 * [Husarion Blog on ROS 2 Migration](https://medium.com/husarion-blog/porting-a-project-from-ros1-to-ros2-our-experience-ef27b1748915)
