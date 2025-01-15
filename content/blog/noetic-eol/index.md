@@ -133,7 +133,7 @@ Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and
 
 * We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/).
   * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are available. ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz)
-* If your robot supports custom hardware, if may be worth investigating [micro-ROS](https://micro.ros.org/).
+* If your robot supports custom hardware, it may be worth investigating [micro-ROS](https://micro.ros.org/).
 * MoveIt2, the latest version of MoveIt, has a complete [migration guide available in their official documentation.](https://moveit.picknik.ai/main/api/html/index.html)
 * Nav2, the ROS 2 navigation framework, has [complete documentation available for new users.](https://docs.nav2.org/index.html)
 * [ROS 2 Control](https://control.ros.org/master/doc/getting_started/getting_started.html) is the new ROS 2 control framework with extensive documentation.
