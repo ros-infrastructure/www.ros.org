@@ -136,7 +136,7 @@ Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and
 * If your robot supports custom hardware, if may be worth investigating [micro-ROS](https://micro.ros.org/).
 * MoveIt2, the latest version of MoveIt, has a complete [migration guide available in their official documentation.](https://moveit.picknik.ai/main/api/html/index.html)
 * Nav2, the ROS 2 navigation framework, has [complete documentation available for new users.](https://docs.nav2.org/index.html)
-* [ROS 2 Control](https://control.ros.org/master/doc/getting_started/getting_started.html) is the new ROS 2 control framework with extensive documentation..
+* [ROS 2 Control](https://control.ros.org/master/doc/getting_started/getting_started.html) is the new ROS 2 control framework with extensive documentation.
 
 
 <br>
