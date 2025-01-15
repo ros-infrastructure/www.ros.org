@@ -115,7 +115,7 @@ The ROS build and command line tools have also gotten a face lift in ROS 2. Whil
 ROS 1's bespoke publish / subscribe layer was very simple to use, but also difficult to configure for more complex use cases. 
 In ROS 2 users have a choice about which protocol they would like to use to move data across their network.
 This new abstraction layer is called a ROS Middle Layer (RMW), and users can pick the [vendor](https://docs.ros.org/en/rolling/Concepts/Intermediate/About-Different-Middleware-Vendors.html) that best supports their application.
-**If you don't know which RMW is right for you we suggest you use the default RMW that ships with your distro**, however ROS 2 users now have multiple official and unofficial ROS RMWs to choose from, including:
+**If you don't know which RMW is right for you, we suggest you use the default RMW that ships with your distro**, however ROS 2 users now have multiple official and unofficial ROS RMWs to choose from, including:
 
 * DDS-based RMWs like [Fast-DDS](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/ros2_configure.html) and [Cyclone DDS](https://cyclonedds.io/docs/cyclonedds/latest/about_dds/eclipse_cyclone_dds.html). 
   * We recommend new DDS users read our [tuning guide](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html) and familiarize themselves with utilities like the [Fast-DDS Discovery Server](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html) when using WiFi networks.
