@@ -64,7 +64,7 @@ Due to the operating system constraints for the current active ROS releases (Noe
 #### Other Migration Options
 
 We highly recommend you migrate your ROS 1 project to ROS 2 as soon as possible.
-Most users have found the migration process less difficult than the initially expected. 
+Most users have found the migration process less difficult than they initially expected. 
 If you simply can't migrate your ROS 1 project right now you do have a few options,
 **however, none of these solutions are officially supported, and we can't speak to their long-term robustness.** 
 
