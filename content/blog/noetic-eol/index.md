@@ -154,7 +154,7 @@ We've collected a few relevant blog posts below:
 
 
 At ROSCon 2024, our annual ROS developers conference, an overwhelming majority of the talks were about ROS 2. 
-Below you find a collection ROSCon talks that directly cover the process of migrating from ROS 1 to ROS 2. 
+Below you find a collection of ROSCon talks that directly cover the process of migrating from ROS 1 to ROS 2. 
 
 
 * [ROSCon 2022: "Migrating from ROS1 to ROS2 - choosing the right bridge"](https://vimeo.com/showcase/9954564/video/767140113)
