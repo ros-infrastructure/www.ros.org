@@ -78,7 +78,7 @@ If you simply can't migrate your ROS 1 project right now, you do have a few opti
 ### What's New in ROS 2?
 
 
-Before you begin your ROS migration journey, we recommend you read up on some the new and improved features in ROS 2. 
+Before you begin your ROS migration journey, we recommend you read up on some of the new and improved features in ROS 2. 
 We've put together a collection of resources that outline some of the major changes in ROS 2. 
 **Almost all of these resources are readily available as part of our [migration guide in the ROS 2 documentation](https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1.html).**
 While understanding what has and hasn't changed between ROS 1 and ROS 2 can make the migration process go a lot smoother, it really isn't necessary to get started!
