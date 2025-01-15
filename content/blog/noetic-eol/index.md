@@ -102,7 +102,7 @@ The list below outlines some of the larger changes to the ROS API found in versi
 
 **ROS Development**
 
-The ROS build and command line tools have also gotten a face lift in ROS 2. While there have been a few changes the way you build and run your ROS application should feel familiar. All of our new tools are self documenting, and you should can learn a lot by simply passing them the `--help` command. 
+The ROS build and command line tools have also gotten a face lift in ROS 2. While there have been a few changes, the way you build and run your ROS application should feel familiar. All of our new tools are self-documenting, and you can learn a lot by simply passing them the `--help` command. 
 
 * The [ROS command line interface (CLI)](https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html) syntax has changed slightly in ROS 2. All your favorite commands are still there, but they syntax has been modernized.
 * ROS 2 has replaced Catkin for [Colcon](https://colcon.readthedocs.io/en/released/user/quick-start.html). The names have changed, but most of your favorite functionality is still there.
