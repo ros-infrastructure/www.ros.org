@@ -58,7 +58,7 @@ The ROS community has produced a number of migration tools which you may find he
 
 If your ROS 1 system is tightly coupled, has a number of un-ported dependencies, or is reasonably complex, you may want to take advantage of the [ROS 1 to ROS 2 Bridge](https://github.com/ros2/ros1_bridge).
 The ROS 1 to ROS 2 Bridge performs automated translation between major ROS versions and should allow you to migrate your project one package at a time. 
-Due to the operating system constraints for the current active ROS releases (Noetic / Ubuntu  20.04, Humble / 22.04)  the only way to use the ROS Bridge is to use ROS 2 Humble Hawksbill compiled from source on Ubuntu 20.04, [which has limited Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027).
+Due to the operating system constraints for the current active ROS releases (Noetic / Ubuntu  20.04, Humble / 22.04)  the easiest way to use the ROS Bridge is to use ROS 2 Humble Hawksbill compiled from source on Ubuntu 20.04, [which has limited Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027).
 
 
 #### Other Migration Options
