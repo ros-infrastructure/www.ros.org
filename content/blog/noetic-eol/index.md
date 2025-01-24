@@ -119,7 +119,7 @@ This new abstraction layer is called a ROS Middleware Layer (RMW), and users can
 
 * DDS-based RMWs like [Fast-DDS](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/ros2_configure.html) and [Cyclone DDS](https://cyclonedds.io/docs/cyclonedds/latest/about_dds/eclipse_cyclone_dds.html). 
   * We recommend new DDS users read our [tuning guide](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html) and familiarize themselves with utilities like the [Fast-DDS Discovery Server](https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html) when using WiFi networks.
-* A preview of [RMW-Zenoh](https://github.com/ros2/rmw_zenoh) is available in ROS 2 Jazzy, and binaries for the new RMW [are now available via apt.](https://discourse.ros.org/t/rmw-zenoh-binaries-for-rolling-jazzy-and-humble/41395) 
+* A preview of [RMW-Zenoh](https://github.com/ros2/rmw_zenoh) is available in ROS 2 Jazzy, and binaries for the new RMW [are now available via apt](https://discourse.ros.org/t/rmw-zenoh-binaries-for-rolling-jazzy-and-humble/41395). 
 * Other community supported and proprietary RMWs are also available including [RTI Connext](https://github.com/ros2/rmw_connextdds), [IceOryx2](https://discourse.ros.org/t/rmw-iceoryx2-v0-1-0-release/40996), [Gurum-DDS](https://github.com/ros2/rmw_gurumdds) and even, [e-mail](https://discourse.ros.org/t/ros-2-over-email-rmw-email-an-rmw-implementation/22360).
 
 <br>
