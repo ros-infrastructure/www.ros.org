@@ -60,7 +60,7 @@ If your ROS 1 system is tightly coupled, has a number of un-ported dependencies,
 The ROS 1 to ROS 2 Bridge performs automated translation between major ROS versions and should allow you to migrate your project one package at a time. 
 The ROS 1 to ROS 2 Bridge was intended to only support ROS 2 distros prior to and including ROS 2 Foxy, and due to operating system constraints it is no longer fully supported by the current ROS 2 releases. 
 However, with a little bit of work, it is still possible to use the ROS 1 / ROS 2 bridge with Noetic and a current ROS 2 distro. 
-Users can either compile ROS 2 Humble from source for Ubuntu 20.04, [which has Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027), or use [ROS-0 binaries](https://ros.packages.techfak.net/) to build their packages on a newer version of Ubuntu (i.e. 22.04 of 24.04).
+Users can either compile ROS 2 Humble from source for Ubuntu 20.04, [which has Tier 3 support](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027), or use [ROS-O binaries](https://ros.packages.techfak.net/) to build their packages on a newer version of Ubuntu (i.e. 22.04 of 24.04).
 
 
 #### Other Migration Options
@@ -135,7 +135,7 @@ You don't necessarily need to upgrade both ROS and Gazebo at the same time, but 
 Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and improved releases that are production-ready for your robotics application!
 
 * We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/).
-  * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are available. ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz)
+  * Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are readily available, while in older versions modern Gazebo and ROS 2 are supported through source compilation (e.g. Humble and Fortress). ROS 2 / modern Gazebo integration is accomplished using the [`ros_gz` repository](https://github.com/gazebosim/ros_gz).
 * If your robot supports custom hardware, it may be worth investigating [micro-ROS](https://micro.ros.org/).
 * MoveIt2, the latest version of MoveIt, has a complete [migration guide available in their official documentation.](https://moveit.picknik.ai/main/api/html/index.html)
 * Nav2, the ROS 2 navigation framework, has [complete documentation available for new users](https://docs.nav2.org/index.html).
