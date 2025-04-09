@@ -52,7 +52,7 @@ ROS 1 going end of life does **not** mean:
 
 **If you are still using ROS 1 it is time to consider switching to ROS 2 Humble Hawksbill ([migration guide](https://docs.ros.org/en/humble/How-To-Guides/Migrating-from-ROS1.html)) or ROS 2 Jazzy Jalisco ([migration guide](https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html)).**
 Which distro you choose as your migration target is going to depend on the complexity of your ROS 1 system.
-This [migration heuristic tool](https://github.com/osrf/ros2-porting-heuristics) can help you estimating the complexity of migrating your project to ROS 2.
+This [migration heuristic tool](https://github.com/osrf/ros2-porting-heuristics) can help you estimate the complexity of migrating your project to ROS 2.
 If you have a smaller ROS 1 project, or a reasonably de-coupled workspace, it is most likely that you can migrate to ROS 2 Jazzy Jalisco directly.
 The ROS community has produced a number of migration tools which you may find helpful, including this migration tool from [AWS Labs](https://github.com/awslabs/ros2-migration-tools), and this migration tool from ROS maintainer [David Lu!](https://github.com/DLu/roscompile/tree/main/magical_ros2_conversion_tool)
 
