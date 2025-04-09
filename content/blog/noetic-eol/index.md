@@ -131,7 +131,7 @@ This new abstraction layer is called a ROS Middleware Layer (RMW), and users can
 
 Most of the major ROS packages and projects have already upgraded to ROS 2. 
 Our sister project, Gazebo, is also in the process of migrating to its second major release, and many ROS users are also making the switch to a modern version of Gazebo.
-You don't necessarily need to upgrade both ROS and Gazebo at the same time, but it is important to note that [Gazebo Classic is also going end of life in 2025](https://community.gazebosim.org/t/gazebo-classic-end-of-life/2563) too.
+You don't necessarily need to upgrade both ROS and Gazebo at the same time, but it is important to note that [Gazebo Classic reached end of life in 2025](https://community.gazebosim.org/t/gazebo-classic-end-of-life/2563) too.
 Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and improved releases that are production-ready for your robotics application!
 
 * We recommend Gazebo users [migrate their Gazebo simulation to a modern version of Gazebo](https://gazebosim.org/docs/harmonic/gazebo_classic_migration/).
