@@ -108,7 +108,7 @@ The ROS build and command line tools have also gotten a face lift in ROS 2.
 While there have been a few changes, the way you build and run your ROS application should feel familiar. All of our new tools are self-documenting, and you can learn a lot by simply passing them the `--help` option.
 
 * The [ROS command line interface (CLI)](https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html) syntax has changed slightly in ROS 2. All your favorite commands are still there, but the syntax has been modernized.
-* ROS 2 uses [Colcon](https://colcon.readthedocs.io/en/released/user/quick-start.html), rather than `catkin build` or `catkin make`, as the build tool. The names have changed, but most of your favorite functionality is still there.
+* ROS 2 uses [Colcon](https://colcon.readthedocs.io/en/released/user/quick-start.html), rather than `catkin build` or `catkin_make`, as the build tool. The names have changed, but most of your favorite functionality is still there.
 * [Ament](https://github.com/ament) is a collection of [ROS build tool helper functions](https://docs.ros.org/en/rolling/Concepts/Advanced/About-Build-System.html). Ament wraps common build tasks and exposes them to Colcon and ROS. 
 
 <br>
