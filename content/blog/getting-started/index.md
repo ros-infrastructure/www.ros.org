@@ -15,7 +15,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <table style="text-align: center">
 <tr>
 <td style="border: none;">
-<a href="http://wiki.ros.org/noetic/Installation/Ubuntu">
+<a href="https://docs.ros.org/en/jazzy/Installation.html">
 <img src="/imgs/JazzyNoBG.png" alt="ROS Jazzy Jalisco logo" style="float: center; max-height: 120px; vertical-align: middle">
 </a>
 <p><b>ROS 2 Jazzy Jalisco</b></p>
