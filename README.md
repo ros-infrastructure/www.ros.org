@@ -74,7 +74,7 @@ Now, you need to tell the upload script where to look for the SSH key file for t
 ``` 
 Host ros1.osuosl.org osuoslros
      User ros
-     HostName ros1.osuosl.org
+     HostName ros2.osuosl.org
      ForwardAgent yes
      ServerAliveInterval 30
      ServerAliveCountMax 4
