@@ -75,10 +75,7 @@ agencies, people and organizations of all stripes keep the ROS
 project going.
 
 The community hub and neutral steward for the project is [Open
-Robotics](https://www.openrobotics.org), who hosts the shared online services
-(such as this website), create and manage distribution releases (including
-the binary packages that you install), and develop and maintain much of the core
+Robotics](https://www.openrobotics.org/), who hosts the shared online services
+(such as this website), creates and manages distribution releases (including
+the binary packages that you install), and develops and maintains much of the core
 software within ROS.
-*Open Robotics also offers [engineering
-services](https://www.openrobotics.org/solutions) related to ROS.*
- 
