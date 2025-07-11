@@ -246,7 +246,7 @@
       overflow-y: auto;
     }
 
-    .support-wiki {
+    .support-documentation {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -268,7 +268,7 @@
       width: auto;
     }
 
-    .support-ros-answers {
+    .support-stack-exchange {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -306,28 +306,6 @@
     .blurb-3 {
       width: auto;
       padding-top: 20px;
-    }
-
-    .support-wiki-ros1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      margin-top: 10px;
-    }
-    .img-4 {
-      height: 50px;
-      padding-left: 15px;
-    }
-    .img-caption-4 {
-      padding-top: 20px;
-      font-size: 18px;
-      width: auto;
-    }
-    .blurb-4 {
-      padding-top: 20px;
-      width: auto;
     }
   }
   .blog-newsletter {
