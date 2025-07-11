@@ -83,8 +83,6 @@ know](https://discourse.ros.org/c/ros-projects) if you're able!
 
 ### Industry Support
 
-As demonstrated by the membership of the [ROS 2 Technical Steering
-Committee](https://docs.ros.org/en/rolling/Governance.html), industry support
-for ROS 2 is strong.  Companies large and small from around the world are
+Companies large and small from around the world are
 committing their resources to making open source contributions to ROS 2, in
 addition to developing products on top.

@@ -13,28 +13,35 @@ header_image: /imgs/quadcopter.png # Optional, default defined in blog layout
 ROS is released as *distributions*, also called "distros", with more than one ROS distribution supported at a time. Some releases come with long term support (LTS), meaning they are more stable and have undergone extensive testing. Other distributions are newer with shorter lifetimes, but with support for more recent platforms and more recent versions of their constituent ROS packages. See the [distributions list](http://docs.ros.org/) for more details. Generally a new ROS distro is released every year on [world turtle day](https://www.worldturtleday.org/), with LTS distros being released in even years. We currently recommend one of the versions below:
 
 <table style="text-align: center">
-<tr>
-<td style="border: none;">
-<a href="https://docs.ros.org/en/jazzy/Installation.html">
-<img src="/imgs/JazzyNoBG.png" alt="ROS Jazzy Jalisco logo" style="float: center; max-height: 120px; vertical-align: middle">
-</a>
-<p><b>ROS 2 Jazzy Jalisco</b></p>
-<p><i>Ubuntu Linux 24.04, Windows 10</i></p>
-<p>(Latest ROS 2 LTS)</p>
-<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/jazzy/Installation.html">Install</a>
-</p>
-</td>
-<td style="border: none;">
-<a href="https://docs.ros.org/en/humble/Installation.html">
-<img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
-</a>
-<p><b>Get ROS 2 Humble Hawksbill</b></p>
-<p><i>Ubuntu Linux 22.04, Windows 10</i></p>
-<p>(Best upgrade path for ROS 1 users)</p>
-<p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a>
-</p>
-</td>
-</tr>
+  <tr>
+    <td style="border: none;">
+      <a href="https://docs.ros.org/en/kilted/Installation.html">
+        <img src="/imgs/kilted-kaiju.png" alt="ROS Kilted Kaiju logo" style="float: center; max-height: 120px; vertical-align: middle">
+      </a>
+      <p><b>ROS 2 Kilted Kaiju</b></p>
+      <p><i>Ubuntu Linux 24.04, Windows 10</i></p>
+      <p>(Latest ROS 2 short-term release)</p>
+      <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/kilted/Installation.html">Install</a></p>
+    </td>
+    <td style="border: none;">
+      <a href="https://docs.ros.org/en/jazzy/Installation.html">
+        <img src="/imgs/JazzyNoBG.png" alt="ROS Jazzy Jalisco logo" style="float: center; max-height: 120px; vertical-align: middle">
+      </a>
+      <p><b>ROS 2 Jazzy Jalisco</b></p>
+      <p><i>Ubuntu Linux 24.04, Windows 10</i></p>
+      <p>(Latest ROS 2 LTS)</p>
+      <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/jazzy/Installation.html">Install</a></p>
+    </td>
+    <td style="border: none;">
+      <a href="https://docs.ros.org/en/humble/Installation.html">
+        <img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
+      </a>
+      <p><b>Get ROS 2 Humble Hawksbill</b></p>
+      <p><i>Ubuntu Linux 22.04, Windows 10</i></p>
+      <p>(Best upgrade path for ROS 1 users)</p>
+      <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a></p>
+    </td>
+  </tr>
 </table>
 
 [Want to try ROS using Docker? Check out the latest distros on Dockerhub](https://hub.docker.com/_/ros/)
