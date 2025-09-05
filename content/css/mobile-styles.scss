@@ -29,7 +29,6 @@
   }
 
   .banner {
-    background-image: url("/imgs/noetic-background.png");
     background-attachment: fixed;
     background-size: 250px;
     background-repeat: no-repeat;
@@ -127,7 +126,7 @@
   }
   .install {
     grid-template-columns: repeat(4, 22.5%);
-    grid-template-rows: 90px 48% 41%;
+    grid-template-rows: auto auto auto auto auto;
     grid-column-gap: 0;
     padding-bottom: 50px;
     h3 {
@@ -148,7 +147,8 @@
       padding-top: 50px;
     }
     .install-text-1 {
-      margin-top: 25px;
+      margin-top: 20px;
+      margin-left: -20px;
       z-index: 1;
       padding-left: 15px;
       grid-column: 1 / 3;
@@ -156,45 +156,44 @@
     }
     .release-img-1 {
       z-index: 0;
-      margin-top: -50px;
       margin-left: -50px;
       transform: scale(0.8);
-      grid-column: 3 / 5;
+      grid-column: 4 / 5;
       grid-row: 2 / 3;
     }
     .btn-install-left {
       width: 80vw;
       grid-column: 2 / 4;
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
       place-self: end;
       justify-self: center;
+      margin-top: -20px;
     }
     .divider-horizontal {
       display: none;
     }
     .install-text-2 {
-      width: 150px;
-      padding-top: 25px;
+      margin-top: 20px;
+      margin-left: -20px;
+      z-index: 1;
       padding-left: 15px;
-      padding-right: 70px;
       grid-column: 1 / 3;
-      grid-row: 3 / 4;
+      grid-row: 4 / 5;
     }
     .release-img-2 {
+      z-index: 0;
+      margin-left: -190px;
       transform: scale(0.5);
-      margin-top: -80px;
-      grid-column: 3 / 5;
-      grid-row: 3 / 4;
-      justify-self: center;
+      grid-column: 4 / 5;
+      grid-row: 4 / 5;
     }
     .btn-install-right {
-      align-self: start;
-      margin: 0 5vw;
       width: 80vw;
       grid-column: 2 / 4;
-      grid-row: 3 / 4;
+      grid-row: 5 / 6;
       place-self: end;
       justify-self: center;
+      margin-top: -90px;
     }
 
     .install-text-1,
@@ -246,7 +245,7 @@
       overflow-y: auto;
     }
 
-    .support-wiki {
+    .support-documentation {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -268,7 +267,7 @@
       width: auto;
     }
 
-    .support-ros-answers {
+    .support-stack-exchange {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -306,28 +305,6 @@
     .blurb-3 {
       width: auto;
       padding-top: 20px;
-    }
-
-    .support-wiki-ros1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      margin-top: 10px;
-    }
-    .img-4 {
-      height: 50px;
-      padding-left: 15px;
-    }
-    .img-caption-4 {
-      padding-top: 20px;
-      font-size: 18px;
-      width: auto;
-    }
-    .blurb-4 {
-      padding-top: 20px;
-      width: auto;
     }
   }
   .blog-newsletter {
