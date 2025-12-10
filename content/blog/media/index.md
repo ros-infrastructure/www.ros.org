@@ -60,7 +60,7 @@ If you are unsure if **your** illustration requires approval, we encourage you t
 The community is welcome to commission our current project illustrator [Ryan Hungerford](https://www.behance.net/ryetoons9ee0?locale=en_US) for custom work or use their own local illustrator.
 
 The ROS project has had a long and valuable relationship with professional illustrators since the early days of the project. We credit these illustrators' work with creating our strong brand identity. 
-We strongly discourage the use of generative AI tools for*ROS-related artwork.
+We strongly discourage the use of generative AI tools for ROS-related artwork.
 
 
 ## Additional Resources 
