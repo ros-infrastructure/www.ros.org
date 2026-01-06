@@ -172,7 +172,7 @@ If you run into migration problem that you just can't solve feel free to swing b
 
 
 * [Discourse](https://discourse.ros.org/) -- our ROS discussion forum.
-* [ROS Discord](https://discord.com/servers/open-robotics-1077825543698927656) -- our live discussion server.
+* [ROS Zulip](https://openrobotics.zulipchat.com/) -- our live developer discussion server.
 * [Robotics Stack Exchange](https://robotics.stackexchange.com/) -- our preferred Q&A forum.
 * [Official ROS 2 Documentation](https://docs.ros.org/) -- our official ROS documentation.
 * [ROS Package API reference](https://docs.ros.org/en/rolling/p/) -- API documentation for ROS package.
