@@ -112,13 +112,6 @@ interest.  The ROS Discourse is **not the right place to ask troubleshooting
 questions or report bugs**; please use the other support resources listed above
 instead.
 
-### [Open Robotics Discord Server  <i style="font-size: 1rem;" class="fas fa-users"></i>](/blog/discord/)
-
-Open Robotics hosts a [community Discord server](/blog/discord/) where ROS,
-Gazebo, and Open-RMF users can meet with each other, chat, and coordinate on
-open-source development. If you are looking to connect with ROS users this a
-great place to start.
-
 ### [ROS Index <i style="font-size: 1rem;" class="fas fa-sitemap"></i>](https://index.ros.org)
 
 When you want to find out information about a specific package the
