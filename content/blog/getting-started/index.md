@@ -112,6 +112,13 @@ interest.  The ROS Discourse is **not the right place to ask troubleshooting
 questions or report bugs**; please use the other support resources listed above
 instead.
 
+### [Open Robotics Zulip Server  <i style="font-size: 1rem;" class="fas fa-users"></i>](https://openrobotics.zulipchat.com/)
+
+Open Robotics hosts a [community Zulip server](https://openrobotics.zulipchat.com/) where ROS,
+Gazebo, and Open-RMF users can meet with each other, chat, and coordinate on
+open-source development. If you are looking to connect with ROS users this a
+great place to start.
+
 ### [ROS Index <i style="font-size: 1rem;" class="fas fa-sitemap"></i>](https://index.ros.org)
 
 When you want to find out information about a specific package the
