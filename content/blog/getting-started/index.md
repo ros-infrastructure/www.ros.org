@@ -15,13 +15,13 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <table style="text-align: center">
   <tr>
     <td style="border: none;">
-      <a href="https://docs.ros.org/en/kilted/Installation.html">
-        <img src="/imgs/kilted-kaiju.png" alt="ROS Kilted Kaiju logo" style="float: center; max-height: 120px; vertical-align: middle">
+      <a href="https://docs.ros.org/en/lyrical/Installation.html">
+        <img src="/imgs/lyrical.png" alt="ROS Lyrical Luth logo" style="float: center; max-height: 120px; vertical-align: middle">
       </a>
-      <p><b>ROS 2 Kilted Kaiju</b></p>
-      <p><i>Ubuntu Linux 24.04, Windows 10</i></p>
-      <p>(Latest ROS 2 short-term release)</p>
-      <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/kilted/Installation.html">Install</a></p>
+      <p><b>ROS 2 Lyrical Luth</b></p>
+      <p><i>Ubuntu Linux 26.04, Windows 11</i></p>
+      <p>(Latest ROS 2 long-term release)</p>
+      <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/lyrical/Installation.html">Install</a></p>
     </td>
     <td style="border: none;">
       <a href="https://docs.ros.org/en/jazzy/Installation.html">
@@ -29,14 +29,14 @@ ROS is released as *distributions*, also called "distros", with more than one RO
       </a>
       <p><b>ROS 2 Jazzy Jalisco</b></p>
       <p><i>Ubuntu Linux 24.04, Windows 10</i></p>
-      <p>(Latest ROS 2 LTS)</p>
+      <p>(Active ROS 2 long-term release)</p>
       <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/jazzy/Installation.html">Install</a></p>
     </td>
     <td style="border: none;">
       <a href="https://docs.ros.org/en/humble/Installation.html">
         <img src="/imgs/humble.png" alt="ROS Humble Hawksbill logo" style="float: center; max-height: 120px; vertical-align: middle">
       </a>
-      <p><b>Get ROS 2 Humble Hawksbill</b></p>
+      <p><b>ROS 2 Humble Hawksbill</b></p>
       <p><i>Ubuntu Linux 22.04, Windows 10</i></p>
       <p>(Best upgrade path for ROS 1 users)</p>
       <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/humble/Installation.html">Install</a></p>
@@ -103,10 +103,10 @@ more than 60,000 questions at ROS Answers.  Start by searching for questions
 similar to yours; if your question isn't already asked, post a new one. Be sure
 to check the guidelines on how to prepare your question before posting.
 
-### [ROS Discourse Forums <i style="font-size: 1rem;" class="fas fa-comments"></i>](https://discourse.ros.org)
+### [Open Robotics Discourse Forums <i style="font-size: 1rem;" class="fas fa-comments"></i>](https://discourse.ros.org)
 
 To stay up-to-date on the latest developments within the ROS community, you'll
-want to join the **[ROS Discourse](https://discourse.ros.org)** forums.  These
+want to join the **[Open Robotics Discourse](https://discourse.openrobotics.org/)** forums.  These
 forums are the place for announcements, news, and discussions of general
 interest.  The ROS Discourse is **not the right place to ask troubleshooting
 questions or report bugs**; please use the other support resources listed above
