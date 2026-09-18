@@ -15,7 +15,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
 <table style="text-align: center">
   <tr>
     <td style="border: none;">
-      <a href="https://docs.ros.org/en/lyrical/Installation.html">
+      <a href="https://docs.ros.org/en/lyrical/Get-Started/Installation.html">
         <img src="/imgs/lyrical.png" alt="ROS Lyrical Luth logo" style="float: center; max-height: 120px; vertical-align: middle">
       </a>
       <p><b>ROS 2 Lyrical Luth</b></p>
