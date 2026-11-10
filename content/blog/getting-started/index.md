@@ -19,7 +19,7 @@ ROS is released as *distributions*, also called "distros", with more than one RO
         <img src="/imgs/lyrical.png" alt="ROS Lyrical Luth logo" style="float: center; max-height: 120px; vertical-align: middle">
       </a>
       <p><b>ROS 2 Lyrical Luth</b></p>
-      <p><i>Ubuntu 26.04, RHEL 10, Windows 11</i></p>
+      <p><i>Ubuntu 26.04, Windows 11</i></p>
       <p>(Latest ROS 2 long-term release)</p>
       <p><a class="btn btn-large btn-download" href="https://docs.ros.org/en/lyrical/Get-Started/Installation.html">Install</a></p>
     </td>
